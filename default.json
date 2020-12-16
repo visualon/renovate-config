@@ -4,7 +4,7 @@
     "config:base",
     ":dependencyDashboard",
     ":dependencyDashboardApproval",
-    ":assignAndReview(kriese)",
+    ":assignAndReview(viceice)",
     ":maintainLockFilesWeekly",
     "docker:enableMajor",
     "github>whitesource/merge-confidence:beta"
