@@ -10,7 +10,6 @@
     "github>whitesource/merge-confidence:beta"
   ],
   "prCreation": "not-pending",
-  "prConcurrentLimit": 0,
   "automergeType": "branch",
   "timezone": "Europe/Berlin",
   "separateMinorPatch": true,
