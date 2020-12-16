@@ -1,0 +1,168 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base",
+    ":dependencyDashboard",
+    ":dependencyDashboardApproval",
+    ":assignAndReview(kriese)",
+    ":maintainLockFilesWeekly",
+    "docker:enableMajor",
+    "github>whitesource/merge-confidence:beta"
+  ],
+  "prCreation": "not-pending",
+  "prConcurrentLimit": 0,
+  "automergeType": "branch",
+  "timezone": "Europe/Berlin",
+  "separateMinorPatch": true,
+  "semanticCommits": "enabled",
+  "ignorePresets": [":ignoreModulesAndTests"],
+  "ignorePaths": [
+    "**/node_modules/**",
+    "**/bower_components/**",
+    "**/vendor/**",
+    "**/examples/**",
+    "**/__tests__/**",
+    "**/tests/**"
+  ],
+  "postUpdateOptions": ["yarnDedupeHighest"],
+  "dockerfile": {
+    "pinDigests": true
+  },
+  "packageRules": [
+    {
+      "depTypeList": ["devDependencies"],
+      "extends": [":automergeMinor", "schedule:nonOfficeHours"],
+      "automergeType": "pr",
+      "dependencyDashboardApproval": false,
+      "updateNotScheduled": false
+    },
+    {
+      "updateTypes": ["major", "minor"],
+      "stabilityDays": 3,
+      "prNotPendingHours": 73
+    },
+    {
+      "updateTypes": ["patch", "digest", "pin"],
+      "dependencyDashboardApproval": false
+    },
+    {
+      "depTypeList": ["peerDependencies"],
+      "rangeStrategy": "replace"
+    },
+    {
+      "updateTypes": ["lockFileMaintenance"],
+      "dependencyDashboardApproval": false,
+      "automerge": true
+    },
+    {
+      "packagePatterns": ["^VisualOn\\.Microsoft\\."],
+      "groupName": "visualon-microsoft monorepo"
+    },
+    {
+      "packagePatterns": ["^@pnp\\/"],
+      "sourceUrlPrefixes": ["https://github.com/pnp/pnpjs"],
+      "groupName": "pnpjs monorepo"
+    },
+    {
+      "sourceUrlPrefixes": [
+        "https://github.com/dotnet/",
+        "https://github.com/aspnet/"
+      ],
+      "groupName": "dotnet packages"
+    },
+    {
+      "sourceUrlPrefixes": [
+        "https://github.com/NLog/"
+      ],
+      "groupName": "nlog packages"
+    },
+    {
+      "packagePatterns": ["^mcr\\.microsoft\\.com\\/dotnet\\/"],
+      "groupName": "dotnet docker images"
+    },
+    {
+      "packagePatterns": ["^@start\\/"],
+      "sourceUrlPrefixes": ["https://github.com/deepsweet/start"],
+      "groupName": "start monorepo"
+    },
+    {
+      "packagePatterns": ["^Unity\\.", "^unity\\."],
+      "sourceUrlPrefixes": ["https://github.com/unitycontainer/"],
+      "groupName": "unity packages"
+    },
+    {
+      "packagePatterns": ["^Snapper$", "^Snapper\\."],
+      "sourceUrlPrefixes": ["https://github.com/theramis/Snapper"],
+      "groupName": "snapper packages"
+    },
+    {
+      "packageNames": ["renovate", "renovate/renovate", "visualon/renovate", "ghcr.io/visualon/renovate"],
+      "groupName": "renovatebot",
+      "dependencyDashboardApproval": false,
+      "automerge": true
+    },
+    {
+      "packageNames": ["visualon/images"],
+      "groupName": "visualon images"
+    },
+    {
+      "packageNames": [
+        "coverlet.collector",
+        "coverlet.msbuild",
+        "MinVer",
+        "minver-cli",
+        "Microsoft.NET.Test.Sdk",
+        "NLog.Schema",
+        "NSubstitute",
+        "NSubstitute.Analyzers.CSharp",
+        "renovate",
+        "renovate/renovate",
+        "ReportGenerator",
+        "dotnet-reportgenerator-cli",
+        "dotnet-reportgenerator-globaltool",
+        "Snapper",
+        "Snapper.NUnit",
+        "NUnit",
+        "NUnit3TestAdapter",
+        "VisualOn.Build.SigningKey",
+        "visualon.msbuild.tasks",
+        "visualon/images",
+        "visualon/renovate"
+      ],
+      "updateTypes": ["minor", "patch", "digest", "pin"],
+      "dependencyDashboardApproval": false,
+      "automerge": true
+    },
+    {
+      "packageNames": [
+        "renovate",
+        "renovate/renovate",
+        "visualon/renovate",
+        "ghcr.io/visualon/renovate",
+        "visualon/images",
+        "@types/vo-app-base"
+      ],
+      "packagePatterns": [
+        "^@vsaf\\/",
+        "^VisualOn\\."
+      ],
+      "stabilityDays": 0,
+      "prNotPendingHours": 25
+    },
+    {
+      "sourceUrlPrefixes": ["https://github.com/angular/angular-cli"],
+      "minor": { "automerge": false },
+      "separateMajorMinor": false
+    }
+  ],
+  "regexManagers": [
+    {
+      "fileMatch": ["\\.tf$"],
+      "matchStrings": [
+        "\\s+image_[a-z_]+\\s+=\\s+\"(?<lookupName>[a-z.\\/-]+):(?<currentValue>[a-z0-9.-]+)@(?<currentDigest>sha256:[a-f0-9]+)\"\\s+# renovate:(?: depName=(?<depName>.+?))?\\s"
+      ],
+      "datasourceTemplate": "docker",
+      "versioningTemplate": "docker"
+    }
+  ]
+}
