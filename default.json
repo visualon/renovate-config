@@ -95,7 +95,7 @@
       "groupName": "snapper packages"
     },
     {
-      "packageNames": ["renovate", "renovate/renovate", "visualon/renovate", "ghcr.io/visualon/renovate"],
+      "packagePatterns": ["(^|/)renovate$"],
       "groupName": "renovatebot",
       "dependencyDashboardApproval": false,
       "automerge": true
@@ -134,16 +134,13 @@
     },
     {
       "packageNames": [
-        "renovate",
-        "renovate/renovate",
-        "visualon/renovate",
-        "ghcr.io/visualon/renovate",
         "visualon/images",
         "@types/vo-app-base"
       ],
       "packagePatterns": [
         "^@vsaf\\/",
-        "^VisualOn\\."
+        "^VisualOn\\.",
+        "(^|/)renovate$"
       ],
       "stabilityDays": 0,
       "prNotPendingHours": 25
@@ -163,10 +160,10 @@
     {
       "fileMatch": ["\\.tf$"],
       "matchStrings": [
-        "\\s+image_[a-z_]+\\s+=\\s+\"(?<lookupName>[a-z./-]+):(?<currentValue>[a-z0-9.-]+)(?:@(?<currentDigest>sha256:[a-f0-9]+))?\"\\s+# renovate:(?: depName=(?<depName>.+?))?\\s"
+        "\\s+image_[a-z_]+\\s+=\\s+\"(?<lookupName>[a-z./-]+):(?<currentValue>[a-z0-9.-]+)(?:@(?<currentDigest>sha256:[a-f0-9]+))?\"\\s+# renovate:(?: depName=(?<depName>.+?))?(?: versioning=(?<versioning>.*?))?\\s"
       ],
       "datasourceTemplate": "docker",
-      "versioningTemplate": "docker",
+      "versioningTemplate": "{{#if versioning}}{{versioning}}{{else}}docker{{/if}}"
       "depNameTemplate": "{{#if depName}}{{depName}}{{else}}{{lookupName}}{{/if}}"
     },
     {
