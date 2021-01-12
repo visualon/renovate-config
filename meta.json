@@ -1,0 +1,9 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "packagePatterns": ["(^|/)traefik"],
+      "sourceUrl": "https://github.com/containous/traefik"
+    }
+  ]
+}
