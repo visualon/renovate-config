@@ -3,12 +3,12 @@
   "packageRules": [
     {
       "packagePatterns": ["(^|/)traefik$"],
-      "datasource": ["docker"],
+      "datasources": ["docker"],
       "sourceUrl": "https://github.com/containous/traefik"
     },
     {
       "packagePatterns": ["(^|/)rook\\/"],
-      "datasource": ["docker"],
+      "datasources": ["docker"],
       "sourceUrl": "https://github.com/rook/rook"
     }
   ]
