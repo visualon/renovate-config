@@ -17,6 +17,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2.3.4
 
-      - nam: testing ${{ matrix.file }}
+      - name: testing ${{ matrix.file }}
         run: npx renovate-config-validator
 
