@@ -18,7 +18,7 @@ jobs:
           - automergePatch
           - automergeDigest
           - fixes
-          - meta
+          # - meta -> soureUrl not valid
           - shared
     env:
       RENOVATE_CONFIG_FILE: ${{ matrix.file }}.json
