@@ -3,7 +3,7 @@
   "packageRules": [
     {
       "packagePatterns": ["(^|/)traefik$"],
-      "datasource": ["dcoker"],
+      "datasource": ["docker"],
       "sourceUrl": "https://github.com/containous/traefik"
     },
     {
