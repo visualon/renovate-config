@@ -13,7 +13,13 @@ jobs:
 
     strategy:
       matrix:
-        file: [default, automergePatch, automergeDigest]
+        file:
+          - default
+          - automergePatch
+          - automergeDigest
+          - fixes
+          - meta
+          - shared
     env:
       RENOVATE_CONFIG_FILE: ${{ matrix.file }}.json
 
@@ -22,4 +28,3 @@ jobs:
 
       - name: testing ${{ matrix.file }}
         run: npx -p renovate renovate-config-validator
-
