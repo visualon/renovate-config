@@ -1,15 +1,10 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base",
+    "github>visualon/renovate-config:shared",
     ":dependencyDashboard",
     ":dependencyDashboardApproval",
-    ":assignee(viceice)",
-    ":maintainLockFilesWeekly",
-    "docker:enableMajor",
-    "github>whitesource/merge-confidence:beta",
-    "github>visualon/renovate-config:meta",
-    "github>visualon/renovate-config:fixes"
+    ":assignee(viceice)"
   ],
   "prCreation": "not-pending",
   "automergeType": "branch",
