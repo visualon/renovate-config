@@ -2,8 +2,14 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [
     {
-      "packagePatterns": ["(^|/)traefik"],
+      "packagePatterns": ["(^|/)traefik$"],
+      "datasource": ["dcoker"],
       "sourceUrl": "https://github.com/containous/traefik"
+    },
+    {
+      "packagePatterns": ["(^|/)rook\\/"],
+      "datasource": ["docker"],
+      "sourceUrl": "https://github.com/rook/rook"
     }
   ]
 }
