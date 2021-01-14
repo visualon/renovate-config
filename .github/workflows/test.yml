@@ -3,6 +3,9 @@ name: test
 on:
   push:
 
+env:
+  LOG_LEVEL: debug
+
 jobs:
   test:
     runs-on: ubuntu-latest
