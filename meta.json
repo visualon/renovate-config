@@ -14,7 +14,7 @@
     {
       "packagePatterns": ["(^|atlassian\\/)jira-software$"],
       "datasources": ["docker"],
-      "sourceUrl": "https://confluence.atlassian.com/display/jirasoftware/jira-software-release-notes"
+      "sourceUrl": "https://confluence.atlassian.com/jirasoftware/jira-software-release-notes"
     },
     {
       "packagePatterns": ["(^|atlassian\\/)bitbucket-server$"],
