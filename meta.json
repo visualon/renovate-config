@@ -2,22 +2,22 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [
     {
-      "packagePatterns": ["(^|/)traefik$"],
+      "packagePatterns": ["(^|\\/)traefik$"],
       "datasources": ["docker"],
       "sourceUrl": "https://github.com/containous/traefik"
     },
     {
-      "packagePatterns": ["(^|/)rook\\/"],
+      "packagePatterns": ["(^|\\/)rook\\/"],
       "datasources": ["docker"],
       "sourceUrl": "https://github.com/rook/rook"
     },
     {
-      "packagePatterns": ["(^|atlassian/)jira-software$"],
+      "packagePatterns": ["(^|atlassian\\/)jira-software$"],
       "datasources": ["docker"],
       "sourceUrl": "https://confluence.atlassian.com/display/jirasoftware/jira-software-release-notes"
     },
     {
-      "packagePatterns": ["(^|atlassian/)bitbucket-server$"],
+      "packagePatterns": ["(^|atlassian\\/)bitbucket-server$"],
       "datasources": ["docker"],
       "sourceUrl": "https://confluence.atlassian.com/bitbucketserver/bitbucket-server-release-notes"
     }
