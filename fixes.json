@@ -4,6 +4,10 @@
     {
       "sourceUrlPrefixes": ["https://github.com/tunnelvisionlabs/antlr4ts"],
       "allowedVersions": "!/(-dev|-\\w+\\.[a-z0-9]{8})$/"
+    },
+    {
+      "packageNames": ["node", "amd64/node"],
+      "versioning": "node"
     }
   ]
 }
