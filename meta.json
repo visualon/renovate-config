@@ -20,6 +20,11 @@
       "packagePatterns": ["(^|atlassian\\/)bitbucket-server$"],
       "datasources": ["docker"],
       "sourceUrl": "https://confluence.atlassian.com/bitbucketserver/bitbucket-server-release-notes"
+    },
+    {
+      "packageNames": ["jenkins"],
+      "datasources": ["docker"],
+      "sourceUrl": "https://jenkins.io/changelog-stable"
     }
   ]
 }
