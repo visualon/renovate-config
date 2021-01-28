@@ -25,6 +25,11 @@
       "packageNames": ["jenkins"],
       "datasources": ["docker"],
       "sourceUrl": "https://jenkins.io/changelog-stable"
+    },
+    {
+      "packageNames": ["gitea/gitea"],
+      "datasources": ["docker"],
+      "sourceUrl": "https://github.com/go-gitea/gitea"
     }
   ]
 }
