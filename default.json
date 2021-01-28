@@ -50,23 +50,5 @@
       "extractVersion": "^(?<version>v\\d+\\.\\d+\\.\\d+)$",
       "versioning": "regex:^v(?<major>\\d+)(\\.(?<minor>\\d+)\\.(?<patch>\\d+))?$"
     }
-  ],
-  "regexManagers": [
-    {
-      "fileMatch": ["\\.tf$"],
-      "matchStrings": [
-        "\\s+image_[a-z_]+\\s+=\\s+\"(?<lookupName>[a-z./-]+):(?<currentValue>[a-z0-9.-]+)(?:@(?<currentDigest>sha256:[a-f0-9]+))?\"\\s+# renovate:(?: depName=(?<depName>.+?))?(?: versioning=(?<versioning>.*?))?\\s"
-      ],
-      "datasourceTemplate": "docker",
-      "versioningTemplate": "{{#if versioning}}{{versioning}}{{else}}docker{{/if}}",
-      "depNameTemplate": "{{#if depName}}{{depName}}{{else}}{{lookupName}}{{/if}}"
-    },
-    {
-      "fileMatch": ["\\.tf$"],
-      "matchStrings": ["required_version\\s*=\\s*\"(?<currentValue>.+?)\""],
-      "datasourceTemplate": "docker",
-      "versioningTemplate": "hashicorp",
-      "depNameTemplate": "hashicorp/terraform"
-    }
   ]
 }
