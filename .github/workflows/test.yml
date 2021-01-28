@@ -20,6 +20,8 @@ jobs:
           - fixes
           # - meta -> soureUrl not valid
           - shared
+          - grous
+          - vo
     env:
       RENOVATE_CONFIG_FILE: ${{ matrix.file }}.json
 
