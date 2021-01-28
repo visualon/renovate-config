@@ -60,7 +60,7 @@
     {
       "fileMatch": ["\\.tf$"],
       "matchStrings": [
-        "\\s+image_[a-z_]+\\s+=\\s+\"(?<lookupName>[a-z0-9./-]+):(?<currentValue>[a-z0-9.-]+)(?:@(?<currentDigest>sha256:[a-f0-9]+))?\"\\s+# renovate:(?: depName=(?<depName>.+?))?(?: versioning=(?<versioning>.*?))?\\s"
+        "\\s+image_[a-z0-9_]+\\s+=\\s+\"(?<lookupName>[a-z0-9.\\/-]+)(?::(?<currentValue>[a-z0-9.-]+))?(?:@(?<currentDigest>sha256:[a-f0-9]+))?\"\\s+# renovate:(?: depName=(?<depName>.+?))?(?: versioning=(?<versioning>.*?))?\\s"
       ],
       "datasourceTemplate": "docker",
       "versioningTemplate": "{{#if versioning}}{{versioning}}{{else}}docker{{/if}}",
