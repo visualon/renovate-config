@@ -6,8 +6,12 @@
     "docker:enableMajor",
     "github>whitesource/merge-confidence:beta",
     "github>visualon/renovate-config:meta",
-    "github>visualon/renovate-config:fixes"
+    "github>visualon/renovate-config:fixes",
+    "github>visualon/renovate-config:groups"
   ],
+  "timezone": "Europe/Berlin",
+  "semanticCommits": "enabled",
+  "postUpdateOptions": ["yarnDedupeHighest"],
   "packageRules": [
     {
       "managers": ["dockerfile", "droneci"],
@@ -16,6 +20,38 @@
     {
       "managers": ["droneci"],
       "updateTypes": ["minor", "patch", "digest"],
+      "dependencyDashboardApproval": false,
+      "automerge": true
+    },
+    {
+      "updateTypes": ["patch", "digest", "pin"],
+      "dependencyDashboardApproval": false
+    },
+    {
+      "packageNames": [
+        "coverlet.collector",
+        "coverlet.msbuild",
+        "MinVer",
+        "minver-cli",
+        "Microsoft.NET.Test.Sdk",
+        "NLog.Schema",
+        "NSubstitute",
+        "NSubstitute.Analyzers.CSharp",
+        "renovate",
+        "renovate/renovate",
+        "ReportGenerator",
+        "dotnet-reportgenerator-cli",
+        "dotnet-reportgenerator-globaltool",
+        "Snapper",
+        "Snapper.NUnit",
+        "NUnit",
+        "NUnit3TestAdapter",
+        "VisualOn.Build.SigningKey",
+        "visualon.msbuild.tasks",
+        "visualon/images",
+        "visualon/renovate"
+      ],
+      "updateTypes": ["minor", "patch", "digest", "pin"],
       "dependencyDashboardApproval": false,
       "automerge": true
     }
