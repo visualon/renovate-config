@@ -24,6 +24,12 @@
       "automerge": true
     },
     {
+      "paths": ["Jenkinsfile"],
+      "updateTypes": ["minor", "patch", "digest"],
+      "dependencyDashboardApproval": false,
+      "automerge": true
+    },
+    {
       "updateTypes": ["patch", "digest", "pin"],
       "dependencyDashboardApproval": false
     },
