@@ -41,6 +41,30 @@
       "groupName": "renovatebot",
       "dependencyDashboardApproval": false,
       "automerge": true
+    },
+    {
+      "matchSourceUrlPrefixes": ["https://github.com/microsoft/msbuild"],
+      "groupName": "MSBuild monorepo"
+    },
+    {
+      "matchSourceUrlPrefixes": [
+        "https://github.com/microsoft/fluentui",
+        "https://github.com/OfficeDev/office-ui-fabric-react"
+      ],
+      "groupName": "Fluent UI monorepo"
+    },
+    {
+      "matchPackageNames": ["@types/react", "@types/react-dom"],
+      "groupName": "react monorepo"
+    },
+    {
+      "matchPackageNames": ["prettier"],
+      "matchPackagePatterns": ["^@prettier\\/", "^prettier-plugin-"],
+      "groupName": "prettier packages"
+    },
+    {
+      "matchSourceUrlPrefixes": ["https://github.com/tunnelvisionlabs/antlr4ts"],
+      "groupName": "antlr4ts monorepo"
     }
   ]
 }
