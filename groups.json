@@ -7,13 +7,6 @@
       "groupName": "pnpjs monorepo"
     },
     {
-      "sourceUrlPrefixes": [
-        "https://github.com/dotnet/",
-        "https://github.com/aspnet/"
-      ],
-      "groupName": "dotnet packages"
-    },
-    {
       "sourceUrlPrefixes": ["https://github.com/NLog/"],
       "groupName": "nlog packages"
     },
@@ -65,27 +58,6 @@
     {
       "matchSourceUrlPrefixes": ["https://github.com/tunnelvisionlabs/antlr4ts"],
       "groupName": "antlr4ts monorepo"
-    },
-    {
-      "matchSourceUrlPrefixes": [
-        "https://github.com/NLog/"
-      ],
-      "groupName": "nlog packages"
-    },
-    {
-      "matchPackagePatterns": [
-        "^mcr\\.microsoft\\.com\\/dotnet\\/"
-      ],
-      "groupName": "dotnet docker images"
-    },
-    {
-      "matchPackagePatterns": [
-        "^@pnp\\/"
-      ],
-      "matchSourceUrlPrefixes": [
-        "https://github.com/pnp/pnpjs"
-      ],
-      "groupName": "pnpjs monorepo"
     }
   ]
 }
