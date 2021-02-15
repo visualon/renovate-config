@@ -77,6 +77,15 @@
         "^mcr\\.microsoft\\.com\\/dotnet\\/"
       ],
       "groupName": "dotnet docker images"
+    },
+    {
+      "matchPackagePatterns": [
+        "^@pnp\\/"
+      ],
+      "matchSourceUrlPrefixes": [
+        "https://github.com/pnp/pnpjs"
+      ],
+      "groupName": "pnpjs monorepo"
     }
   ]
 }
