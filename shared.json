@@ -34,6 +34,7 @@
       "dependencyDashboardApproval": false
     },
     {
+      "description": "Automerge dotnet dev packages",
       "packageNames": [
         "coverlet.collector",
         "coverlet.msbuild",
@@ -43,19 +44,13 @@
         "NLog.Schema",
         "NSubstitute",
         "NSubstitute.Analyzers.CSharp",
-        "renovate",
-        "renovate/renovate",
         "ReportGenerator",
         "dotnet-reportgenerator-cli",
         "dotnet-reportgenerator-globaltool",
         "Snapper",
         "Snapper.NUnit",
         "NUnit",
-        "NUnit3TestAdapter",
-        "VisualOn.Build.SigningKey",
-        "visualon.msbuild.tasks",
-        "visualon/images",
-        "visualon/renovate"
+        "NUnit3TestAdapter"
       ],
       "updateTypes": ["minor", "patch", "digest", "pin"],
       "dependencyDashboardApproval": false,
