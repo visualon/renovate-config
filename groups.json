@@ -65,6 +65,18 @@
     {
       "matchSourceUrlPrefixes": ["https://github.com/tunnelvisionlabs/antlr4ts"],
       "groupName": "antlr4ts monorepo"
+    },
+    {
+      "matchSourceUrlPrefixes": [
+        "https://github.com/NLog/"
+      ],
+      "groupName": "nlog packages"
+    },
+    {
+      "matchPackagePatterns": [
+        "^mcr\\.microsoft\\.com\\/dotnet\\/"
+      ],
+      "groupName": "dotnet docker images"
     }
   ]
 }
