@@ -23,8 +23,7 @@
     {
       "depTypeList": ["devDependencies"],
       "extends": [":automergeMinor", "schedule:nonOfficeHours"],
-      "automergeType": "pr",
-      "updateNotScheduled": false
+      "automergeType": "pr"
     },
     {
       "updateTypes": ["major", "minor"],
