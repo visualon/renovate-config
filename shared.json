@@ -55,6 +55,10 @@
       "updateTypes": ["minor", "patch", "digest", "pin"],
       "dependencyDashboardApproval": false,
       "automerge": true
+    },
+    {
+      "matchPackageNames": ["haproxy"],
+      "allowedVersions": "/^\\d+\\.\\d*[02468]\\.\\d+(-\\w+)?$/"
     }
   ],
   "regexManagers": [
