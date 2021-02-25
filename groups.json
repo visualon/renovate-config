@@ -58,6 +58,10 @@
     {
       "matchSourceUrlPrefixes": ["https://github.com/tunnelvisionlabs/antlr4ts"],
       "groupName": "antlr4ts monorepo"
+    },
+    {
+      "matchPackagePatterns": ["^goharbor\\/"],
+      "groupName": "goharbor images"
     }
   ]
 }
