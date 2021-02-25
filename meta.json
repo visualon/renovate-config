@@ -30,6 +30,11 @@
       "packageNames": ["gitea/gitea"],
       "datasources": ["docker"],
       "sourceUrl": "https://github.com/go-gitea/gitea"
+    },
+    {
+      "packagePatterns": ["^goharbor\\/"],
+      "datasources": ["docker"],
+      "sourceUrl": "https://github.com/goharbor/harbor"
     }
   ]
 }
