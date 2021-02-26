@@ -14,28 +14,28 @@
   "postUpdateOptions": ["yarnDedupeHighest"],
   "packageRules": [
     {
-      "managers": ["dockerfile", "droneci"],
+      "matchManagers": ["dockerfile", "droneci"],
       "pinDigests": true
     },
     {
-      "managers": ["droneci"],
-      "updateTypes": ["minor", "patch", "digest"],
+      "matchManagers": ["droneci"],
+      "matchUpdateTypes": ["minor", "patch", "digest"],
       "dependencyDashboardApproval": false,
       "automerge": true
     },
     {
-      "paths": ["Jenkinsfile"],
-      "updateTypes": ["minor", "patch", "digest"],
+      "matchFiles": ["Jenkinsfile"],
+      "matchUpdateTypes": ["minor", "patch", "digest"],
       "dependencyDashboardApproval": false,
       "automerge": true
     },
     {
-      "updateTypes": ["patch", "digest", "pin"],
+      "matchUpdateTypes": ["patch", "digest", "pin"],
       "dependencyDashboardApproval": false
     },
     {
       "description": "Automerge dotnet dev packages",
-      "packageNames": [
+      "matchPackageNames": [
         "coverlet.collector",
         "coverlet.msbuild",
         "MinVer",
@@ -52,7 +52,7 @@
         "NUnit",
         "NUnit3TestAdapter"
       ],
-      "updateTypes": ["minor", "patch", "digest", "pin"],
+      "matchUpdateTypes": ["minor", "patch", "digest", "pin"],
       "dependencyDashboardApproval": false,
       "automerge": true
     },

@@ -2,39 +2,44 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [
     {
-      "packagePatterns": ["(^|\\/)traefik$"],
-      "datasources": ["docker"],
+      "matchPackagePatterns": ["(^|\\/)traefik$"],
+      "matchDatasources": ["docker"],
       "sourceUrl": "https://github.com/containous/traefik"
     },
     {
-      "packagePatterns": ["(^|\\/)rook\\/"],
-      "datasources": ["docker"],
+      "matchPackagePatterns": ["(^|\\/)rook\\/"],
+      "matchDatasources": ["docker"],
       "sourceUrl": "https://github.com/rook/rook"
     },
     {
-      "packagePatterns": ["(^|atlassian\\/)jira-software$"],
-      "datasources": ["docker"],
+      "matchPackagePatterns": ["(^|atlassian\\/)jira-software$"],
+      "matchDatasources": ["docker"],
       "sourceUrl": "https://confluence.atlassian.com/jirasoftware/jira-software-release-notes"
     },
     {
-      "packagePatterns": ["(^|atlassian\\/)bitbucket-server$"],
-      "datasources": ["docker"],
+      "matchPackagePatterns": ["(^|atlassian\\/)bitbucket-server$"],
+      "matchDatasources": ["docker"],
       "sourceUrl": "https://confluence.atlassian.com/bitbucketserver/bitbucket-server-release-notes"
     },
     {
-      "packageNames": ["jenkins"],
-      "datasources": ["docker"],
+      "matchPackageNames": ["jenkins"],
+      "matchDatasources": ["docker"],
       "sourceUrl": "https://jenkins.io/changelog-stable"
     },
     {
-      "packageNames": ["gitea/gitea"],
-      "datasources": ["docker"],
+      "matchPackageNames": ["gitea/gitea"],
+      "matchDatasources": ["docker"],
       "sourceUrl": "https://github.com/go-gitea/gitea"
     },
     {
-      "packagePatterns": ["^goharbor\\/"],
-      "datasources": ["docker"],
+      "matchPackagePatterns": ["^goharbor\\/"],
+      "matchDatasources": ["docker"],
       "sourceUrl": "https://github.com/goharbor/harbor"
+    },
+    {
+      "matchPackageNames": ["harbor"],
+      "matchDatasources": ["helm"],
+      "sourceUrl": "https://github.com/goharbor/harbor-helm"
     }
   ]
 }

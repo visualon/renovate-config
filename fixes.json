@@ -2,11 +2,11 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [
     {
-      "sourceUrlPrefixes": ["https://github.com/tunnelvisionlabs/antlr4ts"],
+      "matchSourceUrlPrefixes": ["https://github.com/tunnelvisionlabs/antlr4ts"],
       "allowedVersions": "!/(-dev|-\\w+\\.[a-z0-9]{8})$/"
     },
     {
-      "packageNames": ["node", "amd64/node"],
+      "matchPackageNames": ["node", "amd64/node"],
       "versioning": "node"
     }
   ]

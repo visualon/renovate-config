@@ -2,35 +2,35 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [
     {
-      "packagePatterns": ["^@pnp\\/"],
-      "sourceUrlPrefixes": ["https://github.com/pnp/pnpjs"],
+      "matchPackagePatterns": ["^@pnp\\/"],
+      "matchSourceUrlPrefixes": ["https://github.com/pnp/pnpjs"],
       "groupName": "pnpjs monorepo"
     },
     {
-      "sourceUrlPrefixes": ["https://github.com/NLog/"],
+      "matchSourceUrlPrefixes": ["https://github.com/NLog/"],
       "groupName": "nlog packages"
     },
     {
-      "packagePatterns": ["^mcr\\.microsoft\\.com\\/dotnet\\/"],
+      "matchPackagePatterns": ["^mcr\\.microsoft\\.com\\/dotnet\\/"],
       "groupName": "dotnet docker images"
     },
     {
-      "packagePatterns": ["^@start\\/"],
-      "sourceUrlPrefixes": ["https://github.com/deepsweet/start"],
+      "matchPackagePatterns": ["^@start\\/"],
+      "matchSourceUrlPrefixes": ["https://github.com/deepsweet/start"],
       "groupName": "start monorepo"
     },
     {
-      "packagePatterns": ["^Unity\\.", "^unity\\."],
-      "sourceUrlPrefixes": ["https://github.com/unitycontainer/"],
+      "matchPackagePatterns": ["^Unity\\.", "^unity\\."],
+      "matchSourceUrlPrefixes": ["https://github.com/unitycontainer/"],
       "groupName": "unity packages"
     },
     {
-      "packagePatterns": ["^Snapper$", "^Snapper\\."],
-      "sourceUrlPrefixes": ["https://github.com/theramis/Snapper"],
+      "matchPackagePatterns": ["^Snapper$", "^Snapper\\."],
+      "matchSourceUrlPrefixes": ["https://github.com/theramis/Snapper"],
       "groupName": "snapper packages"
     },
     {
-      "packagePatterns": ["(^|/)renovate$"],
+      "matchPackagePatterns": ["(^|/)renovate$"],
       "groupName": "renovatebot",
       "dependencyDashboardApproval": false,
       "automerge": true
