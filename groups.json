@@ -66,26 +66,30 @@
       "matchDatasources": ["helm", "docker"],
       "matchPackageNames": ["harbor"],
       "matchPackagePatterns": ["^goharbor\\/", "\\/harbor-"],
-      "groupName": "harbor"
+      "groupName": "harbor",
+      "additionalBranchPrefix": ""
     },
     {
       "description": "PostgreSQL chart and images",
       "matchDatasources": ["helm", "docker"],
       "matchPackageNames": ["postgres"],
       "matchPackagePatterns": ["(^|\\/)postgresql$"],
-      "groupName": "postgresql"
+      "groupName": "postgresql",
+      "additionalBranchPrefix": ""
     },
     {
       "description": "MariaDB chart and images",
       "matchDatasources": ["helm", "docker"],
       "matchPackagePatterns": ["(^|\\/)mariadb$"],
-      "groupName": "mariadb"
+      "groupName": "mariadb",
+      "additionalBranchPrefix": ""
     },
     {
       "description": "Minio chart and images",
       "matchDatasources": ["helm", "docker"],
       "matchPackagePatterns": ["(^|\\/)minio$"],
-      "groupName": "mariadb"
+      "groupName": "mariadb",
+      "additionalBranchPrefix": ""
     }
   ]
 }
