@@ -56,12 +56,36 @@
       "groupName": "prettier packages"
     },
     {
-      "matchSourceUrlPrefixes": ["https://github.com/tunnelvisionlabs/antlr4ts"],
+      "matchSourceUrlPrefixes": [
+        "https://github.com/tunnelvisionlabs/antlr4ts"
+      ],
       "groupName": "antlr4ts monorepo"
     },
     {
-      "matchPackagePatterns": ["^goharbor\\/"],
-      "groupName": "goharbor images"
+      "description": "Harbor chart and images",
+      "matchDatasources": ["helm", "docker"],
+      "matchPackageNames": ["harbor"],
+      "matchPackagePatterns": ["^goharbor\\/", "\\/harbor-"],
+      "groupName": "harbor"
+    },
+    {
+      "description": "PostgreSQL chart and images",
+      "matchDatasources": ["helm", "docker"],
+      "matchPackageNames": ["postgres"],
+      "matchPackagePatterns": ["(^|\\/)postgresql$"],
+      "groupName": "postgresql"
+    },
+    {
+      "description": "MariaDB chart and images",
+      "matchDatasources": ["helm", "docker"],
+      "matchPackagePatterns": ["(^|\\/)mariadb$"],
+      "groupName": "mariadb"
+    },
+    {
+      "description": "Minio chart and images",
+      "matchDatasources": ["helm", "docker"],
+      "matchPackagePatterns": ["(^|\\/)minio$"],
+      "groupName": "mariadb"
     }
   ]
 }
