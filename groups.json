@@ -67,7 +67,8 @@
       "matchPackageNames": ["harbor"],
       "matchPackagePatterns": ["^goharbor\\/", "\\/harbor-"],
       "groupName": "harbor",
-      "additionalBranchPrefix": ""
+      "additionalBranchPrefix": "",
+      "commitMessageTopic": "{{{groupName}}}"
     },
     {
       "description": "PostgreSQL chart and images",
@@ -75,35 +76,40 @@
       "matchPackageNames": ["postgres"],
       "matchPackagePatterns": ["(^|\\/)postgresql$"],
       "groupName": "postgresql",
-      "additionalBranchPrefix": ""
+      "additionalBranchPrefix": "",
+      "commitMessageTopic": "{{{groupName}}}"
     },
     {
       "description": "MariaDB chart and images",
       "matchDatasources": ["helm", "docker"],
       "matchPackagePatterns": ["(^|\\/)mariadb$"],
       "groupName": "mariadb",
-      "additionalBranchPrefix": ""
+      "additionalBranchPrefix": "",
+      "commitMessageTopic": "{{{groupName}}}"
     },
     {
       "description": "Minio chart and images",
       "matchDatasources": ["helm", "docker"],
       "matchPackagePatterns": ["(^|\\/)minio$"],
       "groupName": "minio",
-      "additionalBranchPrefix": ""
+      "additionalBranchPrefix": "",
+      "commitMessageTopic": "{{{groupName}}}"
     },
     {
       "description": "Traefik chart and images",
       "matchDatasources": ["helm", "docker"],
       "matchPackagePatterns": ["(^|\\/)traefik$"],
       "groupName": "traefik",
-      "additionalBranchPrefix": ""
+      "additionalBranchPrefix": "",
+      "commitMessageTopic": "{{{groupName}}}"
     },
     {
       "description": "Redis chart and images",
       "matchDatasources": ["helm", "docker"],
       "matchPackagePatterns": ["(^|\\/)redis(?:-cluster)?$"],
       "groupName": "redis",
-      "additionalBranchPrefix": ""
+      "additionalBranchPrefix": "",
+      "commitMessageTopic": "{{{groupName}}}"
     }
   ]
 }
