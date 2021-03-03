@@ -88,7 +88,7 @@
       "description": "Minio chart and images",
       "matchDatasources": ["helm", "docker"],
       "matchPackagePatterns": ["(^|\\/)minio$"],
-      "groupName": "mariadb",
+      "groupName": "minio",
       "additionalBranchPrefix": ""
     },
     {
