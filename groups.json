@@ -66,8 +66,9 @@
       "matchDatasources": ["helm", "docker"],
       "matchPackageNames": ["harbor"],
       "matchPackagePatterns": ["^goharbor\\/", "\\/harbor-"],
-      "groupName": "harbor",
+      "groupName": "Harbor",
       "additionalBranchPrefix": "",
+      "commitMessageTopic": "{{{depName}}}",
       "group": { "commitMessageTopic": "{{{groupName}}}" }
     },
     {
@@ -75,16 +76,18 @@
       "matchDatasources": ["helm", "docker"],
       "matchPackageNames": ["postgres"],
       "matchPackagePatterns": ["(^|\\/)postgresql$"],
-      "groupName": "postgresql",
+      "groupName": "PostgreSQL",
       "additionalBranchPrefix": "",
+      "commitMessageTopic": "{{{depName}}}",
       "group": { "commitMessageTopic": "{{{groupName}}}" }
     },
     {
       "description": "MariaDB chart and images",
       "matchDatasources": ["helm", "docker"],
       "matchPackagePatterns": ["(^|\\/)mariadb$"],
-      "groupName": "mariadb",
+      "groupName": "MariaDB",
       "additionalBranchPrefix": "",
+      "commitMessageTopic": "{{{depName}}}",
       "group": { "commitMessageTopic": "{{{groupName}}}" }
     },
     {
@@ -93,22 +96,34 @@
       "matchPackagePatterns": ["(^|\\/)minio$"],
       "groupName": "minio",
       "additionalBranchPrefix": "",
+      "commitMessageTopic": "{{{depName}}}",
       "group": { "commitMessageTopic": "{{{groupName}}}" }
     },
     {
       "description": "Traefik chart and images",
       "matchDatasources": ["helm", "docker"],
       "matchPackagePatterns": ["(^|\\/)traefik$"],
-      "groupName": "traefik",
+      "groupName": "Traefik",
       "additionalBranchPrefix": "",
+      "commitMessageTopic": "{{{depName}}}",
       "group": { "commitMessageTopic": "{{{groupName}}}" }
     },
     {
       "description": "Redis chart and images",
       "matchDatasources": ["helm", "docker"],
       "matchPackagePatterns": ["(^|\\/)redis(?:-cluster)?$"],
-      "groupName": "redis",
+      "groupName": "Redis",
       "additionalBranchPrefix": "",
+      "commitMessageTopic": "{{{depName}}}",
+      "group": { "commitMessageTopic": "{{{groupName}}}" }
+    },
+    {
+      "description": "CoreDNS chart and images",
+      "matchDatasources": ["helm", "docker"],
+      "matchPackagePatterns": ["(^|\\/)coredns$"],
+      "groupName": "CoreDNS",
+      "additionalBranchPrefix": "",
+      "commitMessageTopic": "{{{depName}}}",
       "group": { "commitMessageTopic": "{{{groupName}}}" }
     }
   ]
