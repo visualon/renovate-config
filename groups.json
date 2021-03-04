@@ -69,7 +69,7 @@
       "groupName": "Harbor",
       "additionalBranchPrefix": "",
       "commitMessageTopic": "{{{depName}}}",
-      "group": { "commitMessageTopic": "{{{groupName}}}" }
+      "group": { "commitMessageTopic": "{{{groupName}}} group" }
     },
     {
       "description": "PostgreSQL chart and images",
@@ -79,7 +79,7 @@
       "groupName": "PostgreSQL",
       "additionalBranchPrefix": "",
       "commitMessageTopic": "{{{depName}}}",
-      "group": { "commitMessageTopic": "{{{groupName}}}" }
+      "group": { "commitMessageTopic": "{{{groupName}}} group" }
     },
     {
       "description": "MariaDB chart and images",
@@ -88,7 +88,7 @@
       "groupName": "MariaDB",
       "additionalBranchPrefix": "",
       "commitMessageTopic": "{{{depName}}}",
-      "group": { "commitMessageTopic": "{{{groupName}}}" }
+      "group": { "commitMessageTopic": "{{{groupName}}} group" }
     },
     {
       "description": "Minio chart and images",
@@ -97,7 +97,7 @@
       "groupName": "minio",
       "additionalBranchPrefix": "",
       "commitMessageTopic": "{{{depName}}}",
-      "group": { "commitMessageTopic": "{{{groupName}}}" }
+      "group": { "commitMessageTopic": "{{{groupName}}} group" }
     },
     {
       "description": "Traefik chart and images",
@@ -106,7 +106,7 @@
       "groupName": "Traefik",
       "additionalBranchPrefix": "",
       "commitMessageTopic": "{{{depName}}}",
-      "group": { "commitMessageTopic": "{{{groupName}}}" }
+      "group": { "commitMessageTopic": "{{{groupName}}} group" }
     },
     {
       "description": "Redis chart and images",
@@ -115,7 +115,7 @@
       "groupName": "Redis",
       "additionalBranchPrefix": "",
       "commitMessageTopic": "{{{depName}}}",
-      "group": { "commitMessageTopic": "{{{groupName}}}" }
+      "group": { "commitMessageTopic": "{{{groupName}}} group" }
     },
     {
       "description": "CoreDNS chart and images",
@@ -124,7 +124,7 @@
       "groupName": "CoreDNS",
       "additionalBranchPrefix": "",
       "commitMessageTopic": "{{{depName}}}",
-      "group": { "commitMessageTopic": "{{{groupName}}}" }
+      "group": { "commitMessageTopic": "{{{groupName}}} group" }
     },
     {
       "description": "phpMyAdmin chart and images",
@@ -133,7 +133,7 @@
       "groupName": "phpMyAdmin",
       "additionalBranchPrefix": "",
       "commitMessageTopic": "{{{depName}}}",
-      "group": { "commitMessageTopic": "{{{groupName}}}" }
+      "group": { "commitMessageTopic": "{{{groupName}}} group" }
     }
   ]
 }
