@@ -96,7 +96,6 @@
       "matchPackagePatterns": ["(^|\\/)minio$"],
       "groupName": "MinIO",
       "additionalBranchPrefix": "",
-      "separateMinorPatch": false,
       "commitMessageTopic": "{{{depName}}}",
       "group": { "commitMessageTopic": "{{{groupName}}} group" }
     },

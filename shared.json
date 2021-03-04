@@ -59,6 +59,12 @@
     {
       "matchPackageNames": ["haproxy"],
       "allowedVersions": "/^\\d+\\.\\d*[02468]\\.\\d+(-\\w+)?$/"
+    },
+    {
+      "description": "Date based releases",
+      "matchPackagePatterns": ["(^|\\/)minio$"],
+      "separateMinorPatch": false,
+      "separateMajorMinor": false
     }
   ],
   "regexManagers": [
