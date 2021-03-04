@@ -125,6 +125,15 @@
       "additionalBranchPrefix": "",
       "commitMessageTopic": "{{{depName}}}",
       "group": { "commitMessageTopic": "{{{groupName}}}" }
+    },
+    {
+      "description": "phpMyAdmin chart and images",
+      "matchDatasources": ["helm", "docker"],
+      "matchPackagePatterns": ["(^|\\/)phpmyadmin$"],
+      "groupName": "phpMyAdmin",
+      "additionalBranchPrefix": "",
+      "commitMessageTopic": "{{{depName}}}",
+      "group": { "commitMessageTopic": "{{{groupName}}}" }
     }
   ]
 }
