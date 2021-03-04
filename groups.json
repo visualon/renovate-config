@@ -91,11 +91,12 @@
       "group": { "commitMessageTopic": "{{{groupName}}} group" }
     },
     {
-      "description": "Minio chart and images",
+      "description": "MinIO chart and images",
       "matchDatasources": ["helm", "docker"],
       "matchPackagePatterns": ["(^|\\/)minio$"],
-      "groupName": "minio",
+      "groupName": "MinIO",
       "additionalBranchPrefix": "",
+      "separateMinorPatch": false,
       "commitMessageTopic": "{{{depName}}}",
       "group": { "commitMessageTopic": "{{{groupName}}} group" }
     },
