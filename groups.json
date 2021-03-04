@@ -68,7 +68,7 @@
       "matchPackagePatterns": ["^goharbor\\/", "\\/harbor-"],
       "groupName": "harbor",
       "additionalBranchPrefix": "",
-      "commitMessageTopic": "{{{groupName}}}"
+      "group": { "commitMessageTopic": "{{{groupName}}}" }
     },
     {
       "description": "PostgreSQL chart and images",
@@ -77,7 +77,7 @@
       "matchPackagePatterns": ["(^|\\/)postgresql$"],
       "groupName": "postgresql",
       "additionalBranchPrefix": "",
-      "commitMessageTopic": "{{{groupName}}}"
+      "group": { "commitMessageTopic": "{{{groupName}}}" }
     },
     {
       "description": "MariaDB chart and images",
@@ -85,7 +85,7 @@
       "matchPackagePatterns": ["(^|\\/)mariadb$"],
       "groupName": "mariadb",
       "additionalBranchPrefix": "",
-      "commitMessageTopic": "{{{groupName}}}"
+      "group": { "commitMessageTopic": "{{{groupName}}}" }
     },
     {
       "description": "Minio chart and images",
@@ -93,7 +93,7 @@
       "matchPackagePatterns": ["(^|\\/)minio$"],
       "groupName": "minio",
       "additionalBranchPrefix": "",
-      "commitMessageTopic": "{{{groupName}}}"
+      "group": { "commitMessageTopic": "{{{groupName}}}" }
     },
     {
       "description": "Traefik chart and images",
@@ -101,7 +101,7 @@
       "matchPackagePatterns": ["(^|\\/)traefik$"],
       "groupName": "traefik",
       "additionalBranchPrefix": "",
-      "commitMessageTopic": "{{{groupName}}}"
+      "group": { "commitMessageTopic": "{{{groupName}}}" }
     },
     {
       "description": "Redis chart and images",
@@ -109,7 +109,7 @@
       "matchPackagePatterns": ["(^|\\/)redis(?:-cluster)?$"],
       "groupName": "redis",
       "additionalBranchPrefix": "",
-      "commitMessageTopic": "{{{groupName}}}"
+      "group": { "commitMessageTopic": "{{{groupName}}}" }
     }
   ]
 }
