@@ -134,6 +134,15 @@
       "additionalBranchPrefix": "",
       "commitMessageTopic": "{{{depName}}}",
       "group": { "commitMessageTopic": "{{{groupName}}} group" }
+    },
+    {
+      "description": "pgAdmin chart and images",
+      "matchDatasources": ["helm", "docker"],
+      "matchPackagePatterns": ["(^|\\/)pgadmin4$"],
+      "groupName": "pgAdmin",
+      "additionalBranchPrefix": "",
+      "commitMessageTopic": "{{{depName}}}",
+      "group": { "commitMessageTopic": "{{{groupName}}} group" }
     }
   ]
 }
