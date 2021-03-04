@@ -68,6 +68,11 @@
       "matchPackageNames": ["harbor"],
       "matchDatasources": ["helm"],
       "sourceUrl": "https://github.com/goharbor/harbor-helm"
+    },
+    {
+      "matchPackagePatterns": ["^certbot\\/"],
+      "matchDatasources": ["docker"],
+      "sourceUrl": "https://github.com/certbot/certbot"
     }
   ]
 }
