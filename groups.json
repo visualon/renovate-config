@@ -143,6 +143,15 @@
       "additionalBranchPrefix": "",
       "commitMessageTopic": "{{{depName}}}",
       "group": { "commitMessageTopic": "{{{groupName}}} group" }
+    },
+    {
+      "description": "Gitea chart and images",
+      "matchDatasources": ["helm", "docker"],
+      "matchPackagePatterns": ["(^|\\/)gitea$"],
+      "groupName": "Gitea",
+      "additionalBranchPrefix": "",
+      "commitMessageTopic": "{{{depName}}}",
+      "group": { "commitMessageTopic": "{{{groupName}}} group" }
     }
   ]
 }
