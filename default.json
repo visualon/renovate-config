@@ -4,10 +4,8 @@
     "github>visualon/renovate-config:shared",
     "github>visualon/renovate-config:vo",
     ":dependencyDashboard",
-    ":dependencyDashboardApproval",
     ":assignee(viceice)"
   ],
-  "prCreation": "not-pending",
   "automergeType": "branch",
   "separateMinorPatch": true,
   "ignorePresets": [":ignoreModulesAndTests"],
@@ -28,6 +26,7 @@
     {
       "matchUpdateTypes": ["major", "minor"],
       "stabilityDays": 3,
+      "dependencyDashboardApproval": true,
       "prNotPendingHours": 73
     },
     {
@@ -36,7 +35,6 @@
     },
     {
       "matchUpdateTypes": ["lockFileMaintenance"],
-      "dependencyDashboardApproval": false,
       "automerge": true
     },
     {

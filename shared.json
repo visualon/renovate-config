@@ -9,10 +9,20 @@
     "github>visualon/renovate-config:fixes",
     "github>visualon/renovate-config:groups"
   ],
+  "prCreation": "not-pending",
   "timezone": "Europe/Berlin",
   "semanticCommits": "enabled",
   "postUpdateOptions": ["yarnDedupeHighest"],
   "packageRules": [
+    {
+      "matchUpdateTypes": ["major", "minor"],
+      "stabilityDays": 3,
+      "prNotPendingHours": 73
+    },
+    {
+      "matchUpdateTypes": ["major"],
+      "dependencyDashboardApproval": true
+    },
     {
       "matchManagers": ["dockerfile", "droneci"],
       "pinDigests": true
