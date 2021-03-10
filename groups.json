@@ -68,7 +68,6 @@
       "matchPackagePatterns": ["^goharbor\\/", "\\/harbor-"],
       "groupName": "Harbor",
       "additionalBranchPrefix": "",
-      "commitMessageTopic": "{{{depName}}}",
       "group": { "commitMessageTopic": "{{{groupName}}} group" }
     },
     {
@@ -78,7 +77,6 @@
       "matchPackagePatterns": ["(^|\\/)postgresql$"],
       "groupName": "PostgreSQL",
       "additionalBranchPrefix": "",
-      "commitMessageTopic": "{{{depName}}}",
       "group": { "commitMessageTopic": "{{{groupName}}} group" }
     },
     {
@@ -87,7 +85,6 @@
       "matchPackagePatterns": ["(^|\\/)mariadb$"],
       "groupName": "MariaDB",
       "additionalBranchPrefix": "",
-      "commitMessageTopic": "{{{depName}}}",
       "group": { "commitMessageTopic": "{{{groupName}}} group" }
     },
     {
@@ -96,7 +93,6 @@
       "matchPackagePatterns": ["(^|\\/)minio$"],
       "groupName": "MinIO",
       "additionalBranchPrefix": "",
-      "commitMessageTopic": "{{{depName}}}",
       "group": { "commitMessageTopic": "{{{groupName}}} group" }
     },
     {
@@ -105,7 +101,6 @@
       "matchPackagePatterns": ["(^|\\/)traefik$"],
       "groupName": "Traefik",
       "additionalBranchPrefix": "",
-      "commitMessageTopic": "{{{depName}}}",
       "group": { "commitMessageTopic": "{{{groupName}}} group" }
     },
     {
@@ -114,7 +109,6 @@
       "matchPackagePatterns": ["(^|\\/)redis(?:-cluster)?$"],
       "groupName": "Redis",
       "additionalBranchPrefix": "",
-      "commitMessageTopic": "{{{depName}}}",
       "group": { "commitMessageTopic": "{{{groupName}}} group" }
     },
     {
@@ -123,7 +117,6 @@
       "matchPackagePatterns": ["(^|\\/)coredns$"],
       "groupName": "CoreDNS",
       "additionalBranchPrefix": "",
-      "commitMessageTopic": "{{{depName}}}",
       "group": { "commitMessageTopic": "{{{groupName}}} group" }
     },
     {
@@ -132,7 +125,6 @@
       "matchPackagePatterns": ["(^|\\/)phpmyadmin$"],
       "groupName": "phpMyAdmin",
       "additionalBranchPrefix": "",
-      "commitMessageTopic": "{{{depName}}}",
       "group": { "commitMessageTopic": "{{{groupName}}} group" }
     },
     {
@@ -141,7 +133,6 @@
       "matchPackagePatterns": ["(^|\\/)pgadmin4$"],
       "groupName": "pgAdmin",
       "additionalBranchPrefix": "",
-      "commitMessageTopic": "{{{depName}}}",
       "group": { "commitMessageTopic": "{{{groupName}}} group" }
     },
     {
@@ -150,7 +141,6 @@
       "matchPackagePatterns": ["(^|\\/)gitea$"],
       "groupName": "Gitea",
       "additionalBranchPrefix": "",
-      "commitMessageTopic": "{{{depName}}}",
       "group": { "commitMessageTopic": "{{{groupName}}} group" }
     }
   ]
