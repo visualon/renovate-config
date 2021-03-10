@@ -75,6 +75,11 @@
       "matchPackagePatterns": ["(^|\\/)minio$"],
       "separateMinorPatch": false,
       "separateMajorMinor": false
+    },
+    {
+      "description": "Do not separate Renovate minor and patch",
+      "matchPackagePatterns": ["^renovate(bot)?($|/)"],
+      "separateMinorPatch": false
     }
   ],
   "regexManagers": [
