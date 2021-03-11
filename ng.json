@@ -1,6 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "description": "angular specific settings",
+  "extends": ["github>visualon/renovate-config:shared"],
   "packageRules": [
     {
       "matchPackageNames": ["typescript"],
