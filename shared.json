@@ -65,22 +65,19 @@
     },
     {
       "description": "Automerge dotnet dev packages",
+      "matchSourceUrlPrefixes": [
+        "https://github.com/coverlet-coverage/coverlet",
+        "https://github.com/danielpalme/ReportGenerator",
+        "https://github.com/dotnet/msbuild",
+        "https://github.com/microsoft/vstest",
+        "https://github.com/adamralph/minver",
+        "https://github.com/nunit/",
+        "https://github.com/theramis/Snapper"
+      ],
       "matchPackageNames": [
-        "coverlet.collector",
-        "coverlet.msbuild",
-        "MinVer",
-        "minver-cli",
-        "Microsoft.NET.Test.Sdk",
         "NLog.Schema",
         "NSubstitute",
-        "NSubstitute.Analyzers.CSharp",
-        "ReportGenerator",
-        "dotnet-reportgenerator-cli",
-        "dotnet-reportgenerator-globaltool",
-        "Snapper",
-        "Snapper.NUnit",
-        "NUnit",
-        "NUnit3TestAdapter"
+        "NSubstitute.Analyzers.CSharp"
       ],
       "matchUpdateTypes": ["minor", "patch", "digest", "pin"],
       "automerge": true
