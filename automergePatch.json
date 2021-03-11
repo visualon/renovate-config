@@ -1,11 +1,10 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
+    "github>visualon/renovate-config:automergeDigest",
     ":automergePatch"
   ],
   "patch": {
-    "extends": [
-      "schedule:nonOfficeHours"
-    ]
+    "extends": ["schedule:nonOfficeHours"]
   }
 }
