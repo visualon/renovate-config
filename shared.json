@@ -9,17 +9,38 @@
     "github>visualon/renovate-config:fixes",
     "github>visualon/renovate-config:groups"
   ],
+  "automergeType": "branch",
   "prCreation": "not-pending",
   "timezone": "Europe/Berlin",
   "semanticCommits": "enabled",
   "postUpdateOptions": ["yarnDedupeHighest"],
+  "separateMinorPatch": true,
+  "ignorePresets": [":ignoreModulesAndTests"],
+  "ignorePaths": [
+    "**/node_modules/**",
+    "**/bower_components/**",
+    "**/vendor/**",
+    "**/examples/**",
+    "**/__tests__/**",
+    "**/tests/**"
+  ],
   "packageRules": [
     {
+      "description": "Require stability days",
       "matchUpdateTypes": ["major", "minor"],
+      "excludePackagePatterns": [
+        "^renovate(bot)?($|\\/)",
+        "\\/renovate(?:bot)?$"
+      ],
       "stabilityDays": 3,
       "prNotPendingHours": 73
     },
     {
+      "description": "Require dashboard approval for major updates except Renovate",
+      "excludePackagePatterns": [
+        "^renovate(bot)?($|\\/)",
+        "\\/renovate(?:bot)?$"
+      ],
       "matchUpdateTypes": ["major"],
       "dependencyDashboardApproval": true
     },
@@ -30,18 +51,17 @@
     {
       "matchManagers": ["droneci"],
       "matchUpdateTypes": ["minor", "patch", "digest"],
-      "dependencyDashboardApproval": false,
       "automerge": true
     },
     {
       "matchFiles": ["Jenkinsfile"],
       "matchUpdateTypes": ["minor", "patch", "digest"],
-      "dependencyDashboardApproval": false,
       "automerge": true
     },
     {
-      "matchUpdateTypes": ["patch", "digest", "pin"],
-      "dependencyDashboardApproval": false
+      "description": "Automerge dev deps minor and lower",
+      "matchDepTypes": ["devDependencies"],
+      "extends": [":automergeMinor", "schedule:nonOfficeHours"]
     },
     {
       "description": "Automerge dotnet dev packages",
@@ -63,18 +83,12 @@
         "NUnit3TestAdapter"
       ],
       "matchUpdateTypes": ["minor", "patch", "digest", "pin"],
-      "dependencyDashboardApproval": false,
       "automerge": true
     },
     {
-      "matchPackageNames": ["haproxy"],
-      "allowedVersions": "/^\\d+\\.\\d*[02468]\\.\\d+(-\\w+)?$/"
-    },
-    {
-      "description": "Date based releases",
-      "matchPackagePatterns": ["(^|\\/)minio$"],
-      "separateMinorPatch": false,
-      "separateMajorMinor": false
+      "description": "Use replace for peer deps",
+      "matchDepTypes": ["peerDependencies"],
+      "rangeStrategy": "replace"
     },
     {
       "description": "Do not separate Renovate minor and patch",
@@ -93,11 +107,20 @@
       "depNameTemplate": "{{#if depName}}{{depName}}{{else}}{{lookupName}}{{/if}}"
     },
     {
-      "fileMatch": ["\\.tf$"],
-      "matchStrings": ["required_version\\s*=\\s*\"(?<currentValue>.+?)\""],
+      "fileMatch": ["^Jenkinsfile$"],
+      "matchStrings": [
+        "image '(?<depName>[a-z0-9.\\/-]+)(?::(?<currentValue>[a-z0-9.-]+))?(?:@(?<currentDigest>sha256:[a-f0-9]+))?'"
+      ],
       "datasourceTemplate": "docker",
-      "versioningTemplate": "hashicorp",
-      "depNameTemplate": "hashicorp/terraform"
+      "versioningTemplate": "docker"
+    },
+    {
+      "fileMatch": ["^Jenkinsfile$"],
+      "matchStrings": [
+        "image('(?<depName>[a-z0-9.\\/-]+)(?::(?<currentValue>[a-z0-9.-]+))?(?:@(?<currentDigest>sha256:[a-f0-9]+))?')"
+      ],
+      "datasourceTemplate": "docker",
+      "versioningTemplate": "docker"
     }
   ]
 }

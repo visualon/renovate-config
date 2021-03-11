@@ -3,7 +3,7 @@
   "packageRules": [
     {
       "matchPackageNames": ["visualon/images", "@types/vo-app-base"],
-      "matchPackagePatterns": ["^@vsaf\\/", "^VisualOn\\.", "(^|/)renovate$"],
+      "matchPackagePatterns": ["^@vsaf\\/", "^VisualOn\\."],
       "stabilityDays": 0,
       "prNotPendingHours": 25
     },

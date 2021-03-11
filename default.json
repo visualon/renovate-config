@@ -6,43 +6,9 @@
     ":dependencyDashboard",
     ":assignee(viceice)"
   ],
-  "automergeType": "branch",
-  "separateMinorPatch": true,
-  "ignorePresets": [":ignoreModulesAndTests"],
-  "ignorePaths": [
-    "**/node_modules/**",
-    "**/bower_components/**",
-    "**/vendor/**",
-    "**/examples/**",
-    "**/__tests__/**",
-    "**/tests/**"
-  ],
   "packageRules": [
     {
-      "matchDepTypes": ["devDependencies"],
-      "extends": [":automergeMinor", "schedule:nonOfficeHours"],
-      "automergeType": "pr"
-    },
-    {
-      "matchUpdateTypes": ["major", "minor"],
-      "stabilityDays": 3,
-      "dependencyDashboardApproval": true,
-      "prNotPendingHours": 73
-    },
-    {
-      "matchDepTypes": ["peerDependencies"],
-      "rangeStrategy": "replace"
-    },
-    {
-      "matchUpdateTypes": ["lockFileMaintenance"],
-      "automerge": true
-    },
-    {
-      "matchSourceUrlPrefixes": ["https://github.com/angular/angular-cli"],
-      "minor": { "automerge": false },
-      "separateMajorMinor": false
-    },
-    {
+      "description": "v prefix workaround for action updates",
       "matchDepTypes": ["action"],
       "extractVersion": "^(?<version>v\\d+\\.\\d+\\.\\d+)$",
       "versioning": "regex:^v(?<major>\\d+)(\\.(?<minor>\\d+)\\.(?<patch>\\d+))?$"

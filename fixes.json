@@ -2,12 +2,25 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [
     {
+      "description": "Exclude invalid version from antlr4ts",
       "matchSourceUrlPrefixes": ["https://github.com/tunnelvisionlabs/antlr4ts"],
       "allowedVersions": "!/(-dev|-\\w+\\.[a-z0-9]{8})$/"
     },
     {
+      "description": "Use node versioning for node",
       "matchPackageNames": ["node", "amd64/node"],
       "versioning": "node"
+    },
+    {
+      "description": "Only stable haproxy versions",
+      "matchPackageNames": ["haproxy"],
+      "allowedVersions": "/^\\d+\\.\\d*[02468]\\.\\d+(-\\w+)?$/"
+    },
+    {
+      "description": "Date based releases",
+      "matchPackagePatterns": ["(^|\\/)minio$"],
+      "separateMinorPatch": false,
+      "separateMajorMinor": false
     }
   ]
 }

@@ -1,10 +1,10 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [":automergeDigest"],
-  "digest": {
-    "extends": ["schedule:nonOfficeHours"]
-  },
-  "dockerfile": {
-    "pinDigests": true
-  }
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["digest"],
+      "extends": ["schedule:nonOfficeHours"]
+    }
+  ]
 }
