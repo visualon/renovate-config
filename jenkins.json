@@ -3,6 +3,16 @@
   "description": "jenkins specific settings",
   "packageRules": [
     {
+      "description": "Automerge minor and lower updates",
+      "updateTypes": ["minor", "patch", "digest"],
+      "automerge": true
+    },
+    {
+      "description": "Automerge minor updates with pr",
+      "updateTypes": ["minor"],
+      "automergeType": "pr"
+    },
+    {
       "description": "No approval for jenkins bom",
       "matchSourceUrlPrefixes": [
         "https://github.com/jenkinsci/bom",
