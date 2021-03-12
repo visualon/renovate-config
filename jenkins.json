@@ -1,0 +1,14 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "jenkins specific settings",
+  "packageRules": [
+    {
+      "description": "No approval for jenkins bom",
+      "matchSourceUrlPrefixes": [
+        "https://github.com/jenkinsci/bom",
+        "https://github.com/jenkinsci/plugin-pom"
+      ],
+      "dependencyDashboardApproval": false
+    }
+  ]
+}
