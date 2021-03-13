@@ -60,7 +60,7 @@
     },
     {
       "description": "Automerge dev deps minor and lower",
-      "matchDepTypes": ["devDependencies"],
+      "matchDepTypes": ["devDependencies", "action"],
       "extends": [":automergeMinor", "schedule:nonOfficeHours"]
     },
     {
