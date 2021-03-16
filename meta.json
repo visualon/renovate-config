@@ -73,6 +73,11 @@
       "matchPackagePatterns": ["^certbot\\/"],
       "matchDatasources": ["docker"],
       "sourceUrl": "https://github.com/certbot/certbot"
+    },
+    {
+      "matchPackageNames": ["coredns/coredns"],
+      "matchDatasources": ["docker"],
+      "sourceUrl": "https://github.com/coredns/coredns"
     }
   ]
 }
