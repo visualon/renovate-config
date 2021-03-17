@@ -64,7 +64,7 @@
       "extends": [":automergeMinor", "schedule:nonOfficeHours"]
     },
     {
-      "description": "Automerge dotnet dev packages",
+      "description": "Automerge dotnet dev packages (by source urls)",
       "matchSourceUrlPrefixes": [
         "https://github.com/coverlet-coverage/coverlet",
         "https://github.com/danielpalme/ReportGenerator",
@@ -74,6 +74,11 @@
         "https://github.com/nunit/",
         "https://github.com/theramis/Snapper"
       ],
+      "matchUpdateTypes": ["minor", "patch", "digest", "pin"],
+      "automerge": true
+    },
+    {
+      "description": "Automerge dotnet dev packages (by package names)",
       "matchPackageNames": [
         "NLog.Schema",
         "NSubstitute",
