@@ -10,6 +10,10 @@
       "groupName": "nlog packages"
     },
     {
+      "matchSourceUrlPrefixes": ["https://github.com/adamralph/minver"],
+      "groupName": "minver packages"
+    },
+    {
       "matchPackagePatterns": ["^mcr\\.microsoft\\.com\\/dotnet\\/"],
       "groupName": "dotnet docker images"
     },
