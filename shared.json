@@ -110,16 +110,10 @@
     },
     {
       "fileMatch": ["^Jenkinsfile$"],
+      "matchStringsStrategy": "any",
       "matchStrings": [
         "image '(?<depName>[a-z0-9.\\/-]+)(?::(?<currentValue>[a-z0-9.-]+))?(?:@(?<currentDigest>sha256:[a-f0-9]+))?'",
-        "image \"(?<depName>[a-z0-9.\\/-]+)(?::(?<currentValue>[a-z0-9.-]+))?(?:@(?<currentDigest>sha256:[a-f0-9]+))?\""
-      ],
-      "datasourceTemplate": "docker",
-      "versioningTemplate": "docker"
-    },
-    {
-      "fileMatch": ["^Jenkinsfile$"],
-      "matchStrings": [
+        "image \"(?<depName>[a-z0-9.\\/-]+)(?::(?<currentValue>[a-z0-9.-]+))?(?:@(?<currentDigest>sha256:[a-f0-9]+))?\"",
         "image('(?<depName>[a-z0-9.\\/-]+)(?::(?<currentValue>[a-z0-9.-]+))?(?:@(?<currentDigest>sha256:[a-f0-9]+))?')",
         "image(\"(?<depName>[a-z0-9.\\/-]+)(?::(?<currentValue>[a-z0-9.-]+))?(?:@(?<currentDigest>sha256:[a-f0-9]+))?\")"
       ],
