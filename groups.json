@@ -2,7 +2,6 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [
     {
-      "matchPackagePatterns": ["^@pnp\\/"],
       "matchSourceUrlPrefixes": ["https://github.com/pnp/pnpjs"],
       "groupName": "pnpjs monorepo"
     },
@@ -15,17 +14,14 @@
       "groupName": "dotnet docker images"
     },
     {
-      "matchPackagePatterns": ["^@start\\/"],
       "matchSourceUrlPrefixes": ["https://github.com/deepsweet/start"],
       "groupName": "start monorepo"
     },
     {
-      "matchPackagePatterns": ["^Unity\\.", "^unity\\."],
       "matchSourceUrlPrefixes": ["https://github.com/unitycontainer/"],
       "groupName": "unity packages"
     },
     {
-      "matchPackagePatterns": ["^Snapper$", "^Snapper\\."],
       "matchSourceUrlPrefixes": ["https://github.com/theramis/Snapper"],
       "groupName": "snapper packages"
     },
