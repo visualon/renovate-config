@@ -3,7 +3,9 @@
   "packageRules": [
     {
       "description": "Exclude invalid version from antlr4ts",
-      "matchSourceUrlPrefixes": ["https://github.com/tunnelvisionlabs/antlr4ts"],
+      "matchSourceUrlPrefixes": [
+        "https://github.com/tunnelvisionlabs/antlr4ts"
+      ],
       "allowedVersions": "!/(-dev|-\\w+\\.[a-z0-9]{8})$/"
     },
     {
@@ -21,6 +23,16 @@
       "matchPackagePatterns": ["(^|\\/)minio$"],
       "separateMinorPatch": false,
       "separateMajorMinor": false
+    },
+    {
+      "description": "Restrict husky to v4 due to commercial license for v5",
+      "packageNames": ["husky"],
+      "allowedVersions": "<5"
+    },
+    {
+      "description": "Restrict elasticsearch to v7.10 due to commercial license for v7.11",
+      "packageNames": ["elasticsearch"],
+      "allowedVersions": "<7.11"
     }
   ]
 }
