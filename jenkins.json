@@ -4,12 +4,12 @@
   "packageRules": [
     {
       "description": "Automerge minor and lower updates",
-      "updateTypes": ["minor", "patch", "digest"],
+      "matchUpdateTypes": ["minor", "patch", "digest"],
       "automerge": true
     },
     {
       "description": "Automerge minor updates with pr",
-      "updateTypes": ["minor"],
+      "matchUpdateTypes": ["minor"],
       "automergeType": "pr"
     },
     {
