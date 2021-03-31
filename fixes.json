@@ -38,7 +38,7 @@
       "description": "Use loose versioning for bitnami images",
       "matchPackagePatterns": ["^gcr\\.io\\/bitnami-containers\\/", "^bitnami\\/"],
       "versioning": "loose",
-      "allowedVersions": "/^(?<version>v\\d+\\.\\d+\\.\\d+-debian-\\d+-r\\d+)$/"
+      "allowedVersions": "/^\\d+\\.\\d+\\.\\d+-debian-\\d+-r\\d+$/"
     }
   ]
 }
