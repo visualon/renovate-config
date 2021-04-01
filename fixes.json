@@ -15,7 +15,7 @@
     },
     {
       "description": "Only stable haproxy / nginx versions",
-      "matchPackagePatterns":["^(?:amd64\\/)?haproxy", "^(?:amd64\\/)?nginx"],
+      "matchPackagePatterns": ["^(?:amd64\\/)?haproxy", "^(?:amd64\\/)?nginx"],
       "allowedVersions": "/^\\d+\\.\\d*[02468]\\.\\d+(-\\w+)?$/"
     },
     {
@@ -36,9 +36,20 @@
     },
     {
       "description": "Use loose versioning for bitnami images",
-      "matchPackagePatterns": ["^gcr\\.io\\/bitnami-containers\\/", "^bitnami\\/"],
+      "matchPackagePatterns": [
+        "^gcr\\.io\\/bitnami-containers\\/",
+        "^bitnami\\/"
+      ],
       "versioning": "loose",
       "allowedVersions": "/^\\d+\\.\\d+\\.\\d+-debian-\\d+-r\\d+$/"
+    },
+    {
+      "description": "Only stable haproxy / nginx bitnami versions",
+      "matchPackagePatterns": [
+        "^(gcr\\.io\\/bitnami-containers|bitnami)\\/haproxy",
+        "^(gcr\\.io\\/bitnami-containers|bitnami)\\/nginx"
+      ],
+      "allowedVersions": "/^\\d+\\.\\d*[02468]\\.\\d+-debian-\\d+-r\\d+$/"
     }
   ]
 }
