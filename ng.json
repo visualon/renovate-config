@@ -11,7 +11,12 @@
     {
       "description": "Do not automerge angular cli minor",
       "matchSourceUrlPrefixes": ["https://github.com/angular/angular-cli"],
-      "minor": { "automerge": false },
+      "matchUpdateTypes": ["minor"],
+      "automerge": false
+    },
+    {
+      "description": "Do not separate minor and patch angular cli updates",
+      "matchSourceUrlPrefixes": ["https://github.com/angular/angular-cli"],
       "separateMajorMinor": false
     }
   ]
