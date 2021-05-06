@@ -99,6 +99,11 @@
       "description": "Do not separate Renovate minor and patch",
       "matchPackagePatterns": ["^renovate(bot)?($|/)"],
       "separateMinorPatch": false
+    },
+    {
+      "description": "Do not separate Helm minor and patch",
+      "matchDatasources": ["helm"],
+      "separateMinorPatch": false
     }
   ],
   "regexManagers": [
