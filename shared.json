@@ -12,6 +12,7 @@
   "automergeType": "branch",
   "prCreation": "not-pending",
   "timezone": "Europe/Berlin",
+  "internalChecksFilter": "strict",
   "semanticCommits": "enabled",
   "postUpdateOptions": ["yarnDedupeHighest"],
   "separateMinorPatch": true,
