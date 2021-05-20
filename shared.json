@@ -16,7 +16,7 @@
   "semanticCommits": "enabled",
   "postUpdateOptions": ["yarnDedupeHighest"],
   "separateMinorPatch": true,
-  "ignorePresets": [":ignoreModulesAndTests"],
+  "ignorePresets": [":ignoreModulesAndTests", "helpers:disableTypesNodeMajor"],
   "ignorePaths": [
     "**/node_modules/**",
     "**/bower_components/**",
