@@ -41,9 +41,9 @@
     {
       "description": "Only stable haproxy / nginx bitnami versions",
       "matchPackagePatterns": [
-        "dddd^(?:gcr\\.io\\/bitnami-containers|bitnami)\\/(?:haproxy|nginx)"
+        "^(?:gcr\\.io\\/bitnami-containers|bitnami)\\/(?:haproxy|nginx)"
       ],
-      "allowedVersions": "/^\\d+\\.\\d*[02468]\\.\\d+-debian-\\d+-r\\d+$/"
+      "allowedVersions": "/^\\d+\\.\\d*[02468]\\.\\d+(-\\w+)?$/"
     }
   ]
 }
