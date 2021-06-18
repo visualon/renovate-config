@@ -136,6 +136,16 @@
         "# renovate: datasource=(?<datasource>[a-z-]+?)(?: lookupName=(?<lookupName>.+?))?(?: versioning=(?<versioning>[a-z-]+?))?\\sRUN install-[a-z]+? (?<depName>[a-z-]+?) (?<currentValue>.+?)\\s"
       ],
       "versioningTemplate": "{{#if versioning}}{{versioning}}{{else}}semver{{/if}}"
+    },
+    {
+      "description": "nuspec files manager",
+      "fileMatch": ["\\.nuspec$"],
+      "matchStringsStrategy": "any",
+      "matchStrings": [
+        "<dependency\\s+id=\"(?<depName>.*?)\"\\s+version=\"(?<currentValue>.*?)\"\\s*\\/>"
+      ],
+      "datasourceTemplate": "nuget",
+      "versioningTemplate": "nuget"
     }
   ]
 }
