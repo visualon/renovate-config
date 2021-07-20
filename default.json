@@ -4,7 +4,8 @@
     "github>visualon/renovate-config:shared",
     "github>visualon/renovate-config:vo",
     ":dependencyDashboard",
-    ":assignee(viceice)"
+    ":assignee(viceice)",
+    "helpers:pinGitHubActionDigests"
   ],
   "packageRules": [
     {
