@@ -62,6 +62,12 @@
       "groupName": "antlr4ts monorepo"
     },
     {
+      "matchSourceUrlPrefixes": [
+        "https://github.com/Microsoft/ClearScript"
+      ],
+      "groupName": "ClearScript monorepo"
+    },
+    {
       "description": "Harbor chart and images",
       "matchDatasources": ["helm", "docker"],
       "matchPackageNames": ["harbor"],
