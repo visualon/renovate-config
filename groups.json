@@ -63,7 +63,7 @@
     },
     {
       "matchSourceUrlPrefixes": [
-        "https://github.com/Microsoft/ClearScript"
+        "https://github.com/microsoft/ClearScript"
       ],
       "groupName": "ClearScript monorepo"
     },
