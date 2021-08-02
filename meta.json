@@ -90,6 +90,11 @@
       "matchPackageNames": ["coredns/coredns"],
       "matchDatasources": ["docker"],
       "sourceUrl": "https://github.com/coredns/coredns"
+    },
+    {
+      "matchPackageNames": ["neilpang/acme.sh"],
+      "matchDatasources": "docker",
+      "sourceUrl": "https://github.com/acmesh-official/acme.sh"
     }
   ]
 }
