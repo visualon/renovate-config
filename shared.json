@@ -111,6 +111,12 @@
       "matchSourceUrlPrefixes": ["https://github.com/kulshekhar/ts-jest"],
       "matchUpdateTypes": ["major"],
       "groupName": "jest monorepo"
+    },
+    {
+      "description": "Use custom regex versioning for bitnami images",
+      "matchPackagePrefixes": ["gcr.io/bitnami-containers/","bitnami/"],
+      "matchDatasources": ["docker"],
+      "versioning":"regex:^(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)(:?-(?<compatibility>.*-r)(?<build>\\d+))?$"
     }
   ],
   "regexManagers": [
