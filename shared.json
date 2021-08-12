@@ -102,11 +102,6 @@
       "separateMinorPatch": false
     },
     {
-      "description": "Do not separate Helm minor and patch",
-      "matchDatasources": ["helm"],
-      "separateMinorPatch": false
-    },
-    {
       "description": "Add ts-jest major update to jest monorepo",
       "matchSourceUrlPrefixes": ["https://github.com/kulshekhar/ts-jest"],
       "matchUpdateTypes": ["major"],
