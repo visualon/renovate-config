@@ -84,7 +84,8 @@
       "matchPackagePatterns": ["(^|\\/)postgresql$"],
       "groupName": "PostgreSQL",
       "additionalBranchPrefix": "",
-      "group": { "commitMessageTopic": "{{{groupName}}} group" }
+      "group": { "commitMessageTopic": "{{{groupName}}} group" },
+      "separateMinorPatch": false
     },
     {
       "description": "MariaDB chart and images",
@@ -92,7 +93,8 @@
       "matchPackagePatterns": ["(^|\\/)mariadb$"],
       "groupName": "MariaDB",
       "additionalBranchPrefix": "",
-      "group": { "commitMessageTopic": "{{{groupName}}} group" }
+      "group": { "commitMessageTopic": "{{{groupName}}} group" },
+      "separateMinorPatch": false
     },
     {
       "description": "MinIO chart and images",
@@ -100,7 +102,8 @@
       "matchPackagePatterns": ["(^|\\/)minio$"],
       "groupName": "MinIO",
       "additionalBranchPrefix": "",
-      "group": { "commitMessageTopic": "{{{groupName}}} group" }
+      "group": { "commitMessageTopic": "{{{groupName}}} group" },
+      "separateMinorPatch": false
     },
     {
       "description": "Traefik chart and images",
@@ -108,7 +111,8 @@
       "matchPackagePatterns": ["(^|\\/)traefik$"],
       "groupName": "Traefik",
       "additionalBranchPrefix": "",
-      "group": { "commitMessageTopic": "{{{groupName}}} group" }
+      "group": { "commitMessageTopic": "{{{groupName}}} group" },
+      "separateMinorPatch": false
     },
     {
       "description": "Redis chart and images",
@@ -116,7 +120,8 @@
       "matchPackagePatterns": ["(^|\\/)redis(?:-cluster)?$"],
       "groupName": "Redis",
       "additionalBranchPrefix": "",
-      "group": { "commitMessageTopic": "{{{groupName}}} group" }
+      "group": { "commitMessageTopic": "{{{groupName}}} group" },
+      "separateMinorPatch": false
     },
     {
       "description": "CoreDNS chart and images",
@@ -124,7 +129,8 @@
       "matchPackagePatterns": ["(^|\\/)coredns$"],
       "groupName": "CoreDNS",
       "additionalBranchPrefix": "",
-      "group": { "commitMessageTopic": "{{{groupName}}} group" }
+      "group": { "commitMessageTopic": "{{{groupName}}} group" },
+      "separateMinorPatch": false
     },
     {
       "description": "phpMyAdmin chart and images",
@@ -132,7 +138,8 @@
       "matchPackagePatterns": ["(^|\\/)phpmyadmin$"],
       "groupName": "phpMyAdmin",
       "additionalBranchPrefix": "",
-      "group": { "commitMessageTopic": "{{{groupName}}} group" }
+      "group": { "commitMessageTopic": "{{{groupName}}} group" },
+      "separateMinorPatch": false
     },
     {
       "description": "pgAdmin chart and images",
@@ -140,7 +147,8 @@
       "matchPackagePatterns": ["(^|\\/)pgadmin4$"],
       "groupName": "pgAdmin",
       "additionalBranchPrefix": "",
-      "group": { "commitMessageTopic": "{{{groupName}}} group" }
+      "group": { "commitMessageTopic": "{{{groupName}}} group" },
+      "separateMinorPatch": false
     },
     {
       "description": "Gitea chart and images",
@@ -148,7 +156,8 @@
       "matchPackagePatterns": ["(^|\\/)gitea$"],
       "groupName": "Gitea",
       "additionalBranchPrefix": "",
-      "group": { "commitMessageTopic": "{{{groupName}}} group" }
+      "group": { "commitMessageTopic": "{{{groupName}}} group" },
+      "separateMinorPatch": false
     }
   ]
 }
