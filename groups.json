@@ -158,6 +158,12 @@
       "additionalBranchPrefix": "",
       "group": { "commitMessageTopic": "{{{groupName}}} group" },
       "separateMinorPatch": false
-    }
+    },
+    {
+      "matchSourceUrlPrefixes": [
+        "https://github.com/fluffynuts/NExpect"
+      ],
+      "groupName": "nexpect monorepo"
+    },
   ]
 }
