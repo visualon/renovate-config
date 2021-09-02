@@ -20,7 +20,7 @@ jobs:
           - fixes
           # - meta -> soureUrl not valid
           - shared
-          - grous
+          - groups
           - ng
           - vo
     env:
