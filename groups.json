@@ -2,10 +2,6 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [
     {
-      "matchSourceUrlPrefixes": ["https://github.com/pnp/pnpjs"],
-      "groupName": "pnpjs monorepo"
-    },
-    {
       "matchSourceUrlPrefixes": ["https://github.com/NLog/"],
       "groupName": "nlog packages"
     },
@@ -60,13 +56,6 @@
         "https://github.com/tunnelvisionlabs/antlr4ts"
       ],
       "groupName": "antlr4ts monorepo"
-    },
-    {
-      "matchSourceUrlPrefixes": [
-        "https://github.com/microsoft/ClearScript",
-        "https://github.com/Microsoft/ClearScript"
-      ],
-      "groupName": "ClearScript monorepo"
     },
     {
       "description": "Harbor chart and images",
@@ -158,12 +147,6 @@
       "additionalBranchPrefix": "",
       "group": { "commitMessageTopic": "{{{groupName}}} group" },
       "separateMinorPatch": false
-    },
-    {
-      "matchSourceUrlPrefixes": [
-        "https://github.com/fluffynuts/NExpect"
-      ],
-      "groupName": "nexpect monorepo"
     }
   ]
 }
