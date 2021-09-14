@@ -109,9 +109,9 @@
     },
     {
       "description": "Use custom regex versioning for bitnami images",
-      "matchPackagePrefixes": ["gcr.io/bitnami-containers/","bitnami/"],
+      "matchPackagePrefixes": ["gcr.io/bitnami-containers/", "bitnami/"],
       "matchDatasources": ["docker"],
-      "versioning":"regex:^(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)(:?-(?<compatibility>.*-r)(?<build>\\d+))?$"
+      "versioning": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)(:?-(?<compatibility>.*-r)(?<build>\\d+))?$"
     }
   ],
   "regexManagers": [
@@ -137,10 +137,18 @@
       "versioningTemplate": "docker"
     },
     {
+      "description": "Update install-* Buildpack commands and _VERSION variables in Dockerfiles",
       "fileMatch": ["(^|/|\\.)Dockerfile$", "(^|/)Dockerfile\\.[^/]*$"],
       "matchStrings": [
-        "# renovate: datasource=(?<datasource>.*?) depName=(?<depName>.*?)(?: lookupName=(?<lookupName>.+?))?( versioning=(?<versioning>.*?))?\\s(ENV|ARG) .*?_VERSION=(?<currentValue>.*)\\s",
+        "# renovate: datasource=(?<datasource>.*?) depName=(?<depName>.*?)(?: lookupName=(?<lookupName>.+?))?( versioning=(?<versioning>.*?))?\\s(ENV|ARG) [A-Z_]+?_VERSION=(?<currentValue>.*)\\s",
         "# renovate: datasource=(?<datasource>[a-z-]+?)(?: lookupName=(?<lookupName>.+?))?(?: versioning=(?<versioning>[a-z-]+?))?\\sRUN install-[a-z]+? (?<depName>[a-z-]+?) (?<currentValue>.+?)\\s"
+      ]
+    },
+    {
+      "description": "Update _VERSION variables in shell scripts",
+      "fileMatch": ["\\.sh$"],
+      "matchStrings": [
+        "# renovate: datasource=(?<datasource>.*?) depName=(?<depName>.*?)(?: lookupName=(?<lookupName>.+?))?( versioning=(?<versioning>.*?))?\\s[A-Z_]+?_VERSION=(?<currentValue>.*)\\s"
       ]
     },
     {
