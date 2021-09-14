@@ -146,9 +146,10 @@
     },
     {
       "description": "Update _VERSION variables in shell scripts",
-      "fileMatch": ["\\.sh$"],
+      "fileMatch": ["\\.sh$", "\\.ps1$"],
       "matchStrings": [
-        "# renovate: datasource=(?<datasource>.*?) depName=(?<depName>.*?)(?: lookupName=(?<lookupName>.+?))?( versioning=(?<versioning>.*?))?\\s[A-Z_]+?_VERSION=(?<currentValue>.*)\\s"
+        "# renovate: datasource=(?<datasource>.*?) depName=(?<depName>.*?)(?: lookupName=(?<lookupName>.+?))?( versioning=(?<versioning>.*?))?\\s\\$?[A-Z_]+?_VERSION=(?<currentValue>.*)\\s",
+        "# renovate: datasource=(?<datasource>[a-z-]+?)(?: lookupName=(?<lookupName>.+?))?(?: versioning=(?<versioning>[a-z-]+?))?\\sRUN install-[a-z]+? (?<depName>[a-z-]+?) (?<currentValue>.+?)\\s"
       ]
     },
     {
