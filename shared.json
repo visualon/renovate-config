@@ -145,7 +145,7 @@
       ]
     },
     {
-      "description": "Update _VERSION variables in shell scripts",
+      "description": "Update install-* Buildpack commands and _VERSION variables in shell scripts",
       "fileMatch": ["\\.sh$", "\\.ps1$"],
       "matchStrings": [
         "# renovate: datasource=(?<datasource>.*?) depName=(?<depName>.*?)(?: lookupName=(?<lookupName>.+?))?( versioning=(?<versioning>.*?))?\\s\\$?[A-Z_]+?_VERSION=(?<currentValue>.*)\\s",
