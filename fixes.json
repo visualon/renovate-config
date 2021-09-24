@@ -44,6 +44,12 @@
         "^(?:gcr\\.io\\/bitnami-containers|bitnami)\\/(?:haproxy|nginx)"
       ],
       "allowedVersions": "/^\\d+\\.\\d*[02468]\\.\\d+(-\\w+)?$/"
+    },
+    {
+      "description": "Require k3s minor update approval",
+      "matchPackageNames": ["k3s"],
+      "matchUpdateTypes": ["minor"],
+      "dependencyDashboardApproval": true
     }
   ]
 }
