@@ -46,6 +46,11 @@
       "allowedVersions": "/^\\d+\\.\\d*[02468]\\.\\d+(-\\w+)?$/"
     },
     {
+      "description": "Seperate k3s minor / patch updates",
+      "matchPackageNames": ["k3s"],
+      "separateMinorPatch": true,
+    },
+    {
       "description": "Require k3s minor update approval",
       "matchPackageNames": ["k3s"],
       "matchUpdateTypes": ["minor"],
