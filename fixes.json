@@ -48,7 +48,7 @@
     {
       "description": "Seperate k3s minor / patch updates",
       "matchPackageNames": ["k3s"],
-      "separateMinorPatch": true,
+      "separateMinorPatch": true
     },
     {
       "description": "Require k3s minor update approval",
