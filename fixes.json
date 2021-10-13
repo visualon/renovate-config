@@ -30,15 +30,6 @@
       "allowedVersions": "<7.11"
     },
     {
-      "description": "Use loose versioning for bitnami images",
-      "matchPackagePatterns": [
-        "dd^gcr\\.io\\/bitnami-containers\\/",
-        "dd^bitnami\\/"
-      ],
-      "versioning": "loose",
-      "allowedVersions": "/^\\d+\\.\\d+\\.\\d+-debian-\\d+-r\\d+$/"
-    },
-    {
       "description": "Only stable haproxy / nginx bitnami versions",
       "matchPackagePatterns": [
         "^(?:gcr\\.io\\/bitnami-containers|bitnami)\\/(?:haproxy|nginx)"
