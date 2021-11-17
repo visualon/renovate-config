@@ -42,36 +42,36 @@
       "sourceUrl": "https://www.pgadmin.org"
     },
     {
-      "matchPackagePatterns": ["^(?:amd64\\/)nextcloud$"],
+      "matchPackagePatterns": ["^(?:amd64\\/)?nextcloud$"],
       "matchDatasources": ["docker"],
       "sourceUrl": "https://nextcloud.com/changelog"
     },
     {
-      "matchPackagePatterns": ["^(?:amd64\\/)nextcloud$"],
+      "matchPackagePatterns": ["^(?:amd64\\/)?nextcloud$"],
       "matchDatasources": ["docker"],
       "matchCurrentVersion": "^20",
       "sourceUrl": "https://nextcloud.com/changelog/#latest20"
     },
     {
-      "matchPackagePatterns": ["^(?:amd64\\/)nextcloud$"],
+      "matchPackagePatterns": ["^(?:amd64\\/)?nextcloud$"],
       "matchDatasources": ["docker"],
       "matchCurrentVersion": "^21",
       "sourceUrl": "https://nextcloud.com/changelog/#latest21"
     },
     {
-      "matchPackagePatterns": ["^(?:amd64\\/)nextcloud$"],
+      "matchPackagePatterns": ["^(?:amd64\\/)?nextcloud$"],
       "matchDatasources": ["docker"],
       "matchCurrentVersion": "^22",
       "sourceUrl": "https://nextcloud.com/changelog/#latest22"
     },
     {
-      "matchPackagePatterns": ["^(?:amd64\\/)nextcloud$"],
+      "matchPackagePatterns": ["^(?:amd64\\/)?nextcloud$"],
       "matchDatasources": ["docker"],
       "matchCurrentVersion": "^23",
       "sourceUrl": "https://nextcloud.com/changelog/#latest23"
     },
     {
-      "matchPackagePatterns": ["^(?:amd64\\/)nextcloud$"],
+      "matchPackagePatterns": ["^(?:amd64\\/)?nextcloud$"],
       "matchDatasources": ["docker"],
       "matchCurrentVersion": "^24",
       "sourceUrl": "https://nextcloud.com/changelog/#latest24"
