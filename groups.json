@@ -147,6 +147,11 @@
       "additionalBranchPrefix": "",
       "group": { "commitMessageTopic": "{{{groupName}}} group" },
       "separateMinorPatch": false
+    },
+    {
+      "description": "OpenSearch charts",
+      "matchSourceUrlPrefixes": ["https://github.com/opensearch-project/helm-charts"],
+      "groupName": "OpenSearch charts"
     }
   ]
 }
