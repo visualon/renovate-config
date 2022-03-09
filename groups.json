@@ -152,7 +152,9 @@
     },
     {
       "description": "OpenSearch charts",
-      "matchSourceUrlPrefixes": ["https://github.com/opensearch-project/helm-charts"],
+      "matchSourceUrlPrefixes": [
+        "https://github.com/opensearch-project/helm-charts"
+      ],
       "groupName": "OpenSearch charts"
     }
   ]
