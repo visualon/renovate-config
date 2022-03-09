@@ -32,6 +32,11 @@
       "sourceUrl": "https://github.com/go-gitea/gitea"
     },
     {
+      "matchPackageNames": ["gitea"],
+      "matchDatasources": ["helm"],
+      "sourceUrl": "https://gitea.com/gitea/helm-chart"
+    },
+    {
       "matchPackagePatterns": ["^goharbor\\/"],
       "matchDatasources": ["docker"],
       "sourceUrl": "https://github.com/goharbor/harbor"
