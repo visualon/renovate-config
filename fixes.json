@@ -46,6 +46,13 @@
       "matchPackageNames": ["k3s"],
       "matchUpdateTypes": ["minor"],
       "dependencyDashboardApproval": true
+    },
+    {
+      "description": "Multiple major updates for docker database images",
+      "matchDatasources": ["docker"],
+      "matchPackageNames": ["postgres", "mariadb"],
+      "matchPackagePatterns": ["(^|\\/)postgresql$", "(^|\\/)mariadb$"],
+      "separateMultipleMajor": true
     }
   ]
 }
