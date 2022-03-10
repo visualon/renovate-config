@@ -53,6 +53,14 @@
       "matchPackageNames": ["postgres", "mariadb"],
       "matchPackagePatterns": ["(^|\\/)postgresql$", "(^|\\/)mariadb$"],
       "separateMultipleMajor": true
+    },
+    {
+      "description": "Don't group docker database images major updates",
+      "matchDatasources": ["docker"],
+      "matchPackageNames": ["postgres", "mariadb"],
+      "matchPackagePatterns": ["(^|\\/)postgresql$", "(^|\\/)mariadb$"],
+      "matchUpdateTypes": ["major"],
+      "groupName": null
     }
   ]
 }
