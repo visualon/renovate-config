@@ -3,7 +3,7 @@
   "packageRules": [
     {
       "matchPackageNames": ["visualon/images", "@types/vo-app-base"],
-      "matchPackagePatterns": ["^@vsaf\\/", "^VisualOn\\."],
+      "matchPackagePatterns": ["^@vsaf\\/", "^VisualOn\\.", "(^|\\/)visualon\\/(builder|buildpack)$"],
       "stabilityDays": 0,
       "prNotPendingHours": 25
     },
@@ -14,6 +14,10 @@
     {
       "matchPackageNames": ["visualon/images"],
       "groupName": "visualon images"
+    },
+    {
+      "matchPackagePatterns: ["(^|\\/)visualon\\/(builder|buildpack)$"],
+      "dependencyDashboardApproval": false,
     }
   ]
 }
