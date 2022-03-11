@@ -16,7 +16,7 @@
       "groupName": "visualon images"
     },
     {
-      "matchPackagePatterns: ["(^|\\/)visualon\\/(builder|buildpack)$"],
+      "matchPackagePatterns": ["(^|\\/)visualon\\/(builder|buildpack)$"],
       "dependencyDashboardApproval": false,
     }
   ]
