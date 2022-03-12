@@ -17,7 +17,7 @@
     },
     {
       "matchPackagePatterns": ["(^|\\/)visualon\\/(builder|buildpack)$"],
-      "dependencyDashboardApproval": false,
+      "dependencyDashboardApproval": false
     }
   ]
 }
