@@ -13,7 +13,9 @@
       "matchDepTypes": ["action"],
       "extractVersion": "^(?<version>v\\d+\\.\\d+\\.\\d+)$",
       "versioning": "regex:^v(?<major>\\d+)(\\.(?<minor>\\d+)\\.(?<patch>\\d+))?$"
-    },
+    }
+  ],
+  "regexManagers": [
     {
       "description": "Update version: variables in workflows",
       "fileMatch": ["^\\.github\\/workflows\\/[^/]+\\.ya?ml$"],
