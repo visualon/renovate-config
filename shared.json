@@ -124,11 +124,11 @@
     {
       "fileMatch": ["\\.tf$"],
       "matchStrings": [
-        "\\s+image_[a-z0-9_]+\\s+=\\s+\"(?<lookupName>[a-z0-9.\\/-]+)(?::(?<currentValue>[a-z0-9.-]+))?(?:@(?<currentDigest>sha256:[a-f0-9]+))?\"\\s+# renovate:(?: depName=(?<depName>.+?))?(?: versioning=(?<versioning>.+?))?\\s"
+        "\\s+image_[a-z0-9_]+\\s+=\\s+\"(?<packageName>[a-z0-9.\\/-]+)(?::(?<currentValue>[a-z0-9.-]+))?(?:@(?<currentDigest>sha256:[a-f0-9]+))?\"\\s+# renovate:(?: depName=(?<depName>.+?))?(?: versioning=(?<versioning>.+?))?\\s"
       ],
       "datasourceTemplate": "docker",
       "versioningTemplate": "{{#if versioning}}{{versioning}}{{else}}docker{{/if}}",
-      "depNameTemplate": "{{#if depName}}{{depName}}{{else}}{{lookupName}}{{/if}}"
+      "depNameTemplate": "{{#if depName}}{{depName}}{{else}}{{packageName}}{{/if}}"
     },
     {
       "fileMatch": ["^Jenkinsfile$"],
@@ -146,16 +146,16 @@
       "description": "Update install-* Buildpack commands and _VERSION variables in Dockerfiles",
       "fileMatch": ["(^|/|\\.)Dockerfile$", "(^|/)Dockerfile\\.[^/]*$"],
       "matchStrings": [
-        "# renovate: datasource=(?<datasource>.+?) depName=(?<depName>.+?)(?: lookupName=(?<lookupName>.+?))?( versioning=(?<versioning>.+?))?\\s(ENV|ARG) [A-Z0-9_]+?_VERSION=(?<currentValue>.+?)\\s",
-        "# renovate: datasource=(?<datasource>.+?)(?: lookupName=(?<lookupName>.+?))?(?: versioning=(?<versioning>.+?))?\\sRUN install-[a-z]+? (?<depName>[a-z0-9-]+?) (?<currentValue>.+?)\\s"
+        "# renovate: datasource=(?<datasource>.+?) depName=(?<depName>.+?)(?: (?:packageName|lookupName)=(?<packageName>.+?))?( versioning=(?<versioning>.+?))?\\s(ENV|ARG) [A-Z0-9_]+?_VERSION=(?<currentValue>.+?)\\s",
+        "# renovate: datasource=(?<datasource>.+?)(?: (?:packageName|lookupName)=(?<packageName>.+?))?(?: versioning=(?<versioning>.+?))?\\sRUN install-[a-z]+? (?<depName>[a-z0-9-]+?) (?<currentValue>.+?)\\s"
       ]
     },
     {
       "description": "Update install-* Buildpack commands and _VERSION variables in shell scripts",
       "fileMatch": ["\\.sh$", "\\.ps1$"],
       "matchStrings": [
-        "# renovate: datasource=(?<datasource>.+?) depName=(?<depName>.+?)(?: lookupName=(?<lookupName>.+?))?( versioning=(?<versioning>.+?))?\\s\\$?[A-Z0-9_]+?_VERSION=\"?(?<currentValue>.+?)\"?\\s",
-        "# renovate: datasource=(?<datasource>.+?)(?: lookupName=(?<lookupName>.+?))?(?: versioning=(?<versioning>.+?))?\\sRUN install-[a-z]+? (?<depName>[a-z0-9-]+?) (?<currentValue>.+?)\\s"
+        "# renovate: datasource=(?<datasource>.+?) depName=(?<depName>.+?)(?: (?:packageName|lookupName)=(?<packageName>.+?))?( versioning=(?<versioning>.+?))?\\s\\$?[A-Z0-9_]+?_VERSION=\"?(?<currentValue>.+?)\"?\\s",
+        "# renovate: datasource=(?<datasource>.+?)(?: (?:packageName|lookupName)=(?<packageName>.+?))?(?: versioning=(?<versioning>.+?))?\\sRUN install-[a-z]+? (?<depName>[a-z0-9-]+?) (?<currentValue>.+?)\\s"
       ]
     },
     {
