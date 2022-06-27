@@ -95,6 +95,11 @@
       "matchPackageNames": ["neilpang/acme.sh"],
       "matchDatasources": "docker",
       "sourceUrl": "https://github.com/acmesh-official/acme.sh"
+    },
+    {
+      "matchPackageNames": ["IKVM"],
+      "matchDatasources": "nuget",
+      "sourceUrl": "https://github.com/ikvm-revived/ikvm"
     }
   ]
 }
