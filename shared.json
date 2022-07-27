@@ -155,7 +155,7 @@
       "fileMatch": ["\\.sh$", "\\.ps1$"],
       "matchStrings": [
         "# renovate: datasource=(?<datasource>.+?) depName=(?<depName>.+?)(?: (?:packageName|lookupName)=(?<packageName>.+?))?( versioning=(?<versioning>.+?))?\\s\\$?[A-Z0-9_]+?_VERSION\\s*=\\s*\"?(?<currentValue>.+?)\"?\\s",
-        "# renovate: datasource=(?<datasource>.+?)(?: (?:packageName|lookupName)=(?<packageName>.+?))?(?: versioning=(?<versioning>.+?))?\\sRUN install-[a-z]+? (?<depName>[a-z0-9-]+?) (?<currentValue>.+?)\\s"
+        "# renovate: datasource=(?<datasource>.+?)(?: (?:packageName|lookupName)=(?<packageName>.+?))?(?: versioning=(?<versioning>.+?))?\\sinstall-[a-z]+? (?<depName>[a-z0-9-]+?) (?<currentValue>.+?)\\s"
       ]
     },
     {
