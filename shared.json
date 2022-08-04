@@ -121,7 +121,7 @@
     },
     {
       "description": "Use other registry for chocolatey packages",
-      "matchPackageNames": ["chocolatey-core.extension"],
+      "matchPackageNames": ["chocolatey-core.extension", "graphviz.portable"],
       "matchDatasources": ["nuget"],
       "registryUrls": ["https://chocolatey.org/api/v2/"]
     }
