@@ -118,6 +118,12 @@
       "matchPackageNames": ["k3s"],
       "matchDatasources": ["github-releases"],
       "versioning": "regex:^v(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)(?<compatibility>\\+k3s)(?<build>\\d+)$"
+    },
+    {
+      "description": "Use other registry for chocolatey packages",
+      "matchPackageNames": ["chocolatey-core.extension"],
+      "matchDatasources": ["nuget"],
+      "registryUrls": ["https://chocolatey.org/api/v2/"]
     }
   ],
   "regexManagers": [
