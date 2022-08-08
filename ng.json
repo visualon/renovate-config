@@ -28,7 +28,9 @@
     {
       "description": "Do not automerge nx, needs migration",
       "matchSourceUrlPrefixes": ["https://github.com/nrwl/nx"],
-      "automerge": false
+      "automerge": false,
+      "stabilityDays": 0,
+      "prNotPendingHours": 25
     }
   ]
 }
