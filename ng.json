@@ -9,15 +9,14 @@
       "dependencyDashboardApproval": true
     },
     {
-      "description": "Do not automerge angular cli minor",
-      "matchSourceUrlPrefixes": ["https://github.com/angular/angular-cli"],
-      "matchUpdateTypes": ["minor"],
-      "automerge": false
-    },
-    {
-      "description": "Do not separate minor and patch angular cli updates",
-      "matchSourceUrlPrefixes": ["https://github.com/angular/angular-cli"],
-      "separateMajorMinor": false
+      "description": "Do not automerge and group angular updates",
+      "matchSourceUrls": [
+        "https://github.com/angular/angular",
+        "https://github.com/angular/angular-cli",
+        "https://github.com/angular/components"
+      ],
+      "automerge": false,
+      "groupName": "angular"
     },
     {
       "description": "Add jest-preset-angular major update to Jest monorepo",
@@ -27,7 +26,7 @@
     },
     {
       "description": "Do not automerge nx, needs migration",
-      "matchSourceUrlPrefixes": ["https://github.com/nrwl/nx"],
+      "matchSourceUrls": ["https://github.com/nrwl/nx"],
       "automerge": false,
       "stabilityDays": 0,
       "prNotPendingHours": 25
