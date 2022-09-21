@@ -61,6 +61,12 @@
       "matchPackagePatterns": ["(^|\\/)postgresql$", "(^|\\/)mariadb$"],
       "matchUpdateTypes": ["major"],
       "groupName": null
+    },
+    {
+      "description": "Disable stabillity days",
+      "matchPackageNames": ["tigera-operator"],
+      "stabilityDays": 0,
+      "prNotPendingHours": 25
     }
   ]
 }
