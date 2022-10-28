@@ -3,7 +3,8 @@
   "packageRules": [
     {
       "matchSourceUrlPrefixes": ["https://github.com/NLog/"],
-      "groupName": "nlog packages"
+      "groupName": "nlog packages",
+      "separateMinorPatch": false
     },
     {
       "matchSourceUrlPrefixes": ["https://github.com/adamralph/minver"],
