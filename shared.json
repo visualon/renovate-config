@@ -10,7 +10,6 @@
     "github>visualon/renovate-config:groups"
   ],
   "automergeType": "branch",
-  "prCreation": "not-pending",
   "timezone": "Europe/Berlin",
   "internalChecksFilter": "strict",
   "semanticCommits": "enabled",
