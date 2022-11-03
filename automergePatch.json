@@ -3,11 +3,5 @@
   "extends": [
     "github>visualon/renovate-config:automergeDigest",
     ":automergePatch"
-  ],
-  "packageRules": [
-    {
-      "matchUpdateTypes": ["patch"],
-      "extends": ["schedule:nonOfficeHours"]
-    }
   ]
 }
