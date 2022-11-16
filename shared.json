@@ -49,6 +49,11 @@
       "dependencyDashboardApproval": true
     },
     {
+      "description": "No dashboard approval for major updates of github actions",
+      "matchManagers": ["github-actions"],
+      "dependencyDashboardApproval": false
+    },
+    {
       "matchManagers": ["dockerfile", "droneci"],
       "pinDigests": true
     },
