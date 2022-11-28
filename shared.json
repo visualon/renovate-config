@@ -15,6 +15,7 @@
   "semanticCommits": "enabled",
   "postUpdateOptions": ["yarnDedupeHighest"],
   "separateMinorPatch": true,
+  "separateMajorMinor": true,
   "branchNameStrict": false,
   "ignorePresets": [":ignoreModulesAndTests", "helpers:disableTypesNodeMajor"],
   "ignorePaths": [
