@@ -67,6 +67,13 @@
       "matchPackageNames": ["tigera-operator"],
       "stabilityDays": 0,
       "prNotPendingHours": 25
+    },
+    {
+      "description": "Force different branch for dotnet runtime dependend major updates",
+      "matchPackageNames": ["Microsoft.AspNetCore.Mvc.Testing"],
+      "matchDatasources": ["nuget"],
+      "matchUpdateTypes": ["major"],
+      "groupName": "dotnet-test"
     }
   ]
 }
