@@ -70,10 +70,10 @@
     },
     {
       "description": "Force different branch for dotnet runtime dependend major updates",
-      "matchPackageNames": ["Microsoft.AspNetCore.Mvc.Testing"],
+      "matchPackagePrefixes": ["Microsoft.AspNetCore"],
       "matchDatasources": ["nuget"],
       "matchUpdateTypes": ["major"],
-      "groupName": "dotnet-test"
+      "groupName": "dotnet-aspnet"
     }
   ]
 }
