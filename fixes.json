@@ -74,6 +74,12 @@
       "matchDatasources": ["nuget"],
       "matchUpdateTypes": ["major"],
       "groupName": "dotnet-aspnet"
+    },
+    {
+      "description": "Fix forgejo docker image versioning",
+      "matchPackageNames": ["codeberg.org/forgejo/forgejo", "ghcr.io/visualon/forgejo"],
+      "matchDatasources": ["docker"],
+      "versioning": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)-(?<build>)(?:-(?<compatibility>.*))?$"
     }
   ]
 }
