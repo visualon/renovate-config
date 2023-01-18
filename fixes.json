@@ -77,13 +77,16 @@
     },
     {
       "description": "Fix forgejo docker image versioning",
-      "matchPackageNames": ["codeberg.org/forgejo/forgejo", "ghcr.io/visualon/forgejo"],
+      "matchPackageNames": [
+        "codeberg.org/forgejo/forgejo",
+        "ghcr.io/visualon/forgejo"
+      ],
       "matchDatasources": ["docker"],
       "versioning": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)-(?<build>)(?:-(?<compatibility>.+))?$"
     },
     {
       "description": "Fix shim versioning",
-      "matchSourceUrls": ["https://github.com/kiennq/scoop-better-shimexe"],
+      "matchPackageNames": ["shim", "kiennq/scoop-better-shimexe"],
       "versioning": "regex:^v?(?<major>\\d+)\\.(?<minor>\\d+)(?:\\.(?<patch>\\d+)?$"
     }
   ]
