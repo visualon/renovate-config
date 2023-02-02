@@ -44,7 +44,11 @@
       "description": "Require dashboard approval for major updates except Renovate",
       "excludePackagePatterns": [
         "^renovate(bot)?($|\\/)",
-        "\\/renovate(?:bot)?$"
+        "\\/renovate(?:bot)?$",
+        "containerbase/buildpack",
+        "ghcr.io/containerbase/buildpack",
+        "containerbase/base",
+        "ghcr.io/containerbase/base"
       ],
       "matchUpdateTypes": ["major"],
       "dependencyDashboardApproval": true
@@ -130,6 +134,16 @@
       "matchPackageNames": ["chocolatey-core.extension", "graphviz.portable"],
       "matchDatasources": ["nuget"],
       "registryUrls": ["https://chocolatey.org/api/v2/"]
+    },
+    {
+      "description": "Use `build` semantic commit scope for build deps",
+      "matchDepNames": [
+        "conventional-changelog-conventionalcommits",
+        "node",
+        "semantic-release",
+        "@semantic-release/exec"
+      ],
+      "semanticCommitType": "build"
     }
   ],
   "regexManagers": [
