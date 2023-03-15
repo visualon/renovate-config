@@ -21,6 +21,7 @@ jobs:
           # - meta -> soureUrl not valid
           - shared
           - groups
+          - replacements
           - ng
           - vo
     env:

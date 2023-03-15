@@ -7,7 +7,8 @@
     "github>whitesource/merge-confidence:beta",
     "github>visualon/renovate-config:meta",
     "github>visualon/renovate-config:fixes",
-    "github>visualon/renovate-config:groups"
+    "github>visualon/renovate-config:groups",
+    "github>visualon/renovate-config:replacements"
   ],
   "automergeType": "branch",
   "timezone": "Europe/Berlin",
