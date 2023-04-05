@@ -20,16 +20,19 @@
     },
     {
       "description": "Add jest-preset-angular major update to Jest monorepo",
-      "matchSourceUrlPrefixes": ["https://github.com/thymikee/jest-preset-angular"],
+      "matchSourceUrlPrefixes": [
+        "https://github.com/thymikee/jest-preset-angular"
+      ],
       "matchUpdateTypes": ["major"],
       "groupName": "jest monorepo"
     },
     {
-      "description": "Do not automerge nx, needs migration",
+      "description": "Do not automerge nx, don't seperate minor / patch, needs migration",
       "matchSourceUrls": ["https://github.com/nrwl/nx"],
       "automerge": false,
       "stabilityDays": 0,
-      "prNotPendingHours": 25
+      "prNotPendingHours": 25,
+      "separateMinorPatch": false
     }
   ]
 }
