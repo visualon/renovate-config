@@ -100,6 +100,16 @@
       "matchPackageNames": ["IKVM"],
       "matchDatasources": "nuget",
       "sourceUrl": "https://github.com/ikvm-revived/ikvm"
+    },
+    {
+      "matchPackageNames": [
+        "iobroker",
+        "iobroker/iobroker",
+        "buanet/iobroker",
+        "ghcr.io/buanet/iobroker"
+      ],
+      "matchDatasources": ["docker"],
+      "sourceUrl": "https://github.com/buanet/ioBroker.docker"
     }
   ]
 }
