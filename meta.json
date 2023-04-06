@@ -2,12 +2,7 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [
     {
-      "matchPackagePatterns": ["(^|\\/)traefik$"],
-      "matchDatasources": ["docker"],
-      "sourceUrl": "https://github.com/containous/traefik"
-    },
-    {
-      "matchPackagePatterns": ["(^|\\/)rook\\/"],
+      "matchPackagePatterns": ["(^|/)rook/"],
       "matchDatasources": ["docker"],
       "sourceUrl": "https://github.com/rook/rook"
     },
@@ -17,12 +12,7 @@
       "sourceUrl": "https://jenkins.io/changelog-stable"
     },
     {
-      "matchPackageNames": ["gitea/gitea"],
-      "matchDatasources": ["docker"],
-      "sourceUrl": "https://github.com/go-gitea/gitea"
-    },
-    {
-      "matchPackagePatterns": ["^goharbor\\/"],
+      "matchPackagePatterns": ["^goharbor/"],
       "matchDatasources": ["docker"],
       "sourceUrl": "https://github.com/goharbor/harbor"
     },
@@ -32,7 +22,7 @@
       "sourceUrl": "https://www.pgadmin.org"
     },
     {
-      "matchPackagePatterns": ["^(?:amd64\\/)?nextcloud$"],
+      "matchPackagePatterns": ["^(?:amd64/)?nextcloud$"],
       "matchDatasources": ["docker"],
       "sourceUrl": "https://nextcloud.com/changelog"
     },
@@ -42,7 +32,7 @@
       "sourceUrl": "https://github.com/goharbor/harbor-helm"
     },
     {
-      "matchPackagePatterns": ["^certbot\\/"],
+      "matchPackagePatterns": ["^certbot/"],
       "matchDatasources": ["docker"],
       "sourceUrl": "https://github.com/certbot/certbot"
     },
