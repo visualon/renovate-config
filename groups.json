@@ -155,6 +155,11 @@
         "https://github.com/opensearch-project/helm-charts"
       ],
       "groupName": "OpenSearch charts"
+    },
+    {
+      "description": "swc mono repo",
+      "matchSourceUrlPrefixes": ["https://github.com/swc-project/swc"],
+      "groupName": "SWC monorepo"
     }
   ]
 }
