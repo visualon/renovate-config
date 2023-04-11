@@ -159,7 +159,8 @@
     {
       "description": "swc mono repo",
       "matchSourceUrlPrefixes": ["https://github.com/swc-project/swc"],
-      "groupName": "SWC monorepo"
+      "groupName": "SWC monorepo",
+      "separateMinorPatch": false
     }
   ]
 }
