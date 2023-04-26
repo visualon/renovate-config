@@ -25,11 +25,6 @@
       "separateMajorMinor": false
     },
     {
-      "description": "Restrict elasticsearch to v7.10 due to commercial license for v7.11",
-      "matchPackageNames": ["elasticsearch"],
-      "allowedVersions": "<7.11"
-    },
-    {
       "description": "Only stable haproxy / nginx bitnami versions",
       "matchPackagePatterns": [
         "^(?:gcr\\.io\\/bitnami-containers|bitnami)\\/(?:haproxy|nginx)"
