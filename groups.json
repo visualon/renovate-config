@@ -27,6 +27,10 @@
       "groupName": "snapper packages"
     },
     {
+      "matchSourceUrlPrefixes":["https://github.com/AzureAD/microsoft-identity-web"],
+      "groupName": "microsoft-identity-web monorepo"
+    },
+    {
       "matchPackagePatterns": ["(^|/)renovate$"],
       "groupName": "renovatebot",
       "dependencyDashboardApproval": false,
