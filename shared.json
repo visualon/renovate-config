@@ -156,6 +156,13 @@
       "depNameTemplate": "{{#if depName}}{{depName}}{{else}}{{packageName}}{{/if}}"
     },
     {
+      "description": "update _version variables in terraform",
+      "fileMatch": ["\\.tf$"],
+      "matchStrings": [
+        "\\s+(?<depName>[a-z0-9_]+?)_version\\s+=\\s+\"(?<currentValue>[a-z0-9.-]+)\"\\s+# renovate: datasource=(?<datasource>.+?)(?: packageName=(?<packageName>.+?))?(?: versioning=(?<versioning>.+?))?\\s"
+      ]
+    },
+    {
       "fileMatch": ["^Jenkinsfile$"],
       "matchStringsStrategy": "any",
       "matchStrings": [
