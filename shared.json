@@ -156,6 +156,14 @@
       "depNameTemplate": "{{#if depName}}{{depName}}{{else}}{{packageName}}{{/if}}"
     },
     {
+      "description": "update docker tags inside flux manifests",
+      "fileMatch": ["\\.yaml$"],
+      "matchStrings": [
+        "\\s+tag:\\s+(?<currentValue>[a-z0-9.-]+)\\s+# renovate: depName=(?<depName>.+?)\\s"
+      ],
+      "datasourceTemplate": "docker"
+    },
+    {
       "description": "update _version variables in terraform",
       "fileMatch": ["\\.tf$"],
       "matchStrings": [
