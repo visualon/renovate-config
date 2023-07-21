@@ -83,6 +83,12 @@
       "description": "Fix shim versioning",
       "matchPackageNames": ["shim", "kiennq/scoop-better-shimexe"],
       "versioning": "regex:^v?(?<major>\\d+)\\.(?<minor>\\d+)(?:\\.(?<patch>\\d+))?$"
+    },
+    {
+      "description": "Fix primeng when latest tag is not latest version",
+      "matchDatasources": ["npm"],
+      "matchDepName": ["primeng"],
+      "respectLatest": false
     }
   ]
 }
