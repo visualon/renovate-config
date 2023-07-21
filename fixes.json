@@ -87,7 +87,7 @@
     {
       "description": "Fix primeng when latest tag is not latest version",
       "matchDatasources": ["npm"],
-      "matchDepName": ["primeng"],
+      "matchDepNames": ["primeng"],
       "respectLatest": false
     }
   ]
