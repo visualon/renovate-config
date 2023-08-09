@@ -11,7 +11,6 @@
     "github>visualon/renovate-config:replacements"
   ],
   "automergeType": "branch",
-  "platformAutomerge": false,
   "timezone": "Europe/Berlin",
   "internalChecksFilter": "strict",
   "semanticCommits": "enabled",
