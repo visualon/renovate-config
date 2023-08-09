@@ -79,6 +79,7 @@
     {
       "description": "Automerge dotnet dev packages (by source urls)",
       "matchSourceUrlPrefixes": [
+        "https://github.com/belav/csharpier",
         "https://github.com/coverlet-coverage/coverlet",
         "https://github.com/danielpalme/ReportGenerator",
         "https://github.com/dotnet/msbuild",
