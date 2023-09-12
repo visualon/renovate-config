@@ -154,6 +154,15 @@
       "separateMinorPatch": false
     },
     {
+      "description": "Matomo chart and images",
+      "matchDatasources": ["helm", "docker"],
+      "matchPackagePatterns": ["(^|\\/)matomo$"],
+      "groupName": "Matomo",
+      "additionalBranchPrefix": "",
+      "group": { "commitMessageTopic": "{{{groupName}}} group" },
+      "separateMinorPatch": false
+    },
+    {
       "description": "OpenSearch charts",
       "matchSourceUrlPrefixes": [
         "https://github.com/opensearch-project/helm-charts"
