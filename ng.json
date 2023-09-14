@@ -16,7 +16,8 @@
         "https://github.com/angular/components"
       ],
       "automerge": false,
-      "groupName": "angular"
+      "groupName": "angular",
+      "semanticCommitType": "fix"
     },
     {
       "description": "Add jest-preset-angular major update to Jest monorepo",
