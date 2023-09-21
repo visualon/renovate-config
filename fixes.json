@@ -89,6 +89,12 @@
       "matchDatasources": ["npm"],
       "matchDepNames": ["primeng"],
       "respectLatest": false
+    },
+    {
+      "description": "Fix oci helm chart commit message",
+      "matchDatasources": ["docker"],
+      "matchManagers": ["helmv3"],
+      "commitMessageTopic": "helm release {{depName}}"
     }
   ]
 }
