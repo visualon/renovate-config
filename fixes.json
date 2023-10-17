@@ -94,7 +94,11 @@
       "description": "Fix oci helm chart commit message",
       "matchDatasources": ["docker"],
       "matchManagers": ["helmv3"],
-      "commitMessageTopic": "helm release {{depName}}"
+      "commitMessageTopic": "helm chart {{depName}}"
+    },
+    {
+      "matchSourceUrlPrefixes": ["https://github.com/bitnami/charts"],
+      "commitMessageTopic": "helm chart {{depName}}"
     }
   ]
 }
