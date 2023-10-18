@@ -79,14 +79,15 @@
     {
       "description": "Automerge dotnet dev packages (by source urls)",
       "matchSourceUrlPrefixes": [
+        "https://github.com/adamralph/minver",
         "https://github.com/belav/csharpier",
         "https://github.com/coverlet-coverage/coverlet",
         "https://github.com/danielpalme/ReportGenerator",
         "https://github.com/dotnet/msbuild",
         "https://github.com/microsoft/vstest",
-        "https://github.com/adamralph/minver",
         "https://github.com/nunit/",
-        "https://github.com/theramis/Snapper"
+        "https://github.com/theramis/Snapper",
+        "https://github.com/xunit/"
       ],
       "matchUpdateTypes": ["minor", "patch", "digest", "pin"],
       "automerge": true
