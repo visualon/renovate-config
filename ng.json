@@ -28,12 +28,13 @@
       "groupName": "jest monorepo"
     },
     {
-      "description": "Do not automerge nx, don't seperate minor / patch, needs migration",
+      "description": "Do not automerge nx, don't seperate major / minor / patch, needs migration",
       "matchSourceUrls": ["https://github.com/nrwl/nx"],
       "automerge": false,
       "minimumReleaseAge": null,
       "prNotPendingHours": 25,
-      "separateMinorPatch": false
+      "separateMinorPatch": false,
+      "separateMajorMinor": false
     }
   ]
 }
