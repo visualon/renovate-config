@@ -60,9 +60,9 @@
       "groupName": null
     },
     {
-      "description": "Disable stabillity days",
-      "matchPackageNames": ["tigera-operator"],
-      "stabilityDays": 0,
+      "description": "Disable stabillity days for docker and helm datasources",
+      "matchDatasources": ["docker", "helm"],
+      "minimumReleaseAge": null,
       "prNotPendingHours": 25
     },
     {
