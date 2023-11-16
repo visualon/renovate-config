@@ -39,7 +39,7 @@
         "\\/renovate(?:bot)?$",
         "^(?:ghcr\\.io/)?containerbase/"
       ],
-      "stabilityDays": 3,
+      "minimumReleaseAge": "3 days",
       "prNotPendingHours": 73
     },
     {
