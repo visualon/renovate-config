@@ -8,7 +8,7 @@
         "^VisualOn\\.",
         "(^|\\/)visualon\\/(builder|buildpack)$"
       ],
-      "stabilityDays": 0,
+      "minimumReleaseAge": null,
       "prNotPendingHours": 25
     },
     {
