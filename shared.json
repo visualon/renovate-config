@@ -76,6 +76,10 @@
       "description": "Automerge dev deps minor and lower",
       "matchDepTypes": ["devDependencies", "action"],
       "extends": [":automergeMinor", "schedule:nonOfficeHours"]
+    },{
+      "description": "Automerge package managers",
+      "matchDepNames": ["yarn", "pnpm"],
+      "extends": [":automergeMinor", "schedule:nonOfficeHours"]
     },
     {
       "description": "Automerge dotnet dev packages (by source urls)",
