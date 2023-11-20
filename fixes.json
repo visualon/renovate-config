@@ -60,12 +60,6 @@
       "groupName": null
     },
     {
-      "description": "Disable stabillity days for docker and helm datasources",
-      "matchDatasources": ["docker", "helm"],
-      "minimumReleaseAge": null,
-      "prNotPendingHours": 25
-    },
-    {
       "description": "Force different branch for dotnet runtime dependend major updates",
       "matchPackagePrefixes": ["Microsoft.AspNetCore"],
       "matchDatasources": ["nuget"],
