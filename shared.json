@@ -17,6 +17,7 @@
   "postUpdateOptions": ["yarnDedupeHighest"],
   "separateMinorPatch": true,
   "separateMajorMinor": true,
+  "configMigration": true,
   "branchNameStrict": false,
   "ignorePresets": [":ignoreModulesAndTests", "helpers:disableTypesNodeMajor"],
   "ignorePaths": [
