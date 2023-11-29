@@ -32,7 +32,7 @@ jobs:
       - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
 
       - name: testing ${{ matrix.file }}
-        run: npx -p renovate@{{env.RENOVATE_VERSION}} renovate-config-validator
+        run: npx -p renovate@${{env.RENOVATE_VERSION}} renovate-config-validator
 
   test-success:
     runs-on: ubuntu-latest
