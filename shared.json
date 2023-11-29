@@ -18,6 +18,7 @@
   "separateMinorPatch": true,
   "separateMajorMinor": true,
   "configMigration": true,
+  "commitBodyTable": true,
   "branchNameStrict": false,
   "ignorePresets": [":ignoreModulesAndTests", "helpers:disableTypesNodeMajor"],
   "ignorePaths": [
