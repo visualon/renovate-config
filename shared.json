@@ -4,7 +4,7 @@
     "config:recommended",
     ":maintainLockFilesWeekly",
     "docker:enableMajor",
-    "github>whitesource/merge-confidence:beta",
+    "mergeConfidence:all-badges",
     "github>visualon/renovate-config:meta",
     "github>visualon/renovate-config:fixes",
     "github>visualon/renovate-config:groups",
