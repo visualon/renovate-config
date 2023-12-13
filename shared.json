@@ -70,15 +70,16 @@
       "automerge": true
     },
     {
-      "matchFiles": ["Jenkinsfile"],
-      "matchUpdateTypes": ["minor", "patch", "digest"],
-      "automerge": true
+      "description": "Automerge ci deps minor and lower",
+      "matchFiles": ["Jenkinsfile", ".{github,forgejo}/**"],
+      "extends": [":automergeMinor", "schedule:nonOfficeHours"]
     },
     {
       "description": "Automerge dev deps minor and lower",
-      "matchDepTypes": ["devDependencies", "action"],
+      "matchDepTypes": ["devDependencies"],
       "extends": [":automergeMinor", "schedule:nonOfficeHours"]
-    },{
+    },
+    {
       "description": "Automerge package managers",
       "matchDepNames": ["yarn", "pnpm"],
       "extends": [":automergeMinor", "schedule:nonOfficeHours"]
