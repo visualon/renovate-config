@@ -84,7 +84,7 @@
       "description": "Fix zalando spilo docker image versioning",
       "matchPackagePrefixes": ["ghcr.io/zalando/spilo-"],
       "matchDatasources": ["docker"],
-      "versioning": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)-(?<patch>\\d+)$"
+      "versioning": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)-p(?<patch>\\d+)$"
     },
     {
       "description": "Fix primeng when latest tag is not latest version",
