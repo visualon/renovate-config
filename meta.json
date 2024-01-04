@@ -45,6 +45,11 @@
       "matchPackageNames": ["neilpang/acme.sh"],
       "matchDatasources": "docker",
       "sourceUrl": "https://github.com/acmesh-official/acme.sh"
+    },
+    {
+      "matchPackagePrefixes": ["ghcr.io/zalando/spilo-"],
+      "matchDatasources": "docker",
+      "sourceUrl": "https://github.com/zalando/spilo"
     }
   ]
 }
