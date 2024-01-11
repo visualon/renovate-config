@@ -13,6 +13,12 @@
       "matchDepTypes": ["action"],
       "extractVersion": "^(?<version>v\\d+\\.\\d+\\.\\d+)$",
       "versioning": "regex:^v(?<major>\\d+)(\\.(?<minor>\\d+)\\.(?<patch>\\d+))?$"
+    },
+    {
+      "description": "Fix chetan/git-restore-mtime-action versioning",
+      "matchDepNames": ["chetan/git-restore-mtime-action"],
+      "matchDepTypes": ["action"],
+      "versioning": "regex:^v(?<major>\\d+)(?:\\.(?<minor>\\d+)(?:\\.(?<patch>\\d+)?)?$"
     }
   ],
   "regexManagers": [
