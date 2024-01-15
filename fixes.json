@@ -103,9 +103,9 @@
       "commitMessageTopic": "helm chart {{depName}}"
     },
     {
-      "description": "Use semver-coerce for action updates",
+      "description": "Use `semver-coerced` for action updates",
       "matchDepTypes": ["action"],
-      "versioning": "semver-coerce"
+      "versioning": "semver-coerced"
     }
   ]
 }
