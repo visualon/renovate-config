@@ -29,7 +29,7 @@
       "matchPackagePatterns": [
         "^(?:gcr\\.io\\/bitnami-containers|bitnami)\\/(?:haproxy|nginx)"
       ],
-      "allowedVersions": "/^\\d+\\.\\d*[02468]\\.\\d+(-\\w+)?$/"
+      "allowedVersions": "/^\\d+\\.\\d*[02468]\\.\\d+(?:-.+-\\d+(?:-r\\d+)?)?$/"
     },
     {
       "description": "Seperate k3s minor / patch updates",
