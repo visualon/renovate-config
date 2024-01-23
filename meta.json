@@ -50,6 +50,11 @@
       "matchPackagePrefixes": ["ghcr.io/zalando/spilo-"],
       "matchDatasources": "docker",
       "sourceUrl": "https://github.com/zalando/spilo"
+    },
+    {
+      "matchDepNames": ["docker"],
+      "matchDatasources": "docker",
+      "sourceUrl": "https://github.com/moby/moby"
     }
   ]
 }
