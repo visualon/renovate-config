@@ -92,10 +92,17 @@
         "https://github.com/coverlet-coverage/coverlet",
         "https://github.com/danielpalme/ReportGenerator",
         "https://github.com/dotnet/msbuild",
+        "https://github.com/dotnet/roslyn-analyzers",
+        "https://github.com/dotnet/sourcelink",
+        "https://github.com/DotNetAnalyzers/StyleCopAnalyzers",
+        "https://github.com/fluffynuts/NExpect",
         "https://github.com/microsoft/vstest",
+        "https://github.com/Microsoft/MSBuildSdks",
+        "https://github.com/nsubstitute/",
         "https://github.com/nunit/",
         "https://github.com/theramis/Snapper",
-        "https://github.com/xunit/"
+        "https://github.com/xunit/",
+        "https://nsubstitute.github.io/"
       ],
       "matchUpdateTypes": ["minor", "patch", "digest", "pin"],
       "automerge": true
