@@ -108,6 +108,12 @@
       "versioning": "semver-coerced"
     },
     {
+      "description": "Use `semver` for official action updates",
+      "matchDepTypes": ["action"],
+      "matchDepPatterns": ["^actions/"],
+      "versioning": "semver"
+    },
+    {
       "matchDatasources": ["docker"],
       "matchDepNames": ["docker"],
       "versionCompatibility": "^(?<version>[^-]+)(?<compatibility>-.*)?$",
