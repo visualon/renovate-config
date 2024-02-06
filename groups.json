@@ -182,6 +182,12 @@
         "https://github.com/syncfusion/ej2-angular-ui-components"
       ],
       "groupName": "syncfusion ej2 packages"
+    },
+    {
+      "description": "syncfusion ej2 packages (workaround)",
+      "matchDatasources": ["npm"],
+      "matchDepPatterns": ["^@syncfusion/ej2-"],
+      "groupName": "syncfusion ej2 packages"
     }
   ]
 }
