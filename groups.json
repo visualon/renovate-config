@@ -186,7 +186,7 @@
     {
       "description": "syncfusion ej2 packages (workaround)",
       "matchDatasources": ["npm"],
-      "matchDepPatterns": ["^@syncfusion/ej2-"],
+      "matchDepNames": ["@syncfusion/ej2-dropdowns"],
       "groupName": "syncfusion ej2 packages"
     }
   ]
