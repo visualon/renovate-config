@@ -152,13 +152,8 @@
       "registryUrls": ["https://chocolatey.org/api/v2/"]
     },
     {
-      "description": "Use `build` semantic commit scope for build deps",
-      "matchDepNames": [
-        "conventional-changelog-conventionalcommits",
-        "node",
-        "semantic-release",
-        "@semantic-release/exec"
-      ],
+      "description": "Use `build` semantic commit scope for some build deps",
+      "matchDepNames": ["node"],
       "semanticCommitType": "build"
     }
   ],
