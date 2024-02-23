@@ -73,7 +73,7 @@
         "ghcr.io/visualon/forgejo"
       ],
       "matchDatasources": ["docker"],
-      "versioning": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)-(?<build>\\d+)(?:-(?<compatibility>.+))?$"
+      "versioning": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)(?:-(?<build>\\d+)(?:-(?<compatibility>.+))?)?$"
     },
     {
       "description": "Fix shim versioning",
