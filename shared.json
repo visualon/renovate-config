@@ -95,6 +95,7 @@
         "https://github.com/dotnet/roslyn-analyzers",
         "https://github.com/dotnet/sourcelink",
         "https://github.com/DotNetAnalyzers/StyleCopAnalyzers",
+        "https://github.com/fluentassertions/fluentassertions",
         "https://github.com/fluffynuts/NExpect",
         "https://github.com/microsoft/vstest",
         "https://github.com/Microsoft/MSBuildSdks",
