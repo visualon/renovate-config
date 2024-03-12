@@ -8,8 +8,9 @@
     "helpers:pinGitHubActionDigests"
   ],
   "packageRules": [],
-  "regexManagers": [
+  "customManagers": [
     {
+      "customType": "regex",
       "description": "Update version: variables in workflows",
       "fileMatch": ["^\\.github\\/workflows\\/[^/]+\\.ya?ml$"],
       "matchStrings": [
@@ -17,6 +18,7 @@
       ]
     },
     {
+      "customType": "regex",
       "description": "Update _VERSION: variables in workflows",
       "fileMatch": ["^\\.github\\/workflows\\/[^/]+\\.ya?ml$"],
       "matchStrings": [
