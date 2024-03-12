@@ -29,9 +29,7 @@
     "**/__tests__/**",
     "**/tests/**"
   ],
-  "lockFileMaintenance": {
-    "automerge": true
-  },
+  "lockFileMaintenance": { "automerge": true },
   "packageRules": [
     {
       "description": "Require stability days",
@@ -60,10 +58,7 @@
       "matchManagers": ["github-actions"],
       "dependencyDashboardApproval": false
     },
-    {
-      "matchManagers": ["dockerfile", "droneci"],
-      "pinDigests": true
-    },
+    { "matchManagers": ["dockerfile", "droneci"], "pinDigests": true },
     {
       "matchManagers": ["droneci"],
       "matchUpdateTypes": ["minor", "patch", "digest"],
@@ -71,7 +66,7 @@
     },
     {
       "description": "Automerge ci deps minor and lower",
-      "matchFiles": ["Jenkinsfile", ".{github,forgejo}/**"],
+      "matchFileNames": ["Jenkinsfile", ".{github,forgejo}/**"],
       "extends": [":automergeMinor", "schedule:nonOfficeHours"]
     },
     {
@@ -158,8 +153,9 @@
       "semanticCommitType": "build"
     }
   ],
-  "regexManagers": [
+  "customManagers": [
     {
+      "customType": "regex",
       "fileMatch": ["\\.tf$"],
       "matchStrings": [
         "\\s+image_[a-z0-9_]+\\s+=\\s+\"(?<packageName>[a-z0-9.\\/-]+)(?::(?<currentValue>[a-z0-9.-]+))?(?:@(?<currentDigest>sha256:[a-f0-9]+))?\"\\s+# renovate:(?: depName=(?<depName>.+?))?(?: versioning=(?<versioning>.+?))?\\s"
@@ -169,6 +165,7 @@
       "depNameTemplate": "{{#if depName}}{{depName}}{{else}}{{packageName}}{{/if}}"
     },
     {
+      "customType": "regex",
       "description": "update docker tags inside flux manifests",
       "fileMatch": ["\\.yaml$"],
       "matchStrings": [
@@ -177,6 +174,7 @@
       "datasourceTemplate": "docker"
     },
     {
+      "customType": "regex",
       "description": "update _version variables in terraform",
       "fileMatch": ["\\.tf$"],
       "matchStrings": [
@@ -184,6 +182,7 @@
       ]
     },
     {
+      "customType": "regex",
       "fileMatch": ["^Jenkinsfile$"],
       "matchStringsStrategy": "any",
       "matchStrings": [
@@ -196,6 +195,7 @@
       "versioningTemplate": "docker"
     },
     {
+      "customType": "regex",
       "description": "Update install-* Buildpack commands and _VERSION variables in Dockerfiles",
       "fileMatch": ["(^|/|\\.)Dockerfile$", "(^|/)Dockerfile\\.[^/]*$"],
       "matchStrings": [
@@ -204,6 +204,7 @@
       ]
     },
     {
+      "customType": "regex",
       "description": "Update install-* Buildpack commands and _VERSION variables in shell scripts",
       "fileMatch": ["\\.sh$", "\\.ps1$"],
       "matchStrings": [
@@ -212,6 +213,7 @@
       ]
     },
     {
+      "customType": "regex",
       "description": "nuspec files manager",
       "fileMatch": ["\\.nuspec$"],
       "matchStringsStrategy": "any",
