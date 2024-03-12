@@ -8,6 +8,10 @@
     "helpers:pinGitHubActionDigests"
   ],
   "packageRules": [],
+  "registryAliases": {
+    "hub.visualon.de/": "",
+    "ghcr.visualon.de/": "ghcr.io/"
+  },
   "customManagers": [
     {
       "customType": "regex",
