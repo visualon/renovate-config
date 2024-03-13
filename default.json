@@ -9,8 +9,8 @@
   ],
   "packageRules": [],
   "registryAliases": {
-    "hub.visualon.de/": "",
-    "ghcr.visualon.de/": "ghcr.io/"
+    "hub.visualon.de": "docker.io",
+    "ghcr.visualon.de": "ghcr.io"
   },
   "customManagers": [
     {
