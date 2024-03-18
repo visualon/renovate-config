@@ -14,7 +14,7 @@
   "timezone": "Europe/Berlin",
   "internalChecksFilter": "strict",
   "semanticCommits": "enabled",
-  "postUpdateOptions": ["yarnDedupeHighest"],
+  "postUpdateOptions": ["yarnDedupeHighest", "pnpmDedupe"],
   "separateMinorPatch": true,
   "separateMajorMinor": true,
   "configMigration": true,
