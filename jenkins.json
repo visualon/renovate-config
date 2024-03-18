@@ -1,17 +1,14 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "description": "jenkins specific settings",
+  "extends": ["config:recommended", ":semanticCommitsDisabled"],
+  "automergeType": "pr",
+  "automerge": true,
+  "labels": [
+    "dependencies"
+  ],
+  "rebaseWhen": "conflicted",
   "packageRules": [
-    {
-      "description": "Automerge minor and lower updates",
-      "matchUpdateTypes": ["minor", "patch", "digest"],
-      "automerge": true
-    },
-    {
-      "description": "Automerge minor updates with pr",
-      "matchUpdateTypes": ["minor"],
-      "automergeType": "pr"
-    },
     {
       "description": "No approval for jenkins bom",
       "matchSourceUrlPrefixes": [
@@ -19,6 +16,15 @@
         "https://github.com/jenkinsci/plugin-pom"
       ],
       "dependencyDashboardApproval": false
+    }
+  ],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": [".mvn/extensions.xml"],
+      "matchStrings": ["<version>(?<currentValue>.*?)<\/version>"],
+      "depNameTemplate": "io.jenkins.tools.incrementals:git-changelist-maven-extension",
+      "datasourceTemplate": "maven"
     }
   ]
 }
