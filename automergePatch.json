@@ -1,7 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "github>visualon/renovate-config:automergeDigest",
+    "github>visualon/renovate-config//automergeDigest.json",
     ":automergePatch"
   ]
 }

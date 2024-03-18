@@ -5,10 +5,10 @@
     ":maintainLockFilesWeekly",
     "docker:enableMajor",
     "mergeConfidence:all-badges",
-    "github>visualon/renovate-config:meta",
-    "github>visualon/renovate-config:fixes",
-    "github>visualon/renovate-config:groups",
-    "github>visualon/renovate-config:replacements"
+    "github>visualon/renovate-config//meta.json",
+    "github>visualon/renovate-config//fixes.json",
+    "github>visualon/renovate-config//groups.json",
+    "github>visualon/renovate-config//replacements.json"
   ],
   "automergeType": "branch",
   "timezone": "Europe/Berlin",
