@@ -222,6 +222,15 @@
       ],
       "datasourceTemplate": "nuget",
       "versioningTemplate": "nuget"
+    },
+    {
+      "description": "update pnpm patches",
+      "customType": "regex",
+      "fileMatch": ["^package\\.json$"],
+      "matchStrings": [
+        "\"(?<depName>.+?)@(?<currentValue>\\d+\\.\\d+\\.\\d+(?:-.+)?)\": \"patches/"
+      ],
+      "datasourceTemplate": "npm"
     }
   ]
 }
