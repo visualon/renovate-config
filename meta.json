@@ -55,6 +55,11 @@
       "matchDepNames": ["docker"],
       "matchDatasources": "docker",
       "sourceUrl": "https://github.com/moby/moby"
+    },
+    {
+      "matchDepNames": ["code.forgejo.org/forgejo/runner"],
+      "matchDatasources": "docker",
+      "sourceUrl": "https://code.forgejo.org/forgejo/runner"
     }
   ]
 }
