@@ -60,6 +60,11 @@
       "matchDepNames": ["code.forgejo.org/forgejo/runner"],
       "matchDatasources": "docker",
       "sourceUrl": "https://code.forgejo.org/forgejo/runner"
+    },
+    {
+      "matchDatasources": "docker",
+      "matchDepPatterns": ["^bitnami/harbor"],
+      "sourceUrl": "https://github.com/goharbor/harbor"
     }
   ]
 }
