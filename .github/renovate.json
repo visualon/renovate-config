@@ -16,8 +16,7 @@
       "matchStrings": ["allowedVersions\": \"(?<currentValue><=\\d+\\.\\d+)\""],
       "depNameTemplate": "k3s",
       "versioningTemplate": "npm",
-      "datasourceTemplate": "custom.k3s",
-      "extractVersionTemplate": "^v(?<version>\\d+\\.\\d+\\.\\d+)"
+      "datasourceTemplate": "custom.k3s"
     }
   ],
   "packageRules": [
