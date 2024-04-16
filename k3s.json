@@ -1,0 +1,11 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "description": "Limit k3s minor update",
+      "matchDepNames": ["k3s"],
+      "matchDatasources":["github-releases"],
+      "allowedVersions": "<=1.28"
+    }
+  ]
+}

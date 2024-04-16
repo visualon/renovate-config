@@ -37,12 +37,6 @@
       "separateMinorPatch": true
     },
     {
-      "description": "Require k3s minor update approval",
-      "matchPackageNames": ["k3s"],
-      "matchUpdateTypes": ["minor"],
-      "dependencyDashboardApproval": true
-    },
-    {
       "description": "Multiple major updates for docker database images",
       "matchDatasources": ["docker"],
       "matchPackageNames": ["postgres", "mariadb"],

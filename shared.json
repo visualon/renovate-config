@@ -8,7 +8,8 @@
     "github>visualon/renovate-config//meta.json",
     "github>visualon/renovate-config//fixes.json",
     "github>visualon/renovate-config//groups.json",
-    "github>visualon/renovate-config//replacements.json"
+    "github>visualon/renovate-config//replacements.json",
+    "github>visualon/renovate-config//k3s.json"
   ],
   "automergeType": "branch",
   "timezone": "Europe/Berlin",
