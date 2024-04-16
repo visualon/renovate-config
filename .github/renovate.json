@@ -17,14 +17,14 @@
       "depNameTemplate": "k3s",
       "versioningTemplate": "npm",
       "datasourceTemplate": "custom.k3s",
-      "extractVersionTemplate": "^v(?<version>\\d+\\.\\d+)"
+      "extractVersionTemplate": "^v(?<version>\\d+\\.\\d+\\.\\d+)"
     }
   ],
   "packageRules": [
     {
       "description": "prepare k3s",
       "matchDatasources": ["custom.k3s"],
-      "rangeStrategy": "bump"
+      "rangeStrategy": "replace"
     }
   ]
 }
