@@ -5,7 +5,7 @@
     "k3s": {
       "defaultRegistryUrlTemplate": "https://update.k3s.io/v1-release/channels",
       "transformTemplates": [
-        "($getMinor:=function($v){$v~>$substringAfter(\".\")~>$substringBefore(\".\")~>$number};$stable:=$getMinor($$.(data[id = 'stable'].latest));$isStable:=function($name,$version){$contains($name,/^vd+.d+$/)and($getMinor($version)<=$stable)};{\"releases\":[$$.(data[$isStable(name,latest)].{\"version\":latest~>$substringBefore(\"+\")~>$substringAfter(\"v\")})],\"sourceUrl\":\"https://github.com/k3s-io/k3s\",\"homepage\":\"https://k3s.io/\"})"
+        "($getMinor:=function($v){$v~>$substringAfter('.')~>$substringBefore('.')~>$number};$stable:=$getMinor(data[id='stable'].latest);$isStable:=function($name,$version){$contains($name,/^v\\d+.\\d+$/)and($getMinor($version)<=$stable)};{\"releases\":[data[$isStable(name,latest)].{\"version\":latest~>$substringBefore('+')~>$substringAfter('v')}],\"sourceUrl\":\"https://github.com/k3s-io/k3s\",\"homepage\":\"https://k3s.io/\"})"
       ]
     }
   },
