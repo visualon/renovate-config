@@ -39,8 +39,8 @@
     {
       "description": "Multiple major updates for docker database images",
       "matchDatasources": ["docker"],
-      "matchPackageNames": ["postgres", "mariadb"],
-      "matchPackagePatterns": ["(^|\\/)postgresql$", "(^|\\/)mariadb$"],
+      "matchDepNames": ["postgres", "mariadb"],
+      "matchDepPatterns": ["(^|\\/)postgresql$", "(^|\\/)mariadb$"],
       "excludePackagePrefixes": ["registry-1.docker.io/bitnamicharts/"],
       "separateMultipleMajor": true
     },
