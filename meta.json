@@ -2,52 +2,52 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [
     {
-      "matchPackagePatterns": ["(^|/)rook/"],
+      "matchDepPatterns": ["(^|/)rook/"],
       "matchDatasources": ["docker"],
       "sourceUrl": "https://github.com/rook/rook"
     },
     {
-      "matchPackageNames": ["jenkins"],
+      "matchDepNames": ["jenkins"],
       "matchDatasources": ["docker"],
       "sourceUrl": "https://jenkins.io/changelog-stable"
     },
     {
-      "matchPackagePatterns": ["^goharbor/"],
+      "matchDepPatterns": ["^goharbor/"],
       "matchDatasources": ["docker"],
       "sourceUrl": "https://github.com/goharbor/harbor"
     },
     {
-      "matchPackageNames": ["dpage/pgadmin4"],
+      "matchDepNames": ["dpage/pgadmin4"],
       "matchDatasources": ["docker"],
       "sourceUrl": "https://www.pgadmin.org"
     },
     {
-      "matchPackagePatterns": ["^(?:amd64/)?nextcloud$"],
+      "matchDepPatterns": ["^(?:amd64/)?nextcloud$"],
       "matchDatasources": ["docker"],
       "sourceUrl": "https://nextcloud.com/changelog"
     },
     {
-      "matchPackageNames": ["harbor"],
+      "matchDepNames": ["harbor"],
       "matchDatasources": ["helm"],
       "sourceUrl": "https://github.com/goharbor/harbor-helm"
     },
     {
-      "matchPackagePatterns": ["^certbot/"],
+      "matchDepPatterns": ["^certbot/"],
       "matchDatasources": ["docker"],
       "sourceUrl": "https://github.com/certbot/certbot"
     },
     {
-      "matchPackageNames": ["coredns/coredns"],
+      "matchDepNames": ["coredns/coredns"],
       "matchDatasources": ["docker"],
       "sourceUrl": "https://github.com/coredns/coredns"
     },
     {
-      "matchPackageNames": ["neilpang/acme.sh"],
+      "matchDepNames": ["neilpang/acme.sh"],
       "matchDatasources": "docker",
       "sourceUrl": "https://github.com/acmesh-official/acme.sh"
     },
     {
-      "matchPackagePrefixes": ["ghcr.io/zalando/spilo-"],
+      "matchDepPrefixes": ["ghcr.io/zalando/spilo-"],
       "matchDatasources": "docker",
       "sourceUrl": "https://github.com/zalando/spilo"
     },
