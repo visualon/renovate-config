@@ -65,7 +65,7 @@
     {
       "description": "Harbor chart and images",
       "matchDatasources": ["helm", "docker"],
-      "matchPackageNames": ["harbor"],
+      "matchDepNames": ["harbor"],
       "matchPackagePatterns": ["^goharbor\\/", "\\/harbor-"],
       "groupName": "Harbor",
       "additionalBranchPrefix": "",
@@ -74,7 +74,7 @@
     {
       "description": "PostgreSQL chart and images",
       "matchDatasources": ["helm", "docker"],
-      "matchPackageNames": ["postgres"],
+      "matchDepNames": ["postgres"],
       "matchPackagePatterns": ["(^|\\/)postgresql$"],
       "groupName": "PostgreSQL",
       "additionalBranchPrefix": "",

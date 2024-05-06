@@ -32,7 +32,7 @@
       "allowedVersions": "/^\\d+\\.\\d*[02468]\\.\\d+(?:-.+-\\d+(?:-r\\d+)?)?$/"
     },
     {
-      "description": "Seperate k3s minor / patch updates",
+      "description": "Separate k3s minor / patch updates",
       "matchPackageNames": ["k3s"],
       "separateMinorPatch": true
     },
@@ -47,7 +47,7 @@
     {
       "description": "Don't group docker database images major updates",
       "matchDatasources": ["docker"],
-      "matchPackageNames": ["postgres", "mariadb"],
+      "matchDepNames": ["postgres", "mariadb"],
       "matchPackagePatterns": ["(^|\\/)postgresql$", "(^|\\/)mariadb$"],
       "matchUpdateTypes": ["major"],
       "excludePackagePrefixes": ["registry-1.docker.io/bitnamicharts/"],
