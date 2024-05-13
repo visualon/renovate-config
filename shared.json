@@ -232,7 +232,7 @@
         "\"(?<depName>.+?)@(?<currentValue>\\d+\\.\\d+\\.\\d+(?:-.+)?)\": \"patches/"
       ],
       "datasourceTemplate": "npm",
-      "depTypeTemplate": "patchedDependencies",
+      "depTypeTemplate": "patchedDependencies"
     }
   ]
 }
