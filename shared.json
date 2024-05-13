@@ -231,7 +231,8 @@
       "matchStrings": [
         "\"(?<depName>.+?)@(?<currentValue>\\d+\\.\\d+\\.\\d+(?:-.+)?)\": \"patches/"
       ],
-      "datasourceTemplate": "npm"
+      "datasourceTemplate": "npm",
+      "depTypeTemplate": "patchedDependencies",
     }
   ]
 }
