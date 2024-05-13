@@ -181,13 +181,15 @@
         "https://github.com/syncfusion/ej2-javascript-ui-controls",
         "https://github.com/syncfusion/ej2-angular-ui-components"
       ],
-      "groupName": "syncfusion ej2 packages"
+      "groupName": "syncfusion ej2 packages",
+      "semanticCommitType": "fix"
     },
     {
       "description": "syncfusion ej2 packages (workaround)",
       "matchDatasources": ["npm"],
       "matchDepPrefixes": ["@syncfusion/ej2-"],
-      "groupName": "syncfusion ej2 packages"
+      "groupName": "syncfusion ej2 packages",
+      "semanticCommitType": "fix"
     }
   ]
 }
