@@ -33,7 +33,7 @@
     },
     {
       "description": "Separate k3s minor / patch updates",
-      "matchPackageNames": ["k3s"],
+      "matchDepNames": ["k3s"],
       "separateMinorPatch": true
     },
     {
