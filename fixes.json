@@ -112,6 +112,12 @@
       "matchDepNames": ["docker"],
       "versionCompatibility": "^(?<version>[^-]+)(?<compatibility>-.*)?$",
       "versioning": "semver"
+    },
+    {
+      "description": "set version compabillity for roundcube",
+      "matchDatasources": ["docker"],
+      "matchDepNames": ["roundcube/roundcubemail"],
+      "versionCompatibility": "^(?<version>[^-]+)(?<compatibility>-.*)?$"
     }
   ]
 }
