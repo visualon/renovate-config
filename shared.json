@@ -152,6 +152,11 @@
       "description": "Use `build` semantic commit scope for some build deps",
       "matchDepNames": ["node"],
       "semanticCommitType": "build"
+    },
+    {
+      "description": "autmerge digests via branch to reduce noise",
+      "matchUpdateTypes": ["digest"],
+      "automergeType": "branch"
     }
   ],
   "customManagers": [
