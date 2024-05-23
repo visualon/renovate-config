@@ -28,7 +28,8 @@
     "**/vendor/**",
     "**/examples/**",
     "**/__tests__/**",
-    "**/tests/**"
+    "**/tests/**",
+    "**/flux-system/gotk-sync.yaml"
   ],
   "lockFileMaintenance": { "automerge": true },
   "packageRules": [
