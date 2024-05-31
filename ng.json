@@ -34,7 +34,8 @@
       "minimumReleaseAge": null,
       "prNotPendingHours": 25,
       "separateMinorPatch": false,
-      "separateMajorMinor": false
+      "separateMajorMinor": false,
+      "semanticCommitType": "build"
     }
   ]
 }
