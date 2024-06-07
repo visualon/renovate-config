@@ -7,7 +7,6 @@
   "labels": [
     "dependencies"
   ],
-  "rebaseWhen": "conflicted",
   "packageRules": [
     {
       "description": "No approval for jenkins bom",
