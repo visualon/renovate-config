@@ -10,7 +10,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    container: ghcr.io/visualon/renovate:37.401.5
+    container: ghcr.io/visualon/renovate:37.404.1
 
     strategy:
       matrix:
