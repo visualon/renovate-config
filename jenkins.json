@@ -16,14 +16,5 @@
       ],
       "dependencyDashboardApproval": false
     }
-  ],
-  "customManagers": [
-    {
-      "customType": "regex",
-      "fileMatch": [".mvn/extensions.xml"],
-      "matchStrings": ["<version>(?<currentValue>.*?)<\/version>"],
-      "depNameTemplate": "io.jenkins.tools.incrementals:git-changelist-maven-extension",
-      "datasourceTemplate": "maven"
-    }
   ]
 }
