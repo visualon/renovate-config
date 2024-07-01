@@ -17,7 +17,7 @@
       "sourceUrl": "https://github.com/goharbor/harbor"
     },
     {
-      "matchDepNames": ["dpage/pgadmin4"],
+      "matchDepNames": ["dpage/pgadmin4", "docker.io/dpage/pgadmin4"],
       "matchDatasources": ["docker"],
       "sourceUrl": "https://www.pgadmin.org"
     },
