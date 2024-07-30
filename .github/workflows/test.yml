@@ -19,7 +19,7 @@ jobs:
           - automergePatch
           - automergeDigest
           - fixes
-          # - meta -> soureUrl not valid
+          - meta
           - shared
           - groups
           - replacements
