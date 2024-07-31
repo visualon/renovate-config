@@ -12,11 +12,6 @@
       "sourceUrl": "https://jenkins.io/changelog-stable"
     },
     {
-      "matchDepPatterns": ["^goharbor/"],
-      "matchDatasources": ["docker"],
-      "sourceUrl": "https://github.com/goharbor/harbor"
-    },
-    {
       "matchDepNames": ["dpage/pgadmin4", "docker.io/dpage/pgadmin4"],
       "matchDatasources": ["docker"],
       "sourceUrl": "https://www.pgadmin.org"
@@ -25,11 +20,6 @@
       "matchDepPatterns": ["^(?:amd64/)?nextcloud$"],
       "matchDatasources": ["docker"],
       "sourceUrl": "https://nextcloud.com/changelog"
-    },
-    {
-      "matchDepNames": ["harbor"],
-      "matchDatasources": ["helm"],
-      "sourceUrl": "https://github.com/goharbor/harbor-helm"
     },
     {
       "matchDepPatterns": ["^certbot/"],
@@ -64,7 +54,7 @@
     {
       "matchDatasources": "docker",
       "matchDepNames": ["/bitnami/harbor/"],
-      "sourceUrl": "https://github.com/goharbor/harbor"
+      "changelogUrl": "https://github.com/goharbor/harbor"
     },
     {
       "description": "set source url for roundcube",
