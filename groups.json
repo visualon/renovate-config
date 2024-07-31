@@ -190,6 +190,11 @@
       "matchDepPrefixes": ["@syncfusion/ej2-"],
       "groupName": "syncfusion ej2 packages",
       "semanticCommitType": "fix"
+    },
+    {
+      "description": "Group Forgejo packages",
+      "matchPackageNames": ["forgejo", "ghcr.io/visualon/forgejo", "code.forgejo.org/forgejo/forgejo", "code.forgejo.org/forgejo-helm/forgejo"],
+      "groupName": "Forgejo"
     }
   ]
 }
