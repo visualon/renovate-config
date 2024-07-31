@@ -63,7 +63,7 @@
     },
     {
       "matchDatasources": "docker",
-      "matchDepPatterns": ["^bitnami/harbor"],
+      "matchDepNames": ["/bitnami/harbor/"],
       "sourceUrl": "https://github.com/goharbor/harbor"
     },
     {
