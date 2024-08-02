@@ -5,7 +5,7 @@
       "description": "Limit k3s minor update",
       "matchDepNames": ["k3s"],
       "matchDatasources":["github-releases"],
-      "allowedVersions": "<=1.29"
+      "allowedVersions": "<=1.30"
     }
   ]
 }
