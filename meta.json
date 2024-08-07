@@ -72,7 +72,7 @@
       "description": "set changelog url for bitnami pgbouncer",
       "matchDatasources":["docker"],
       "matchDepNames": ["/bitnami/pgbouncer/"],
-      "changelogUrl": "https://www.pgbouncer.org/changelog.html"
+      "changelogUrl": "https://github.com/pgbouncer/pgbouncer"
     }
   ]
 }
