@@ -67,6 +67,12 @@
       "matchDatasources": ["docker"],
       "matchDepNames": ["traefik", "ghcr.io/traefik/helm/traefik"],
       "sourceUrl": "https://github.com/traefik/traefik-helm-chart"
+    },
+    {
+      "description": "set changelog url for bitnami pgbouncer",
+      "matchDatasources":["docker"],
+      "matchDepNames": ["/bitnami/pgbouncer/"],
+      "changelogUrl": "https://www.pgbouncer.org/changelog.html"
     }
   ]
 }
