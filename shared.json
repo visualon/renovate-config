@@ -138,12 +138,6 @@
       "versioning": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)(:?-(?<compatibility>.+)-(?<build>\\d+)(?:-r(?<revision>\\d+))?)?$"
     },
     {
-      "description": "Use custom regex versioning for k3s",
-      "matchDepNames": ["k3s"],
-      "matchDatasources": ["github-releases"],
-      "versioning": "regex:^v(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)(?<compatibility>\\+k3s)(?<build>\\d+)$"
-    },
-    {
       "description": "Use other registry for chocolatey packages",
       "matchPackageNames": ["chocolatey-core.extension", "graphviz.portable"],
       "matchDatasources": ["nuget"],
