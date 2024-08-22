@@ -3,14 +3,14 @@
   "packageRules": [
     {
       "description": "Limit k3s minor update",
-      "matchDepNames": ["k3s"],
       "matchDatasources":["github-releases"],
+      "matchPackageNames": ["k3s-io/k3s"],
       "allowedVersions": "<=1.30"
     },
     {
       "description": "Use custom regex versioning for k3s",
-      "matchDepNames": ["k3s"],
       "matchDatasources": ["github-releases"],
+      "matchPackageNames": ["k3s-io/k3s"],
       "versioning": "regex:^v(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)(?<compatibility>\\+k3s)(?<build>\\d+)$"
     }
   ]
