@@ -21,8 +21,8 @@
     },
     {
       "description": "Add jest-preset-angular major update to Jest monorepo",
-      "matchSourceUrlPrefixes": [
-        "https://github.com/thymikee/jest-preset-angular"
+      "matchSourceUrls": [
+        "https://github.com/thymikee/jest-preset-angular{,/}**"
       ],
       "matchUpdateTypes": ["major"],
       "groupName": "jest monorepo"

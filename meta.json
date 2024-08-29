@@ -2,7 +2,7 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [
     {
-      "matchDepPatterns": ["(^|/)rook/"],
+      "matchDepNames": ["/(^|/)rook//"],
       "matchDatasources": ["docker"],
       "sourceUrl": "https://github.com/rook/rook"
     },
@@ -17,12 +17,12 @@
       "sourceUrl": "https://www.pgadmin.org"
     },
     {
-      "matchDepPatterns": ["^(?:amd64/)?nextcloud$"],
+      "matchDepNames": ["/^(?:amd64/)?nextcloud$/"],
       "matchDatasources": ["docker"],
       "sourceUrl": "https://nextcloud.com/changelog"
     },
     {
-      "matchDepPatterns": ["^certbot/"],
+      "matchDepNames": ["/^certbot//"],
       "matchDatasources": ["docker"],
       "sourceUrl": "https://github.com/certbot/certbot"
     },
@@ -37,7 +37,7 @@
       "sourceUrl": "https://github.com/acmesh-official/acme.sh"
     },
     {
-      "matchDepPrefixes": ["ghcr.io/zalando/spilo-"],
+      "matchDepNames": ["ghcr.io/zalando/spilo-**"],
       "matchDatasources": "docker",
       "sourceUrl": "https://github.com/zalando/spilo"
     },

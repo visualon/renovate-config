@@ -2,17 +2,18 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [
     {
-      "matchPackageNames": ["visualon/images", "@types/vo-app-base"],
-      "matchPackagePatterns": [
-        "^@vsaf\\/",
-        "^VisualOn\\.",
-        "(^|\\/)visualon\\/(builder|buildpack)$"
+      "matchPackageNames": [
+        "visualon/images",
+        "@types/vo-app-base",
+        "@vsaf/**",
+        "VisualOn.*",
+        "/(^|\\/)visualon\\/(builder|buildpack)$/"
       ],
       "minimumReleaseAge": null,
       "prNotPendingHours": 25
     },
     {
-      "matchPackagePatterns": ["^VisualOn\\.Microsoft\\."],
+      "matchPackageNames": ["VisualOn.Microsoft.*"],
       "groupName": "visualon-microsoft monorepo"
     },
     {
@@ -20,7 +21,7 @@
       "groupName": "visualon images"
     },
     {
-      "matchPackagePatterns": ["(^|\\/)visualon\\/(builder|buildpack)$"],
+      "matchPackageNames": ["/(^|\\/)visualon\\/(builder|buildpack)$/"],
       "dependencyDashboardApproval": false,
       "separateMinorPatch": false
     }

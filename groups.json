@@ -2,48 +2,48 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [
     {
-      "matchSourceUrlPrefixes": ["https://github.com/NLog/"],
+      "matchSourceUrls": ["https://github.com/NLog/**"],
       "groupName": "nlog packages",
       "separateMinorPatch": false
     },
     {
-      "matchSourceUrlPrefixes": ["https://github.com/adamralph/minver"],
+      "matchSourceUrls": ["https://github.com/adamralph/minver{,/}**"],
       "groupName": "minver packages"
     },
     {
-      "matchPackagePatterns": ["^mcr\\.microsoft\\.com\\/dotnet\\/"],
+      "matchPackageNames": ["mcr.microsoft.com/dotnet/**"],
       "groupName": "dotnet docker images"
     },
     {
-      "matchSourceUrlPrefixes": ["https://github.com/deepsweet/start"],
+      "matchSourceUrls": ["https://github.com/deepsweet/start{,/}**"],
       "groupName": "start monorepo"
     },
     {
-      "matchSourceUrlPrefixes": ["https://github.com/unitycontainer/"],
+      "matchSourceUrls": ["https://github.com/unitycontainer/**"],
       "groupName": "unity packages"
     },
     {
-      "matchSourceUrlPrefixes": ["https://github.com/theramis/Snapper"],
+      "matchSourceUrls": ["https://github.com/theramis/Snapper{,/}**"],
       "groupName": "snapper packages"
     },
     {
-      "matchSourceUrlPrefixes":["https://github.com/AzureAD/microsoft-identity-web"],
+      "matchSourceUrls":["https://github.com/AzureAD/microsoft-identity-web{,/}**"],
       "groupName": "microsoft-identity-web monorepo"
     },
     {
-      "matchPackagePatterns": ["(^|/)renovate$"],
+      "matchPackageNames": ["/(^|/)renovate$/"],
       "groupName": "renovatebot",
       "dependencyDashboardApproval": false,
       "automerge": true
     },
     {
-      "matchSourceUrlPrefixes": ["https://github.com/microsoft/msbuild"],
+      "matchSourceUrls": ["https://github.com/microsoft/msbuild{,/}**"],
       "groupName": "MSBuild monorepo"
     },
     {
-      "matchSourceUrlPrefixes": [
-        "https://github.com/microsoft/fluentui",
-        "https://github.com/OfficeDev/office-ui-fabric-react"
+      "matchSourceUrls": [
+        "https://github.com/microsoft/fluentui{,/}**",
+        "https://github.com/OfficeDev/office-ui-fabric-react{,/}**"
       ],
       "groupName": "Fluent UI monorepo"
     },
@@ -52,13 +52,12 @@
       "groupName": "react monorepo"
     },
     {
-      "matchPackageNames": ["prettier"],
-      "matchPackagePatterns": ["^@prettier\\/", "^prettier-plugin-"],
+      "matchPackageNames": ["prettier","@prettier/**", "prettier-plugin-**"],
       "groupName": "prettier packages"
     },
     {
-      "matchSourceUrlPrefixes": [
-        "https://github.com/tunnelvisionlabs/antlr4ts"
+      "matchSourceUrls": [
+        "https://github.com/tunnelvisionlabs/antlr4ts{,/}**"
       ],
       "groupName": "antlr4ts monorepo"
     },
@@ -73,8 +72,7 @@
     {
       "description": "PostgreSQL chart and images",
       "matchDatasources": ["helm", "docker"],
-      "matchDepNames": ["postgres"],
-      "matchPackagePatterns": ["(^|\\/)postgresql$"],
+      "matchDepNames": ["postgres","/(^|\\/)postgresql$/"],
       "groupName": "PostgreSQL",
       "additionalBranchPrefix": "",
       "group": { "commitMessageTopic": "{{{groupName}}} group" },
@@ -83,7 +81,7 @@
     {
       "description": "MariaDB chart and images",
       "matchDatasources": ["helm", "docker"],
-      "matchPackagePatterns": ["(^|\\/)mariadb$"],
+      "matchPackageNames": ["/(^|\\/)mariadb$/"],
       "groupName": "MariaDB",
       "additionalBranchPrefix": "",
       "group": { "commitMessageTopic": "{{{groupName}}} group" },
@@ -92,7 +90,7 @@
     {
       "description": "MinIO chart and images",
       "matchDatasources": ["helm", "docker"],
-      "matchPackagePatterns": ["(^|\\/)minio$"],
+      "matchPackageNames": ["/(^|\\/)minio$/"],
       "groupName": "MinIO",
       "additionalBranchPrefix": "",
       "group": { "commitMessageTopic": "{{{groupName}}} group" },
@@ -101,7 +99,7 @@
     {
       "description": "Traefik chart and images",
       "matchDatasources": ["helm", "docker"],
-      "matchPackagePatterns": ["(^|\\/)traefik$"],
+      "matchPackageNames": ["/(^|\\/)traefik$/"],
       "groupName": "Traefik",
       "additionalBranchPrefix": "",
       "group": { "commitMessageTopic": "{{{groupName}}} group" },
@@ -110,7 +108,7 @@
     {
       "description": "Redis chart and images",
       "matchDatasources": ["helm", "docker"],
-      "matchPackagePatterns": ["(^|\\/)redis(?:-cluster)?$"],
+      "matchPackageNames": ["/(^|\\/)redis(?:-cluster)?$/"],
       "groupName": "Redis",
       "additionalBranchPrefix": "",
       "group": { "commitMessageTopic": "{{{groupName}}} group" },
@@ -119,7 +117,7 @@
     {
       "description": "CoreDNS chart and images",
       "matchDatasources": ["helm", "docker"],
-      "matchPackagePatterns": ["(^|\\/)coredns$"],
+      "matchPackageNames": ["/(^|\\/)coredns$/"],
       "groupName": "CoreDNS",
       "additionalBranchPrefix": "",
       "group": { "commitMessageTopic": "{{{groupName}}} group" },
@@ -128,7 +126,7 @@
     {
       "description": "phpMyAdmin chart and images",
       "matchDatasources": ["helm", "docker"],
-      "matchPackagePatterns": ["(^|\\/)phpmyadmin$"],
+      "matchPackageNames": ["/(^|\\/)phpmyadmin$/"],
       "groupName": "phpMyAdmin",
       "additionalBranchPrefix": "",
       "group": { "commitMessageTopic": "{{{groupName}}} group" },
@@ -137,7 +135,7 @@
     {
       "description": "pgAdmin chart and images",
       "matchDatasources": ["helm", "docker"],
-      "matchPackagePatterns": ["(^|\\/)pgadmin4$"],
+      "matchPackageNames": ["/(^|\\/)pgadmin4$/"],
       "groupName": "pgAdmin",
       "additionalBranchPrefix": "",
       "group": { "commitMessageTopic": "{{{groupName}}} group" },
@@ -146,7 +144,7 @@
     {
       "description": "Gitea chart and images",
       "matchDatasources": ["helm", "docker"],
-      "matchPackagePatterns": ["(^|\\/)gitea$"],
+      "matchPackageNames": ["/(^|\\/)gitea$/"],
       "groupName": "Gitea",
       "additionalBranchPrefix": "",
       "group": { "commitMessageTopic": "{{{groupName}}} group" },
@@ -155,7 +153,7 @@
     {
       "description": "Matomo chart and images",
       "matchDatasources": ["helm", "docker"],
-      "matchPackagePatterns": ["(^|\\/)matomo$"],
+      "matchPackageNames": ["/(^|\\/)matomo$/"],
       "groupName": "Matomo",
       "additionalBranchPrefix": "",
       "group": { "commitMessageTopic": "{{{groupName}}} group" },
@@ -163,22 +161,22 @@
     },
     {
       "description": "OpenSearch charts",
-      "matchSourceUrlPrefixes": [
-        "https://github.com/opensearch-project/helm-charts"
+      "matchSourceUrls": [
+        "https://github.com/opensearch-project/helm-charts{,/}**"
       ],
       "groupName": "OpenSearch charts"
     },
     {
       "description": "swc mono repo",
-      "matchSourceUrlPrefixes": ["https://github.com/swc-project/swc"],
+      "matchSourceUrls": ["https://github.com/swc-project/swc{,/}**"],
       "groupName": "SWC monorepo",
       "separateMinorPatch": false
     },
     {
       "description": "syncfusion ej2 packages",
-      "matchSourceUrlPrefixes": [
-        "https://github.com/syncfusion/ej2-javascript-ui-controls",
-        "https://github.com/syncfusion/ej2-angular-ui-components"
+      "matchSourceUrls": [
+        "https://github.com/syncfusion/ej2-javascript-ui-controls{,/}**",
+        "https://github.com/syncfusion/ej2-angular-ui-components{,/}**"
       ],
       "groupName": "syncfusion ej2 packages",
       "semanticCommitType": "fix"
@@ -186,7 +184,7 @@
     {
       "description": "syncfusion ej2 packages (workaround)",
       "matchDatasources": ["npm"],
-      "matchDepPrefixes": ["@syncfusion/ej2-"],
+      "matchDepNames": ["@syncfusion/ej2-**"],
       "groupName": "syncfusion ej2 packages",
       "semanticCommitType": "fix"
     },

@@ -3,8 +3,8 @@
   "packageRules": [
     {
       "description": "Exclude invalid version from antlr4ts",
-      "matchSourceUrlPrefixes": [
-        "https://github.com/tunnelvisionlabs/antlr4ts"
+      "matchSourceUrls": [
+        "https://github.com/tunnelvisionlabs/antlr4ts{,/}**"
       ],
       "allowedVersions": "!/(-dev|-\\w+\\.[a-z0-9]{8})$/"
     },
@@ -15,19 +15,19 @@
     },
     {
       "description": "Only stable haproxy / nginx versions",
-      "matchPackagePatterns": ["^(?:amd64\\/)?(?:haproxy|nginx)"],
+      "matchPackageNames": ["/^(?:amd64\\/)?(?:haproxy|nginx)/"],
       "allowedVersions": "/^\\d+\\.\\d*[02468]\\.\\d+(-\\w+)?$/"
     },
     {
       "description": "Date based releases",
-      "matchPackagePatterns": ["(^|\\/)minio$"],
+      "matchPackageNames": ["/(^|\\/)minio$/"],
       "separateMinorPatch": false,
       "separateMajorMinor": false
     },
     {
       "description": "Only stable haproxy / nginx bitnami versions",
-      "matchPackagePatterns": [
-        "(?:bitnami-containers|bitnami)\\/(?:haproxy|nginx)"
+      "matchPackageNames": [
+        "/(?:bitnami-containers|bitnami)\\/(?:haproxy|nginx)/"
       ],
       "allowedVersions": "/^\\d+\\.\\d*[02468]\\.\\d+(?:-.+-\\d+(?:-r\\d+)?)?$/"
     },
@@ -39,23 +39,31 @@
     {
       "description": "Multiple major updates for docker database images",
       "matchDatasources": ["docker"],
-      "matchDepNames": ["postgres", "mariadb"],
-      "matchDepPatterns": ["(^|\\/)postgresql$", "(^|\\/)mariadb$"],
+      "matchDepNames": [
+        "postgres",
+        "mariadb",
+        "/(^|\\/)postgresql$/",
+        "/(^|\\/)mariadb$/"
+      ],
       "excludePackagePrefixes": ["registry-1.docker.io/bitnamicharts/"],
       "separateMultipleMajor": true
     },
     {
       "description": "Don't group docker database images major updates",
       "matchDatasources": ["docker"],
-      "matchDepNames": ["postgres", "mariadb"],
-      "matchPackagePatterns": ["(^|\\/)postgresql$", "(^|\\/)mariadb$"],
+      "matchDepNames": [
+        "postgres",
+        "mariadb",
+        "/(^|\\/)postgresql$/",
+        "/(^|\\/)mariadb$/",
+        "!registry-1.docker.io/bitnamicharts/"
+      ],
       "matchUpdateTypes": ["major"],
-      "excludePackagePrefixes": ["registry-1.docker.io/bitnamicharts/"],
       "groupName": null
     },
     {
       "description": "Force different branch for dotnet runtime dependend major updates",
-      "matchPackagePrefixes": ["Microsoft.AspNetCore"],
+      "matchPackageNames": ["Microsoft.AspNetCore**"],
       "matchDatasources": ["nuget"],
       "matchUpdateTypes": ["major"],
       "groupName": "dotnet-aspnet"
@@ -76,7 +84,7 @@
     },
     {
       "description": "Fix zalando spilo docker image versioning",
-      "matchPackagePrefixes": ["ghcr.io/zalando/spilo-"],
+      "matchPackageNames": ["ghcr.io/zalando/spilo-**"],
       "matchDatasources": ["docker"],
       "versioning": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)-p(?<patch>\\d+)$"
     },
@@ -93,7 +101,7 @@
       "commitMessageTopic": "helm chart {{depName}}"
     },
     {
-      "matchSourceUrlPrefixes": ["https://github.com/bitnami/charts"],
+      "matchSourceUrls": ["https://github.com/bitnami/charts{,/}**"],
       "commitMessageTopic": "helm chart {{depName}}"
     },
     {
@@ -104,7 +112,7 @@
     {
       "description": "Use `semver` for official action updates",
       "matchDepTypes": ["action"],
-      "matchDepPatterns": ["^actions/"],
+      "matchDepNames": ["/^actions//"],
       "versioning": "semver"
     },
     {
