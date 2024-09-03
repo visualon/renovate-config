@@ -94,6 +94,8 @@
         "https://github.com/DotNetAnalyzers/StyleCopAnalyzers{,/}**",
         "https://github.com/fluentassertions/fluentassertions{,/}**",
         "https://github.com/fluffynuts/NExpect{,/}**",
+        "https://github.com/manuelroemer/IsExternalInit{,/}**",
+        "https://github.com/manuelroemer/Nullable{,/}**",
         "https://github.com/microsoft/codecoverage{,/}**",
         "https://github.com/microsoft/vstest{,/}**",
         "https://github.com/Microsoft/MSBuildSdks{,/}**",
