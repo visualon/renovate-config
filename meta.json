@@ -9,7 +9,8 @@
     {
       "matchDepNames": ["jenkins"],
       "matchDatasources": ["docker"],
-      "sourceUrl": "https://jenkins.io/changelog-stable"
+      "versionCompatibility": "^(?<version>[^-]+)(?<compatibility>-.+)?$",
+      "changelogUrl": "https://jenkins.io/changelog-stable"
     },
     {
       "matchDepNames": ["dpage/pgadmin4", "docker.io/dpage/pgadmin4"],
