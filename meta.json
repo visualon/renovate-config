@@ -70,6 +70,12 @@
       "sourceUrl": "https://github.com/traefik/traefik-helm-chart"
     },
     {
+      "description": "set source url for traefik image",
+      "matchDatasources": ["docker"],
+      "matchPackageNames": ["docker.io/amd64/traefik", "ghcr.io/traefik/traefik"],
+      "sourceUrl": "https://github.com/traefik/traefik"
+    },
+    {
       "description": "set changelog url for bitnami pgbouncer",
       "matchDatasources":["docker"],
       "matchDepNames": ["/bitnami/pgbouncer/"],
