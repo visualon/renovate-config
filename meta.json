@@ -80,6 +80,12 @@
       "matchDatasources":["docker"],
       "matchDepNames": ["/bitnami/pgbouncer/"],
       "changelogUrl": "https://github.com/pgbouncer/pgbouncer"
+    },
+    {
+      "description": "set changelog url for eclipse mosquitto",
+      "matchDatasources":["docker"],
+      "matchDepNames": ["/eclipse-mosquitto/"],
+      "changelogUrl": "https://mosquitto.org/ChangeLog.txt"
     }
   ]
 }
