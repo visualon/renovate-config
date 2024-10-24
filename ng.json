@@ -9,15 +9,27 @@
       "dependencyDashboardApproval": true
     },
     {
-      "description": "Do not automerge and group angular updates",
+      "description": "Do not automerge and group angular updates for major and minor",
       "matchSourceUrls": [
         "https://github.com/angular/angular",
         "https://github.com/angular/angular-cli",
         "https://github.com/angular/components"
       ],
+      "matchUpdateTypes": ["major", "minor"],
       "automerge": false,
       "groupName": "angular",
       "semanticCommitType": "fix"
+    },
+    {
+      "description": "Do PR automerge angular updates for patch",
+      "matchSourceUrls": [
+        "https://github.com/angular/angular",
+        "https://github.com/angular/angular-cli",
+        "https://github.com/angular/components"
+      ],
+      "matchUpdateTypes": ["patch"],
+      "semanticCommitType": "fix",
+      "automergeType": "pr"
     },
     {
       "description": "Add jest-preset-angular major update to Jest monorepo",
