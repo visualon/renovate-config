@@ -10,23 +10,29 @@ jobs:
   test:
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    container: ghcr.io/visualon/renovate:38.142.0
+    container: ghcr.io/renovatebot/renovate:38.142.0
 
     strategy:
       matrix:
         file:
           - default
-          - automergePatch
-          - automergeDigest
-          - fixes
-          - meta
-          - shared
-          - groups
-          - replacements
-          - ng
-          - vo
+#          - automergePatch
+#          - automergeDigest
+#          - fixes
+#          - meta
+#          - shared
+#          - groups
+#          - replacements
+#          - ng
+#          - vo
 
     steps:
+      - name: testing
+        run: | 
+          ls -la /
+          ls -la /__w/
+          ls -la /__w/_temp
+
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
           show-progress: false
