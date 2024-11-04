@@ -10,7 +10,11 @@ jobs:
   test:
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    container: ghcr.io/renovatebot/renovate:38.142.0
+    container:
+      image: ghcr.io/renovatebot/renovate:38.142.0
+      # github hosted runners are running as `1001:127` (ubuntu:docker)
+      options: -u 1001:0 --group-add 12021 --group-add 127
+    
 
     strategy:
       matrix:
@@ -30,6 +34,7 @@ jobs:
       - name: testing
         run: |
           set -ex
+          id
           ls -la /
           ls -la /__w/
           ls -la /__w/_temp
