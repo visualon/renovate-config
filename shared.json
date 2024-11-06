@@ -93,7 +93,7 @@
         "https://github.com/dotnet/sourcelink{,/}**",
         "https://github.com/DotNetAnalyzers/StyleCopAnalyzers{,/}**",
         "https://github.com/fluentassertions/fluentassertions{,/}**",
-        "https://github.com/fluentassertions/fluentassertions.analyzers{,/}**"
+        "https://github.com/fluentassertions/fluentassertions.analyzers{,/}**",
         "https://github.com/fluffynuts/NExpect{,/}**",
         "https://github.com/manuelroemer/IsExternalInit{,/}**",
         "https://github.com/manuelroemer/Nullable{,/}**",
