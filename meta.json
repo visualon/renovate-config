@@ -76,6 +76,12 @@
       "sourceUrl": "https://github.com/traefik/traefik"
     },
     {
+      "description": "set source url for coredns image",
+      "matchDatasources": ["docker"],
+      "matchPackageNames": ["docker.io/coredns/coredns", "coredns/coredns"],
+      "sourceUrl": "https://github.com/coredns/coredns"
+    },
+    {
       "description": "set changelog url for bitnami pgbouncer",
       "matchDatasources":["docker"],
       "matchDepNames": ["/bitnami/pgbouncer/"],
