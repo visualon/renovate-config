@@ -20,7 +20,7 @@
   "separateMajorMinor": true,
   "configMigration": true,
   "commitBodyTable": true,
-  "branchNameStrict": false,
+  "branchNameStrict": true,
   "ignorePresets": [":ignoreModulesAndTests", "helpers:disableTypesNodeMajor"],
   "ignorePaths": [
     "**/node_modules/**",
