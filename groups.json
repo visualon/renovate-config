@@ -64,7 +64,7 @@
     {
       "description": "Harbor chart and images",
       "matchDatasources": ["helm", "docker"],
-      "matchDepNames": ["/harbor/"],
+      "matchDepNames": ["harbor", "{**/,}bitnami/harbor-*"],
       "groupName": "Harbor",
       "additionalBranchPrefix": "",
       "group": { "commitMessageTopic": "{{{groupName}}} group" }
