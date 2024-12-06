@@ -6,6 +6,7 @@
       "description": "Require typescript minor approval for angular",
       "matchPackageNames": ["typescript"],
       "matchUpdateTypes": ["minor"],
+      "separateMultipleMinor": true,
       "dependencyDashboardApproval": true
     },
     {
