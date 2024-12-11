@@ -27,7 +27,9 @@
       "groupName": "snapper packages"
     },
     {
-      "matchSourceUrls":["https://github.com/AzureAD/microsoft-identity-web{,/}**"],
+      "matchSourceUrls": [
+        "https://github.com/AzureAD/microsoft-identity-web{,/}**"
+      ],
       "groupName": "microsoft-identity-web monorepo"
     },
     {
@@ -52,13 +54,11 @@
       "groupName": "react monorepo"
     },
     {
-      "matchPackageNames": ["prettier","@prettier/**", "prettier-plugin-**"],
+      "matchPackageNames": ["prettier", "@prettier/**", "prettier-plugin-**"],
       "groupName": "prettier packages"
     },
     {
-      "matchSourceUrls": [
-        "https://github.com/tunnelvisionlabs/antlr4ts{,/}**"
-      ],
+      "matchSourceUrls": ["https://github.com/tunnelvisionlabs/antlr4ts{,/}**"],
       "groupName": "antlr4ts monorepo"
     },
     {
@@ -72,7 +72,7 @@
     {
       "description": "PostgreSQL chart and images",
       "matchDatasources": ["helm", "docker"],
-      "matchDepNames": ["postgres","/(^|\\/)postgresql$/"],
+      "matchDepNames": ["postgres", "/(^|\\/)postgresql$/"],
       "groupName": "PostgreSQL",
       "additionalBranchPrefix": "",
       "group": { "commitMessageTopic": "{{{groupName}}} group" },
@@ -190,8 +190,34 @@
     },
     {
       "description": "Group Forgejo packages",
-      "matchPackageNames": ["forgejo", "ghcr.io/visualon/forgejo", "code.forgejo.org/forgejo/forgejo", "code.forgejo.org/forgejo-helm/forgejo"],
+      "matchPackageNames": [
+        "forgejo",
+        "ghcr.io/visualon/forgejo",
+        "code.forgejo.org/forgejo/forgejo",
+        "code.forgejo.org/forgejo-helm/forgejo"
+      ],
       "groupName": "Forgejo"
+    },
+    {
+      "description": "SkiaSharp",
+      "matchDatasources": ["nuget"],
+      "matchSourceUrls": ["https://go.microsoft.com/fwlink/?linkid=868515"],
+      "matchPackageNames": ["SkiaSharp**"],
+      "groupName": "skiasharp packages"
+    },
+    {
+      "description": "HarfBuzzSharp",
+      "matchDatasources": ["nuget"],
+      "matchSourceUrls": ["https://go.microsoft.com/fwlink/?linkid=868515"],
+      "matchPackageNames": ["HarfBuzzSharp**"],
+      "groupName": "harfbuzzsharp packages"
+    },
+    {
+      "description": "SkiaSharp major",
+      "matchDatasources": ["nuget"],
+      "matchSourceUrls": ["https://go.microsoft.com/fwlink/?linkid=868515"],
+      "matchUpdateTypes": ["major"],
+      "groupName": "skiasharp major"
     }
   ]
 }
