@@ -5,7 +5,7 @@
       "description": "Limit k3s minor update",
       "matchDatasources":["github-releases"],
       "matchPackageNames": ["k3s-io/k3s"],
-      "allowedVersions": "<=1.30"
+      "allowedVersions": "<=1.31"
     },
     {
       "description": "Use custom regex versioning for k3s",
