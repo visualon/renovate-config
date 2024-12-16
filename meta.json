@@ -72,7 +72,11 @@
     {
       "description": "set source url for traefik image",
       "matchDatasources": ["docker"],
-      "matchPackageNames": ["docker.io/amd64/traefik", "ghcr.io/traefik/traefik"],
+      "matchPackageNames": [
+        "docker.io/amd64/traefik",
+        "ghcr.io/traefik/traefik",
+        "ghcr.visualon.de/traefik/traefik"
+      ],
       "sourceUrl": "https://github.com/traefik/traefik"
     },
     {
@@ -83,13 +87,13 @@
     },
     {
       "description": "set changelog url for bitnami pgbouncer",
-      "matchDatasources":["docker"],
+      "matchDatasources": ["docker"],
       "matchDepNames": ["/bitnami/pgbouncer/"],
       "changelogUrl": "https://github.com/pgbouncer/pgbouncer"
     },
     {
       "description": "set changelog url for eclipse mosquitto",
-      "matchDatasources":["docker"],
+      "matchDatasources": ["docker"],
       "matchDepNames": ["/eclipse-mosquitto/"],
       "changelogUrl": "https://mosquitto.org/ChangeLog.txt"
     }
