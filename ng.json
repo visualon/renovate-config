@@ -45,11 +45,19 @@
       "groupName": "jest monorepo"
     },
     {
+      "description": "Do minimum release age for some deps",
+      "matchSourceUrls": [
+        "https://github.com/angular/**",
+        "https://github.com/nrwl/nx",
+        "https://github.com/primefaces/primeng{,/}**"
+      ],
+      "minimumReleaseAge": null,
+      "prNotPendingHours": 25
+    },
+    {
       "description": "Do not automerge nx, don't seperate major / minor / patch, needs migration",
       "matchSourceUrls": ["https://github.com/nrwl/nx"],
       "automerge": false,
-      "minimumReleaseAge": null,
-      "prNotPendingHours": 25,
       "separateMinorPatch": false,
       "separateMajorMinor": false,
       "semanticCommitType": "build"
