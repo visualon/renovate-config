@@ -89,9 +89,9 @@
       "versioning": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)-p(?<patch>\\d+)$"
     },
     {
-      "description": "Fix primeng when latest tag is not latest version",
+      "description": "Fix primeng and pnpm when latest tag is not latest version",
       "matchDatasources": ["npm"],
-      "matchDepNames": ["primeng"],
+      "matchDepNames": ["primeng", "pnpm"],
       "respectLatest": false
     },
     {
