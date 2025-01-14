@@ -112,7 +112,7 @@
     {
       "description": "Use `semver` for official action updates",
       "matchDepTypes": ["action"],
-      "matchDepNames": ["/^actions//"],
+      "matchDepNames": ["actions/**", "containerbase/**", "renovatebot/**"],
       "versioning": "semver"
     },
     {
