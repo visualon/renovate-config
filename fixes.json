@@ -105,6 +105,10 @@
       "commitMessageTopic": "helm chart {{depName}}"
     },
     {
+      "matchPackageNames": ["ghcr.io/traefik/helm/traefik"],
+      "commitMessageTopic": "helm chart {{depName}}"
+    },
+    {
       "description": "Use `semver-coerced` for action updates",
       "matchDepTypes": ["action"],
       "versioning": "semver-coerced"
