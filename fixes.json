@@ -105,7 +105,7 @@
       "commitMessageTopic": "helm chart {{depName}}"
     },
     {
-      "matchPackageNames": ["ghcr.io/traefik/helm/traefik"],
+      "matchPackageNames": ["ghcr.io/traefik/helm/traefik", "code.forgejo.org/forgejo-helm/forgejo"],
       "commitMessageTopic": "helm chart {{depName}}"
     },
     {
