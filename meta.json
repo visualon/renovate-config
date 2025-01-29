@@ -96,6 +96,11 @@
       "matchDatasources": ["docker"],
       "matchDepNames": ["/eclipse-mosquitto/"],
       "changelogUrl": "https://mosquitto.org/ChangeLog.txt"
+    },
+    {
+      "description": "set changelog url for syncfusion packages",
+      "matchSourceUrls": ["https://www.syncfusion.com/**"],
+      "changelogUrl": "https://www.syncfusion.com/products/release-history"
     }
   ]
 }
