@@ -28,11 +28,6 @@
       "sourceUrl": "https://github.com/certbot/certbot"
     },
     {
-      "matchDepNames": ["coredns/coredns"],
-      "matchDatasources": ["docker"],
-      "sourceUrl": "https://github.com/coredns/coredns"
-    },
-    {
       "matchDepNames": ["neilpang/acme.sh"],
       "matchDatasources": "docker",
       "sourceUrl": "https://github.com/acmesh-official/acme.sh"
@@ -82,7 +77,11 @@
     {
       "description": "set source url for coredns image",
       "matchDatasources": ["docker"],
-      "matchPackageNames": ["docker.io/coredns/coredns", "coredns/coredns"],
+      "matchPackageNames": [
+        "coredns/coredns",
+        "docker.io/coredns/coredns",
+        "ghcr.io/coredns/coredns"
+      ],
       "sourceUrl": "https://github.com/coredns/coredns"
     },
     {

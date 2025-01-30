@@ -99,7 +99,10 @@
       "commitMessageTopic": "helm chart {{depName}}"
     },
     {
-      "matchSourceUrls": ["https://github.com/bitnami/charts{,/}**"],
+      "matchSourceUrls": [
+        "https://github.com/bitnami/charts{,/}**",
+        "https://github.com/coredns/helm{,/}**"
+      ],
       "commitMessageTopic": "helm chart {{depName}}"
     },
     {
