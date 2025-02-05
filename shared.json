@@ -174,7 +174,7 @@
       "description": "update versions inside yaml manifests",
       "fileMatch": ["\\.yaml$"],
       "matchStrings": [
-        ":\\s+(?<currentValue>[a-z0-9.-]+)\\s+# renovate: datasource=(?<datasource>.+?) depName=(?<depName>.+?)(?: packageName=(?<packageName>.+?))?(?: versioning=(?<versioning>.+?))?\\s"
+        ":\\s+(?<currentValue>.+?)\\s+# renovate: datasource=(?<datasource>.+?) depName=(?<depName>.+?)(?: packageName=(?<packageName>.+?))?(?: versioning=(?<versioning>.+?))?\\s"
       ],
       "datasourceTemplate": "docker"
     },
