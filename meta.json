@@ -85,6 +85,12 @@
       "sourceUrl": "https://github.com/coredns/coredns"
     },
     {
+      "description": "set source url for coredns chart",
+      "matchDatasources": ["docker"],
+      "matchPackageNames": ["ghcr.io/coredns/charts/coredns"],
+      "sourceUrl": "https://github.com/coredns/helm"
+    },
+    {
       "description": "set changelog url for bitnami pgbouncer",
       "matchDatasources": ["docker"],
       "matchDepNames": ["/bitnami/pgbouncer/"],
