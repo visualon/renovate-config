@@ -237,6 +237,14 @@
       ],
       "datasourceTemplate": "npm",
       "depTypeTemplate": "patchedDependencies"
+    },
+    {
+      "description": "update flux kustomization CRD dependencies",
+      "customType": "regex",
+      "fileMatch": ["^flux/infrastructure/crds/kustomization.yaml$"],
+      "matchStrings": [
+        "-\\s(.*?)\/(?<currentValue>[^/\\s]+)\/[^/\\s] # renovate: datasource=(?<datasource>.+?) depName=(?<depName>.+?)"
+      ]
     }
   ]
 }
