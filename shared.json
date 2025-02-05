@@ -171,10 +171,10 @@
     },
     {
       "customType": "regex",
-      "description": "update docker tags inside flux manifests",
+      "description": "update versions inside yaml manifests",
       "fileMatch": ["\\.yaml$"],
       "matchStrings": [
-        "\\s+tag:\\s+(?<currentValue>[a-z0-9.-]+)\\s+# renovate: depName=(?<depName>.+?)\\s"
+        ":\\s+(?<currentValue>[a-z0-9.-]+)\\s+# renovate: datasource=(?<datasource>.+?) depName=(?<depName>.+?)(?: packageName=(?<packageName>.+?))?(?: versioning=(?<versioning>.+?))?\\s"
       ],
       "datasourceTemplate": "docker"
     },
