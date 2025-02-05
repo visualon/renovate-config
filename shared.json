@@ -175,8 +175,7 @@
       "fileMatch": ["\\.yaml$"],
       "matchStrings": [
         ":\\s+(?<currentValue>.+?)\\s+# renovate: datasource=(?<datasource>.+?) depName=(?<depName>.+?)(?: packageName=(?<packageName>.+?))?(?: versioning=(?<versioning>.+?))?\\s"
-      ],
-      "datasourceTemplate": "docker"
+      ]
     },
     {
       "customType": "regex",
