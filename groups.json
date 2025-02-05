@@ -218,6 +218,11 @@
       "matchSourceUrls": ["https://go.microsoft.com/fwlink/?linkid=868515"],
       "matchUpdateTypes": ["major"],
       "groupName": "skiasharp major"
+    },
+    {
+      "description": "rancher system-upgrade-controller",
+      "matchPackageNames": ["rancher/system-upgrade-controller"],
+      "groupName": "rancher system-upgrade-controller"
     }
   ]
 }
