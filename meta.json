@@ -106,6 +106,12 @@
       "description": "set changelog url for syncfusion packages",
       "matchSourceUrls": ["https://www.syncfusion.com/**"],
       "changelogUrl": "https://www.syncfusion.com/products/release-history"
+    },
+    {
+      "description": "set changelog url for rancher system-upgrade-controller",
+      "matchPackageNames": ["rancher/system-upgrade-controller"],
+      "changelogUrl": "https://github.com/rancher/system-upgrade-controller"
+
     }
   ]
 }
