@@ -59,12 +59,6 @@
       "sourceUrl": "https://github.com/roundcube/roundcubemail"
     },
     {
-      "description": "set source url for traefik chart",
-      "matchDatasources": ["docker"],
-      "matchDepNames": ["traefik", "ghcr.io/traefik/helm/traefik"],
-      "sourceUrl": "https://github.com/traefik/traefik-helm-chart"
-    },
-    {
       "description": "set source url for traefik image",
       "matchDatasources": ["docker"],
       "matchPackageNames": [
