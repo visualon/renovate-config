@@ -106,13 +106,6 @@
       "description": "set changelog url for syncfusion packages",
       "matchSourceUrls": ["https://www.syncfusion.com/**"],
       "changelogUrl": "https://www.syncfusion.com/products/release-history"
-    },
-    {
-      "description": "set source url for rancher system-upgrade-controller docker image",
-      "matchDatasources": ["docker"],
-      "matchPackageNames": ["rancher/system-upgrade-controller"],
-      "sourceUrl": "https://github.com/rancher/system-upgrade-controller"
-
     }
   ]
 }
