@@ -141,6 +141,12 @@
         "https://github.com/fluentassertions/fluentassertions{,/}**"
       ],
       "allowedVersions": "(,8.0)"
+    },
+    {
+      "description": "disallow non lts bitnami mariadb versions, they are no longer maintained",
+      "matchDatasources": ["docker"],
+      "matchPackageNames": ["**/bitnami/mariadb"],
+      "allowedVersions": "!/^11\\.(?:5|6|7)(?:\\.|$)/"
     }
   ]
 }
