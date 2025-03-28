@@ -147,6 +147,12 @@
       "matchDatasources": ["docker"],
       "matchPackageNames": ["**/bitnami/mariadb"],
       "allowedVersions": "!/^11\\.(?:5|6|7)(?:\\.|$)/"
+    },
+    {
+      "description": "use semver for headlamp plugins",
+      "matchDatasources": ["docker"],
+      "matchPackageNames": ["ghcr.io/headlamp-k8s/headlamp-plugin-*"],
+      "versioning": "semver"
     }
   ]
 }
