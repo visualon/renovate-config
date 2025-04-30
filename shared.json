@@ -11,6 +11,7 @@
     "github>visualon/renovate-config//replacements.json",
     "github>visualon/renovate-config//k3s.json"
   ],
+  "configWarningReuseIssue": true,
   "automergeType": "branch",
   "timezone": "Europe/Berlin",
   "internalChecksFilter": "strict",
