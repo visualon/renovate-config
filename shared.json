@@ -38,20 +38,20 @@
       "description": "Require stability days",
       "matchUpdateTypes": ["major", "minor"],
       "matchDatasources": ["npm"],
-      "excludePackagePatterns": [
-        "^renovate(bot)?($|\\/)",
-        "\\/renovate(?:bot)?$",
-        "^(?:ghcr\\.io/)?containerbase/"
+      "matchPackageNames": [
+        "!/^renovate(bot)?($|\\/)/",
+        "!/\\/renovate(?:bot)?$/",
+        "!/^(?:ghcr\\.io/)?containerbase\\//"
       ],
       "minimumReleaseAge": "3 days",
       "prNotPendingHours": 73
     },
     {
       "description": "Require dashboard approval for major updates except Renovate",
-      "excludePackagePatterns": [
-        "^renovate(bot)?($|\\/)",
-        "\\/renovate(?:bot)?$",
-        "^(?:ghcr\\.io/)?containerbase/"
+      "matchPackageNames": [
+        "!/^renovate(bot)?($|\\/)/",
+        "!/\\/renovate(?:bot)?$/",
+        "!/^(?:ghcr\\.io/)?containerbase\\//"
       ],
       "matchUpdateTypes": ["major"],
       "dependencyDashboardApproval": true
