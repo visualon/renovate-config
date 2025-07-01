@@ -4,9 +4,7 @@
   "extends": ["config:recommended", ":semanticCommitsDisabled"],
   "automergeType": "pr",
   "automerge": true,
-  "labels": [
-    "dependencies"
-  ],
+  "labels": ["dependencies"],
   "packageRules": [
     {
       "description": "No approval for jenkins bom",

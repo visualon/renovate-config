@@ -223,7 +223,6 @@
       "description": "Flux",
       "matchSourceUrls": ["https://github.com/fluxcd/**"],
       "groupName": "Flux"
-
     }
   ]
 }

@@ -1,0 +1,30 @@
+{
+  "name": "renovate-config",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "author": "VisualOn GmbH <code@visualon.de>",
+  "contributors": [
+    "Michael Kriese <michael.kriese@visualon.de>"
+  ],
+  "type": "module",
+  "scripts": {
+    "lint": "run-s prettier",
+    "prepare": "husky",
+    "prettier": "prettier -c -u --experimental-cli '**/*.*'",
+    "prettier-fix": "prettier -u --experimental-cli '**/*.*' --write",
+    "test": "run-s prettier"
+  },
+  "devDependencies": {
+    "husky": "9.1.7",
+    "lint-staged": "15.5.2",
+    "npm-run-all2": "7.0.2",
+    "prettier": "3.6.2",
+    "prettier-plugin-packagejson": "2.5.17"
+  },
+  "packageManager": "pnpm@10.12.4",
+  "engines": {
+    "node": "^22.11.0",
+    "pnpm": "^10.0.0"
+  }
+}

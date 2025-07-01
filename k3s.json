@@ -3,7 +3,7 @@
   "packageRules": [
     {
       "description": "Limit k3s minor update",
-      "matchDatasources":["github-releases"],
+      "matchDatasources": ["github-releases"],
       "matchPackageNames": ["k3s-io/k3s"],
       "allowedVersions": "<=1.32"
     },
