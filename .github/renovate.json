@@ -1,8 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "visualon/renovate-config"
-  ],
+  "extends": ["visualon/renovate-config"],
   "customDatasources": {
     "k3s": {
       "defaultRegistryUrlTemplate": "https://update.k3s.io/v1-release/channels",
@@ -14,12 +12,8 @@
   "customManagers": [
     {
       "customType": "regex",
-      "managerFilePatterns": [
-        "/k3s.json/"
-      ],
-      "matchStrings": [
-        "allowedVersions\": \"(?<currentValue><=\\d+\\.\\d+)\""
-      ],
+      "managerFilePatterns": ["/k3s.json/"],
+      "matchStrings": ["allowedVersions\": \"(?<currentValue><=\\d+\\.\\d+)\""],
       "depNameTemplate": "k3s",
       "versioningTemplate": "npm",
       "datasourceTemplate": "custom.k3s"
@@ -28,9 +22,7 @@
   "packageRules": [
     {
       "description": "prepare k3s",
-      "matchDatasources": [
-        "custom.k3s"
-      ],
+      "matchDatasources": ["custom.k3s"],
       "rangeStrategy": "replace"
     }
   ]
