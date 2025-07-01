@@ -38,20 +38,20 @@
       "description": "Require stability days",
       "matchUpdateTypes": ["major", "minor"],
       "matchDatasources": ["npm"],
-      "excludePackagePatterns": [
-        "^renovate(bot)?($|\\/)",
-        "\\/renovate(?:bot)?$",
-        "^(?:ghcr\\.io/)?containerbase/"
+      "matchPackageNames": [
+        "!/^renovate(bot)?($|\\/)/",
+        "!/\\/renovate(?:bot)?$/",
+        "!/^(?:ghcr\\.io/)?containerbase\\//"
       ],
       "minimumReleaseAge": "3 days",
       "prNotPendingHours": 73
     },
     {
       "description": "Require dashboard approval for major updates except Renovate",
-      "excludePackagePatterns": [
-        "^renovate(bot)?($|\\/)",
-        "\\/renovate(?:bot)?$",
-        "^(?:ghcr\\.io/)?containerbase/"
+      "matchPackageNames": [
+        "!/^renovate(bot)?($|\\/)/",
+        "!/\\/renovate(?:bot)?$/",
+        "!/^(?:ghcr\\.io/)?containerbase\\//"
       ],
       "matchUpdateTypes": ["major"],
       "dependencyDashboardApproval": true
@@ -166,7 +166,7 @@
   "customManagers": [
     {
       "customType": "regex",
-      "fileMatch": ["\\.tf$"],
+      "managerFilePatterns": ["**/*.tf"],
       "matchStrings": [
         "\\s+image_[a-z0-9_]+\\s+=\\s+\"(?<packageName>[a-z0-9.\\/-]+)(?::(?<currentValue>[a-z0-9.-]+))?(?:@(?<currentDigest>sha256:[a-f0-9]+))?\"\\s+# renovate:(?: depName=(?<depName>.+?))?(?: versioning=(?<versioning>.+?))?\\s"
       ],
@@ -177,7 +177,7 @@
     {
       "customType": "regex",
       "description": "update versions inside yaml manifests",
-      "fileMatch": ["\\.yaml$"],
+      "managerFilePatterns": ["**/*.yaml"],
       "matchStrings": [
         ":\\s+(?<currentValue>.+?)\\s+# renovate: datasource=(?<datasource>.+?) depName=(?<depName>.+?)(?: packageName=(?<packageName>.+?))?(?: versioning=(?<versioning>.+?))?\\s"
       ]
@@ -185,14 +185,14 @@
     {
       "customType": "regex",
       "description": "update _version variables in terraform",
-      "fileMatch": ["\\.tf$"],
+      "managerFilePatterns": ["**/*.tf"],
       "matchStrings": [
         "\\s+(?<depName>[a-z0-9_]+?)_version\\s+=\\s+\"(?<currentValue>[a-z0-9.-]+)\"\\s+# renovate: datasource=(?<datasource>.+?)(?: packageName=(?<packageName>.+?))?(?: versioning=(?<versioning>.+?))?\\s"
       ]
     },
     {
       "customType": "regex",
-      "fileMatch": ["^Jenkinsfile$"],
+      "managerFilePatterns": ["Jenkinsfile"],
       "matchStringsStrategy": "any",
       "matchStrings": [
         "image '(?<depName>[a-z0-9.\\/-]+)(?::(?<currentValue>[a-z0-9.-]+))?(?:@(?<currentDigest>sha256:[a-f0-9]+))?'",
@@ -206,7 +206,10 @@
     {
       "customType": "regex",
       "description": "Update install-* Buildpack commands and _VERSION variables in Dockerfiles",
-      "fileMatch": ["(^|/|\\.)Dockerfile$", "(^|/)Dockerfile\\.[^/]*$"],
+      "managerFilePatterns": [
+        "/(^|/|\\.)Dockerfile$/",
+        "/(^|/)Dockerfile\\.[^/]*$/"
+      ],
       "matchStrings": [
         "# renovate: datasource=(?<datasource>.+?) depName=(?<depName>.+?)(?: (?:packageName|lookupName)=(?<packageName>.+?))?( versioning=(?<versioning>.+?))?\\s(ENV|ARG) [A-Z0-9_]+?_VERSION=(?<currentValue>.+?)\\s",
         "# renovate: datasource=(?<datasource>.+?)(?: (?:packageName|lookupName)=(?<packageName>.+?))?(?: versioning=(?<versioning>.+?))?\\sRUN install-[a-z]+? (?<depName>[a-z0-9-]+?) (?<currentValue>.+?)\\s"
@@ -215,7 +218,7 @@
     {
       "customType": "regex",
       "description": "Update install-* Buildpack commands and _VERSION variables in shell scripts",
-      "fileMatch": ["\\.sh$", "\\.ps1$"],
+      "managerFilePatterns": ["**/*.sh", "**/*.ps1"],
       "matchStrings": [
         "# renovate: datasource=(?<datasource>.+?) depName=(?<depName>.+?)(?: (?:packageName|lookupName)=(?<packageName>.+?))?( versioning=(?<versioning>.+?))?\\s\\$?[A-Z0-9_]+?_VERSION\\s*=\\s*['\"]?(?<currentValue>.+?)['\"]?\\s",
         "# renovate: datasource=(?<datasource>.+?)(?: (?:packageName|lookupName)=(?<packageName>.+?))?(?: versioning=(?<versioning>.+?))?\\sinstall-[a-z]+? (?<depName>[a-z0-9-]+?) (?<currentValue>.+?)\\s"
@@ -224,7 +227,7 @@
     {
       "customType": "regex",
       "description": "nuspec files manager",
-      "fileMatch": ["\\.nuspec$"],
+      "managerFilePatterns": ["**/*.nuspec"],
       "matchStringsStrategy": "any",
       "matchStrings": [
         "<dependency\\s+id=\"(?<depName>.*?)\"\\s+version=\"(?<currentValue>.+?)\"\\s*\\/>"
@@ -235,7 +238,7 @@
     {
       "description": "update pnpm patches",
       "customType": "regex",
-      "fileMatch": ["(?:^|/)package\\.json$"],
+      "managerFilePatterns": ["/(?:^|/)package\\.json$/"],
       "matchStrings": [
         "\"(?<depName>.+?)@(?<currentValue>\\d+\\.\\d+\\.\\d+(?:-.+)?)\": \"patches/"
       ],
@@ -245,7 +248,7 @@
     {
       "description": "update flux kustomization CRD dependencies",
       "customType": "regex",
-      "fileMatch": ["^flux/infrastructure/crds/kustomization.yaml$"],
+      "managerFilePatterns": ["flux/infrastructure/crds/kustomization.yaml"],
       "matchStrings": [
         "-\\s(?:.*?)\\/(?<currentValue>[^/\\s]+)\\/[^/\\s]+ # renovate: datasource=(?<datasource>.+?) depName=(?<depName>.+?)\\s"
       ]

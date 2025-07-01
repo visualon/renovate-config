@@ -43,7 +43,7 @@
         "/(^|\\/)postgresql$/",
         "/(^|\\/)mariadb$/"
       ],
-      "excludePackagePrefixes": ["registry-1.docker.io/bitnamicharts/"],
+      "matchPackageNames": ["!registry-1.docker.io/bitnamicharts/**"],
       "separateMultipleMajor": true
     },
     {
@@ -54,7 +54,7 @@
         "mariadb",
         "/(^|\\/)postgresql$/",
         "/(^|\\/)mariadb$/",
-        "!registry-1.docker.io/bitnamicharts/"
+        "!registry-1.docker.io/bitnamicharts/**"
       ],
       "matchUpdateTypes": ["major"],
       "groupName": null
