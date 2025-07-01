@@ -221,7 +221,7 @@
     },
     {
       "description": "Flux",
-      "matchPackageNames": ["fluxcd/flux2", "ghcr.io/fluxcd/**"],
+      "matchSourceUrls": ["https://github.com/fluxcd/**"],
       "groupName": "Flux"
 
     }
