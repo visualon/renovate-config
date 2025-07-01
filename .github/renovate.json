@@ -12,7 +12,7 @@
   "customManagers": [
     {
       "customType": "regex",
-      "managerFilePatterns": ["/k3s.json/"],
+      "managerFilePatterns": ["k3s.json"],
       "matchStrings": ["allowedVersions\": \"(?<currentValue><=\\d+\\.\\d+)\""],
       "depNameTemplate": "k3s",
       "versioningTemplate": "npm",
