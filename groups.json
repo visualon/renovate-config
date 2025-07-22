@@ -142,15 +142,6 @@
       "separateMinorPatch": false
     },
     {
-      "description": "Gitea chart and images",
-      "matchDatasources": ["helm", "docker"],
-      "matchPackageNames": ["/(^|\\/)gitea$/"],
-      "groupName": "Gitea",
-      "additionalBranchPrefix": "",
-      "group": { "commitMessageTopic": "{{{groupName}}} group" },
-      "separateMinorPatch": false
-    },
-    {
       "description": "Matomo chart and images",
       "matchDatasources": ["helm", "docker"],
       "matchPackageNames": ["/(^|\\/)matomo$/"],
