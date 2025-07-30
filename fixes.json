@@ -106,6 +106,12 @@
       "commitMessageTopic": "helm chart {{depName}}"
     },
     {
+      "description": "set traefik docker image source url (point to main repo) and don't allow `v` prefix for version",
+      "matchPackageNames": ["ghcr.io/traefik/traefik"],
+      "sourceUrl": "https://github.com/traefik/traefik",
+      "extractVersion": "^(?<version>\\d+\\.\\d+\\.\\d+)$"
+    },
+    {
       "matchPackageNames": [
         "ghcr.io/traefik/helm/traefik",
         "code.forgejo.org/forgejo-helm/forgejo"
