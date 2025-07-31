@@ -258,13 +258,13 @@
     {
       "description": "forgejo-code has rate limits",
       "matchHost": "code.forgejo.org",
-      "hostType": "gitea",
+      "hostType": "forgejo",
       "maxRequestsPerSecond": 8
     },
     {
       "description": "codeberg has rate limits",
       "matchHost": "codeberg.org",
-      "hostType": "gitea",
+      "hostType": "forgejo",
       "maxRequestsPerSecond": 8
     }
   ]
