@@ -23,11 +23,14 @@
       "separateMajorMinor": false
     },
     {
-      "description": "Only stable haproxy / nginx bitnami versions",
-      "matchPackageNames": [
-        "/(?:bitnami-containers|bitnami)\\/(?:haproxy|nginx)/"
-      ],
+      "description": "Only stable haproxy bitnami versions",
+      "matchPackageNames": ["/(?:bitnami-containers|bitnami)\\/(?:haproxy)/"],
       "allowedVersions": "/^\\d+\\.\\d*[02468]\\.\\d+(?:-.+-\\d+(?:-r\\d+)?)?$/"
+    },
+    {
+      "description": "Only stable nginx public ecr versions",
+      "matchPackageNames": ["public.ecr.aws/nginx/nginx"],
+      "allowedVersions": "/^\\d+\\.\\d*[02468]\\.\\d+(?:-.+)?$/"
     },
     {
       "description": "Separate k3s minor / patch updates",
