@@ -223,7 +223,8 @@
         "bitnami/cert-manager",
         "bitnami/cert-manager-webhook"
       ],
-      "groupName": "bitnami-cert-manager"
+      "groupName": "bitnami-cert-manager",
+      "changelogUrl": "https://github.com/cert-manager/cert-manager/releases"
     }
   ]
 }
