@@ -267,6 +267,11 @@
       "matchHost": "codeberg.org",
       "hostType": "forgejo",
       "maxRequestsPerSecond": 8
+    },
+    {
+      "description": "mark deuxfleurs as forgejo",
+      "matchHost": "git.deuxfleurs.fr",
+      "hostType": "forgejo"
     }
   ]
 }
