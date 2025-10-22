@@ -8,6 +8,12 @@
       "allowedVersions": "<=1.33"
     },
     {
+      "description": "Limit k3s-upgrade minor update",
+      "matchDatasources": ["docker"],
+      "matchPackageNames": ["rancher/k3s-upgrade"],
+      "allowedVersions": "<=1.33"
+    },
+    {
       "description": "Use custom regex versioning for k3s",
       "matchDatasources": ["github-releases"],
       "matchPackageNames": ["k3s-io/k3s"],
