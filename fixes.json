@@ -28,6 +28,11 @@
       "allowedVersions": "/^\\d+\\.\\d*[02468]\\.\\d+(?:-.+-\\d+(?:-r\\d+)?)?$/"
     },
     {
+      "description": "Only stable busybox versions",
+      "matchPackageNames": ["**{/,}busybox"],
+      "allowedVersions": "!/^\\.0$/"
+    },
+    {
       "description": "Only stable nginx public ecr versions",
       "matchPackageNames": ["public.ecr.aws/nginx/nginx"],
       "allowedVersions": "/^\\d+\\.\\d*[02468]\\.\\d+(?:-.+)?$/"
