@@ -30,7 +30,7 @@
     {
       "description": "Only stable busybox versions",
       "matchPackageNames": ["**{/,}busybox"],
-      "allowedVersions": "!/^\\.0$/"
+      "allowedVersions": "!/\\.0$/"
     },
     {
       "description": "Only stable nginx public ecr versions",
