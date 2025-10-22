@@ -214,6 +214,16 @@
       "description": "Flux",
       "matchSourceUrls": ["https://github.com/fluxcd/**"],
       "groupName": "Flux"
+    },
+    {
+      "description": "bitnami cert-manager",
+      "matchDepNames": [
+        "bitnami/acmesolver",
+        "bitnami/cainjector",
+        "bitnami/cert-manager",
+        "bitnami/cert-manager-webhook"
+      ],
+      "groupName": "bitnami-cert-manager"
     }
   ]
 }
