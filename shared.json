@@ -154,8 +154,31 @@
       "registryUrls": ["https://chocolatey.org/api/v2/"]
     },
     {
+      "description": "separate multiple major and use build scope for node",
+      "matchDepNames": ["node", "**/node"],
+      "separateMultipleMajor": true
+    },
+    {
+      "description": "set branch prefix for node major updates to split from minor updates",
+      "matchPackageNames": ["node", "**/node"],
+      "matchUpdateTypes": ["major"],
+      "additionalBranchPrefix": "major-"
+    },
+    {
+      "description": "split node types to separate pr",
+      "matchPackageNames": ["@types/node"],
+      "matchUpdateTypes": ["major"],
+      "additionalBranchPrefix": "major-types-"
+    },
+    {
+      "description": "widen node engines",
+      "matchPackageNames": ["node"],
+      "matchDepTypes": ["engines"],
+      "rangeStrategy": "widen"
+    },
+    {
       "description": "Use `build` semantic commit scope for some build deps",
-      "matchDepNames": ["node"],
+      "matchDepNames": ["node", "!@types/node"],
       "semanticCommitType": "build"
     },
     {
