@@ -106,6 +106,6 @@
       "matchDatasources": ["docker"],
       "matchDepNames": ["louislam/uptime-kuma"],
       "sourceUrl": "https://github.com/louislam/uptime-kuma"
-      
+    }
   ]
 }
