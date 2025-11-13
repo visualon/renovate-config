@@ -19,7 +19,8 @@
       "matchDatasources": ["docker"],
       "changelogUrl": "https://jenkins.io/changelog-stable",
       "separateMultipleMajor": true,
-      "automerge": false
+      "automerge": false,
+      "addLabels": ["breaking"]
     },
     {
       "description": "bump revision, doesn't work with single numbers yet",
