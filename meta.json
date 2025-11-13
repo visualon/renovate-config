@@ -102,7 +102,7 @@
       "changelogUrl": "https://www.syncfusion.com/products/release-history"
     },
     {
-      "desciption": "set source url for uptime kuma",
+      "description": "set source url for uptime kuma",
       "matchDatasources": ["docker"],
       "matchDepNames": ["louislam/uptime-kuma"],
       "sourceUrl": "https://github.com/louislam/uptime-kuma"
