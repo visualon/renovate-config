@@ -18,7 +18,8 @@
       "matchDepNames": ["jenkins"],
       "matchDatasources": ["docker"],
       "changelogUrl": "https://jenkins.io/changelog-stable",
-      "separateMultipleMajor": true
+      "separateMultipleMajor": true,
+      "automerge": false
     },
     {
       "description": "bump revision, doesn't work with single numbers yet",
