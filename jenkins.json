@@ -1,36 +1,28 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "description": "jenkins specific settings",
-  "extends": ["config:recommended", ":semanticCommitsDisabled"],
+  "extends": ["config:best-practices", ":semanticCommitsDisabled"],
   "automergeType": "pr",
   "automerge": true,
   "labels": ["dependencies"],
+  "separateMultipleMajor": true,
   "packageRules": [
     {
-      "description": "No approval for jenkins bom",
-      "matchSourceUrlPrefixes": [
-        "https://github.com/jenkinsci/bom",
-        "https://github.com/jenkinsci/plugin-pom"
-      ],
-      "dependencyDashboardApproval": false
-    },
-    {
+      "description": "add jenkins changelog url",
       "matchDepNames": ["jenkins"],
-      "matchDatasources": ["docker"],
-      "changelogUrl": "https://jenkins.io/changelog-stable",
-      "separateMultipleMajor": true,
-      "automerge": false,
-      "addLabels": ["breaking"]
+      "changelogUrl": "https://jenkins.io/changelog-stable"
     },
     {
-      "description": "bump revision, doesn't work with single numbers yet",
+      "description": "bump revision for major update",
       "matchFileNames": ["pom.xml"],
-      "matchDepNames": ["jenkins"],
+      "matchUpdateTypes": ["major"],
+      "automerge": false,
+      "addLabels": ["breaking"],
       "bumpVersions": [
         {
           "name": "revision",
           "filePatterns": ["pom.xml"],
-          "matchStrings": ["<revision>(?<version>\\d\\.\\d\\.\\d)</revision>"],
+          "matchStrings": ["<revision>(?<version>.+?)</revision>"],
           "bumpType": "major"
         }
       ]
@@ -45,9 +37,9 @@
         "<jenkins.baseline>(?<currentValue>.+?)</jenkins.baseline>"
       ],
       "depNameTemplate": "jenkins",
-      "packageNameTemplate": "jenkins/jenkins",
-      "datasourceTemplate": "docker",
-      "extractVersionTemplate": "^(?<version>\\d+\\.\\d+)\\.3$"
+      "packageNameTemplate": "jenkinsci/jenkins",
+      "datasourceTemplate": "github-tags",
+      "extractVersionTemplate": "^jenkins-(?<version>\\d+\\.\\d+)\\.3$"
     }
   ]
 }
