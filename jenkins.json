@@ -13,6 +13,39 @@
         "https://github.com/jenkinsci/plugin-pom"
       ],
       "dependencyDashboardApproval": false
+    },
+    {
+      "matchDepNames": ["jenkins"],
+      "matchDatasources": ["docker"],
+      "changelogUrl": "https://jenkins.io/changelog-stable",
+      "separateMultipleMajor": true
+    },
+    {
+      "description": "bump revision, doesn't work with single numbers yet",
+      "matchFileNames": ["pom.xml"],
+      "matchDepNames": ["jenkins"],
+      "bumpVersions": [
+        {
+          "name": "revision",
+          "filePatterns": ["pom.xml"],
+          "matchStrings": ["<revision>(?<version>\\d\\.\\d\\.\\d)</revision>"],
+          "bumpType": "major"
+        }
+      ]
+    }
+  ],
+  "customManagers": [
+    {
+      "description": "update jenkins baseline to only `<major>.<minor>.3` versions",
+      "customType": "regex",
+      "managerFilePatterns": "pom.xml",
+      "matchStrings": [
+        "<jenkins.baseline>(?<currentValue>.+?)</jenkins.baseline>"
+      ],
+      "depNameTemplate": "jenkins",
+      "packageNameTemplate": "jenkins/jenkins",
+      "datasourceTemplate": "docker",
+      "extractVersionTemplate": "^(?<version>\\d+\\.\\d+)\\.3$"
     }
   ]
 }
