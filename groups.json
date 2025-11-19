@@ -11,7 +11,11 @@
       "groupName": "minver packages"
     },
     {
-      "matchPackageNames": ["mcr.microsoft.com/dotnet/**"],
+      "description": "Group dotnet image updates together",
+      "matchPackageNames": [
+        "mcr.microsoft.com/dotnet/**",
+        "mcr.visualon.de/dotnet/**"
+      ],
       "groupName": "dotnet docker images"
     },
     {
