@@ -106,6 +106,12 @@
       "matchDatasources": ["docker"],
       "matchDepNames": ["louislam/uptime-kuma"],
       "sourceUrl": "https://github.com/louislam/uptime-kuma"
+    },
+    {
+      "description": "Set source url for harbor images",
+      "matchDatasources": ["docker"],
+      "matchDepNames": ["ghcr.io/goharbor/**"],
+      "sourceUrl": "https://github.com/goharbor/harbor"
     }
   ]
 }
