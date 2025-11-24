@@ -66,12 +66,12 @@
       "groupName": "antlr4ts monorepo"
     },
     {
-      "description": "Harbor chart and images",
-      "matchDatasources": ["helm", "docker"],
-      "matchDepNames": ["harbor", "{**/,}bitnami/harbor-*"],
+      "description": "Harbor images",
+      "matchDatasources": ["docker"],
+      "matchDepNames": ["ghcr.io/goharbor/**"],
       "groupName": "Harbor",
       "additionalBranchPrefix": "",
-      "group": { "commitMessageTopic": "{{{groupName}}} group" }
+      "group": { "commitMessageTopic": "{{{groupName}}} images" }
     },
     {
       "description": "PostgreSQL chart and images",
