@@ -229,6 +229,16 @@
       ],
       "groupName": "bitnami-cert-manager",
       "changelogUrl": "https://github.com/cert-manager/cert-manager/releases"
+    },
+    {
+      "description": "valkey",
+      "matchDepNames": [
+        "bitnami/valkey",
+        "bitnami/valkey-sentinel",
+        "ghcr.io/valkey-io/valkey",
+        "valkey/valkey"
+      ],
+      "groupName": "valkey"
     }
   ]
 }

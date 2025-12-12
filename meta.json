@@ -117,6 +117,11 @@
       "description": "set changelog url for PgBouncer",
       "matchPackageNames": ["ghcr.io/cloudnative-pg/pgbouncer"],
       "changelogUrl": "https://www.pgbouncer.org/changelog.html"
+    },
+    {
+      "description": "set changelog url for bitnami valkey",
+      "matchDepNames": ["bitnami/valkey", "bitnami/valkey-sentinel"],
+      "changelogUrl": "https://github.com/valkey-io/valkey"
     }
   ]
 }
