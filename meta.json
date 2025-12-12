@@ -112,6 +112,11 @@
       "matchDatasources": ["docker"],
       "matchDepNames": ["ghcr.io/goharbor/**"],
       "sourceUrl": "https://github.com/goharbor/harbor"
+    },
+    {
+      "description": "set changelog url for PgBouncer",
+      "matchPackageNames": ["ghcr.io/cloudnative-pg/pgbouncer"],
+      "changelogUrl": "https://www.pgbouncer.org/changelog.html"
     }
   ]
 }
