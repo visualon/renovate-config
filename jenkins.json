@@ -16,7 +16,10 @@
       "description": "bump revision for major update",
       "matchFileNames": ["pom.xml"],
       "matchUpdateTypes": ["major", "minor"],
-      "matchDepNames": ["!io.jenkins.tools.bom:*"],
+      "matchDepNames": [
+        "!io.jenkins.tools.bom:*",
+        "!org.jenkins-ci.plugins:plugin"
+      ],
       "automerge": false,
       "addLabels": ["breaking"],
       "bumpVersions": [
