@@ -1,11 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "description": "jenkins specific settings",
-  "extends": [
-    "config:best-practices",
-    ":semanticCommitsDisabled",
-    "helpers:pinGitHubActionDigestsToSemver"
-  ],
+  "extends": ["config:best-practices", ":semanticCommitsDisabled"],
   "automergeType": "pr",
   "automerge": true,
   "labels": ["dependencies"],
