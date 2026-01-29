@@ -122,6 +122,13 @@
       "automerge": true
     },
     {
+      "description": "Automerge some major updates",
+      "matchUpdateTypes": ["major"],
+      "matchPackageNames": ["containerbase/internal-tools"],
+      "automergeType": "pr",
+      "automerge": true
+    },
+    {
       "description": "Use replace for peer deps",
       "matchDepTypes": ["peerDependencies"],
       "rangeStrategy": "replace"
