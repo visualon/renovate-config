@@ -122,6 +122,11 @@
       "description": "set changelog url for bitnami valkey",
       "matchDepNames": ["bitnami/valkey", "bitnami/valkey-sentinel"],
       "changelogUrl": "https://github.com/valkey-io/valkey"
+    },
+    {
+      "description": "Set source url for matterjs-server",
+      "matchDepNames": ["ghcr.io/matter-js/matterjs-server"],
+      "sourceUrl": "https://github.com/matter-js/matterjs-server"
     }
   ]
 }
