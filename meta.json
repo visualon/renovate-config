@@ -129,7 +129,7 @@
       "sourceUrl": "https://github.com/matter-js/matterjs-server"
     },
     {
-      "description": "Set source url for kreuzwerker/docker terraform provider",
+      "description": "Set source url for kreuzwerker/docker tofu provider",
       "matchDatasources": ["terraform-provider"],
       "matchPackageNames": ["kreuzwerker/docker"],
       "sourceUrl": "https://github.com/kreuzwerker/terraform-provider-docker"
