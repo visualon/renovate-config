@@ -9,7 +9,7 @@
     {
       "matchDepNames": ["jenkins"],
       "matchDatasources": ["docker"],
-      "versioning": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)(?:-(?<compatibility>.+))?(?:-jdk(?<build>\\d+))?$",
+      "versioning": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)(?:-(?<compatibility>.+?))?(?:-jdk(?<build>\\d+))?$",
       "changelogUrl": "https://jenkins.io/changelog-stable"
     },
     {
