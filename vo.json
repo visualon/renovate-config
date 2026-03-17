@@ -7,7 +7,7 @@
         "@types/vo-app-base",
         "@vsaf/**",
         "VisualOn.*",
-        "/(^|\\/)visualon\\/(builder|buildpack)$/"
+        "/(^|\\/)visualon\\/(builder|buildpack|renovate)$/"
       ],
       "minimumReleaseAge": null,
       "prNotPendingHours": 25
@@ -21,7 +21,7 @@
       "groupName": "visualon images"
     },
     {
-      "matchPackageNames": ["/(^|\\/)visualon\\/(builder|buildpack)$/"],
+      "matchPackageNames": ["/(^|\\/)visualon\\/(builder|buildpack|renovate)$/"],
       "dependencyDashboardApproval": false,
       "separateMinorPatch": false
     }
