@@ -21,7 +21,9 @@
       "groupName": "visualon images"
     },
     {
-      "matchPackageNames": ["/(^|\\/)visualon\\/(builder|buildpack|renovate)$/"],
+      "matchPackageNames": [
+        "/(^|\\/)visualon\\/(builder|buildpack|renovate)$/"
+      ],
       "dependencyDashboardApproval": false,
       "separateMinorPatch": false
     }
