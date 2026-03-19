@@ -128,14 +128,19 @@
       "commitMessageTopic": "helm chart {{depName}}"
     },
     {
-      "description": "Use `semver-coerced` for action updates",
+      "description": "Use `semver-partial` for action updates",
       "matchDepTypes": ["action"],
-      "versioning": "semver-coerced"
+      "versioning": "semver-partial"
     },
     {
       "description": "Use `semver` for official action updates",
       "matchDepTypes": ["action"],
-      "matchDepNames": ["actions/**", "containerbase/**", "renovatebot/**"],
+      "matchDepNames": [
+        "actions/**",
+        "containerbase/**",
+        "pnpm/**",
+        "renovatebot/**"
+      ],
       "versioning": "semver"
     },
     {
@@ -145,7 +150,7 @@
       "versioning": "semver"
     },
     {
-      "description": "set version compabillity for roundcube",
+      "description": "set version compatibility for roundcube",
       "matchDatasources": ["docker"],
       "matchDepNames": ["roundcube/roundcubemail"],
       "versionCompatibility": "^(?<version>[^-]+)(?<compatibility>-.*)?$"
