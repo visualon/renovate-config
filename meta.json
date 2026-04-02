@@ -133,6 +133,12 @@
       "matchDatasources": ["terraform-provider"],
       "matchPackageNames": ["kreuzwerker/docker"],
       "sourceUrl": "https://github.com/kreuzwerker/terraform-provider-docker"
+    },
+    {
+      "description": "Set source url for tofu-controller",
+      "matchDatasources": ["docker"],
+      "matchPackageNames": ["ghcr.io/flux-iac/charts/tofu-controller"],
+      "sourceUrl": "https://github.com/flux-iac/tofu-controller"
     }
   ]
 }
