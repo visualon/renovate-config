@@ -1,5 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "ignorePresets": ["helpers:pinGitHubActionDigestsToSemver"],
   "packageRules": [
     {
       "description": "Exclude invalid version from antlr4ts",
