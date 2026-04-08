@@ -135,7 +135,11 @@
     },
     {
       "description": "Do not separate Renovate minor and patch",
-      "matchPackageNames": ["/^renovate(bot)?($|/)/"],
+      "matchPackageNames": [
+        "/^renovate(bot)?($|/)/",
+        "ghcr.io/renovatebot/renovate",
+        "ghcr.io/visualon/renovate"
+      ],
       "separateMinorPatch": false
     },
     {
