@@ -139,6 +139,12 @@
       "matchDatasources": ["docker"],
       "matchPackageNames": ["ghcr.io/flux-iac/charts/tofu-controller"],
       "sourceUrl": "https://github.com/flux-iac/tofu-controller"
+    },
+    {
+      "description": "Set source url for nginx",
+      "matchDatasources": ["docker"],
+      "matchPackageNames": ["nginx"],
+      "sourceUrl": "https://github.com/nginx/nginx"
     }
   ]
 }
