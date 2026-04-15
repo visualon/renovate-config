@@ -287,6 +287,14 @@
       "matchStrings": [
         "-\\s(?:.*?)\\/(?<currentValue>[^/\\s]+)\\/[^/\\s]+ # renovate: datasource=(?<datasource>.+?) depName=(?<depName>.+?)(?: (?:packageName)=(?<packageName>.+?))?\\s"
       ]
+    },
+    {
+      "description": "update Helm chart app version",
+      "customType": "regex",
+      "managerFilePatterns": ["**/Chart.yaml"],
+      "matchStrings": [
+        "appVersion: [\"']?(?<currentValue>[^/\\s]+)[\"']? # renovate: datasource=(?<datasource>.+?) depName=(?<depName>.+?)(?: (?:packageName)=(?<packageName>.+?))?( versioning=(?<versioning>.+?))?\\s"
+      ]
     }
   ],
   "hostRules": [
