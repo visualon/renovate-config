@@ -145,6 +145,12 @@
       "matchDatasources": ["docker"],
       "matchPackageNames": ["nginx"],
       "sourceUrl": "https://github.com/nginx/nginx"
+    },
+    {
+      "description": "set source url for phpmyadmin",
+      "matchDatasources": ["docker"],
+      "matchDepNames": ["ghcr.io/visualon/library/phpmyadmin"],
+      "sourceUrl": "https://github.com/phpmyadmin/phpmyadmin"
     }
   ]
 }
