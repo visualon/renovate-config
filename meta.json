@@ -151,6 +151,12 @@
       "matchDatasources": ["docker"],
       "matchDepNames": ["ghcr.io/visualon/library/phpmyadmin"],
       "sourceUrl": "https://github.com/phpmyadmin/phpmyadmin"
+    },
+    {
+      "description": "set source url for garage",
+      "matchDatasources": ["docker"],
+      "matchDepNames": ["dxflrs/garage"],
+      "sourceUrl": "https://git.deuxfleurs.fr/Deuxfleurs/garage"
     }
   ]
 }
