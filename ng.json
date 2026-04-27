@@ -48,8 +48,7 @@
       "description": "Do minimum release age for some deps",
       "matchSourceUrls": [
         "https://github.com/angular/**",
-        "https://github.com/nrwl/nx",
-        "https://github.com/primefaces/primeng{,/}**"
+        "https://github.com/nrwl/nx"
       ],
       "minimumReleaseAge": null,
       "prNotPendingHours": 25
