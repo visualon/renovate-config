@@ -36,8 +36,14 @@
   "packageRules": [
     {
       "description": "Require stability days",
-      "matchUpdateTypes": ["major", "minor"],
-      "matchDatasources": ["npm"],
+      "matchDatasources": [
+        "forgejo-releases",
+        "forgejo-tags",
+        "github-releases",
+        "github-tags",
+        "npm",
+        "nuget"
+      ],
       "matchPackageNames": [
         "!/^renovate(bot)?($|\\/)/",
         "!/\\/renovate(?:bot)?$/",
