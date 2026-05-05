@@ -8,8 +8,9 @@
   "separateMultipleMajor": true,
   "packageRules": [
     {
-      "description": "add jenkins changelog url",
+      "description": "add jenkins changelog url and minimum release age",
       "matchDepNames": ["jenkins"],
+      "minimumReleaseAge": "30 days",
       "changelogUrl": "https://jenkins.io/changelog-stable"
     },
     {
