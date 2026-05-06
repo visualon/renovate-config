@@ -291,7 +291,7 @@
       "customType": "regex",
       "managerFilePatterns": ["flux/infrastructure/crds/kustomization.yaml"],
       "matchStrings": [
-        "-\\s(?:.*?)\\/(?<currentValue>[^/\\s]+)\\/[^/\\s]+ # renovate: datasource=(?<datasource>.+?) depName=(?<depName>.+?)(?: (?:packageName)=(?<packageName>.+?))?\\s"
+        "-\\s(?:.*?)\\/(?:releases\\/download|refs\\/tags)\\/(?<currentValue>[^/\\s]+)\\/(?:.*?) # renovate: datasource=(?<datasource>.+?) depName=(?<depName>.+?)(?: (?:packageName)=(?<packageName>.+?))?\\s"
       ]
     },
     {
