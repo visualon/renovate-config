@@ -236,7 +236,8 @@
         "bitnami/valkey",
         "bitnami/valkey-sentinel",
         "ghcr.io/valkey-io/valkey",
-        "valkey/valkey"
+        "valkey/valkey",
+        "valkey"
       ],
       "groupName": "valkey"
     }

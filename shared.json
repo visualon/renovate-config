@@ -47,7 +47,8 @@
       "matchPackageNames": [
         "!/^renovate(bot)?($|\\/)/",
         "!/\\/renovate(?:bot)?$/",
-        "!/^(?:ghcr\\.io/)?containerbase\\//"
+        "!/^(?:ghcr\\.io/)?containerbase\\//",
+        "!@containerbase/*"
       ],
       "minimumReleaseAge": "3 days",
       "prNotPendingHours": 73
@@ -57,7 +58,8 @@
       "matchPackageNames": [
         "!/^renovate(bot)?($|\\/)/",
         "!/\\/renovate(?:bot)?$/",
-        "!/^(?:ghcr\\.io/)?containerbase\\//"
+        "!/^(?:ghcr\\.io/)?containerbase\\//",
+        "!@containerbase/*"
       ],
       "matchUpdateTypes": ["major"],
       "dependencyDashboardApproval": true
@@ -67,12 +69,7 @@
       "matchManagers": ["github-actions"],
       "dependencyDashboardApproval": false
     },
-    { "matchManagers": ["dockerfile", "droneci"], "pinDigests": true },
-    {
-      "matchManagers": ["droneci"],
-      "matchUpdateTypes": ["minor", "patch", "digest"],
-      "automerge": true
-    },
+    { "matchManagers": ["dockerfile"], "pinDigests": true },
     {
       "description": "Automerge ci deps minor and lower",
       "matchFileNames": ["Jenkinsfile", ".{github,forgejo}/**"],
@@ -130,7 +127,11 @@
     {
       "description": "Automerge some major updates",
       "matchUpdateTypes": ["major"],
-      "matchPackageNames": ["containerbase/internal-tools"],
+      "matchPackageNames": [
+        "containerbase/internal-tools",
+        "ghcr.io/visualon/builder",
+        "ghcr.visualon.de/visualon/builder"
+      ],
       "automergeType": "pr",
       "automerge": true
     },
