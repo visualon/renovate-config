@@ -42,7 +42,8 @@
         "github-releases",
         "github-tags",
         "npm",
-        "nuget"
+        "nuget",
+        "terraform-provider"
       ],
       "matchPackageNames": [
         "!/^renovate(bot)?($|\\/)/",
