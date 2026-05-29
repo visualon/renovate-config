@@ -240,6 +240,14 @@
         "valkey"
       ],
       "groupName": "valkey"
+    },
+    {
+      "description": "renovate-operator",
+      "matchDepNames": [
+        "ghcr.io/mogenius/helm-charts/renovate-operator",
+        "mogenius/renovate-operator"
+      ],
+      "groupName": "renovate-operator"
     }
   ]
 }

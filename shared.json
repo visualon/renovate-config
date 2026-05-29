@@ -68,6 +68,12 @@
     {
       "description": "No dashboard approval for major updates of github actions",
       "matchManagers": ["github-actions"],
+      "matchDepTypes": ["action"],
+      "rangeStrategy": "pin"
+    },
+    {
+      "description": "Pin github actions to full semver",
+      "matchManagers": ["github-actions"],
       "dependencyDashboardApproval": false
     },
     { "matchManagers": ["dockerfile"], "pinDigests": true },

@@ -116,33 +116,21 @@
       "commitMessageTopic": "helm chart {{depName}}"
     },
     {
-      "description": "set traefik docker image source url (point to main repo) and don't allow `v` prefix for version",
-      "matchPackageNames": ["ghcr.io/traefik/traefik"],
-      "sourceUrl": "https://github.com/traefik/traefik",
-      "extractVersion": "^(?<version>\\d+\\.\\d+\\.\\d+)$"
-    },
-    {
-      "matchPackageNames": [
-        "ghcr.io/traefik/helm/traefik",
-        "code.forgejo.org/forgejo-helm/forgejo"
+      "matchDepNames": [
+        "**/bitnamicharts/**",
+        "**/charts/**",
+        "**/helm-charts/**",
+        "**/helm/**",
+        "code.forgejo.org/forgejo-helm/forgejo",
+        "ghcr.io/open-telemetry/opentelemetry-helm-charts/**"
       ],
       "commitMessageTopic": "helm chart {{depName}}"
     },
     {
-      "description": "Use `semver-partial` for action updates",
-      "matchDepTypes": ["action"],
-      "versioning": "semver-partial"
-    },
-    {
-      "description": "Use `semver` for official action updates",
-      "matchDepTypes": ["action"],
-      "matchDepNames": [
-        "actions/**",
-        "containerbase/**",
-        "pnpm/**",
-        "renovatebot/**"
-      ],
-      "versioning": "semver"
+      "description": "set traefik docker image source url (point to main repo) and don't allow `v` prefix for version",
+      "matchPackageNames": ["ghcr.io/traefik/traefik"],
+      "sourceUrl": "https://github.com/traefik/traefik",
+      "extractVersion": "^(?<version>\\d+\\.\\d+\\.\\d+)$"
     },
     {
       "matchDatasources": ["docker"],
