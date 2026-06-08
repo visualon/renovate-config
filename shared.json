@@ -210,6 +210,11 @@
       "description": "autmerge digests via branch to reduce noise",
       "matchUpdateTypes": ["digest"],
       "automergeType": "branch"
+    },
+    {
+      "description": "Bump bare NuGet versions to the latest release",
+      "matchManagers": ["nuget"],
+      "rangeStrategy": "bump"
     }
   ],
   "customManagers": [
