@@ -248,6 +248,12 @@
         "mogenius/renovate-operator"
       ],
       "groupName": "renovate-operator"
+    },
+    {
+      "description": "group actions from different hosts",
+      "matchManagers": ["github-actions"],
+      "matchDepTypes": ["action"],
+      "groupName": "{{{packageName}}}"
     }
   ]
 }
