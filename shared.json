@@ -66,13 +66,30 @@
       "dependencyDashboardApproval": true
     },
     {
-      "description": "No dashboard approval for major updates of github actions",
+      "description": "Pin actions to full semver",
       "matchManagers": ["github-actions"],
       "matchDepTypes": ["action"],
-      "rangeStrategy": "pin"
+      "rangeStrategy": "pin",
+      "pinDigests": true
     },
     {
-      "description": "Pin github actions to full semver",
+      "description": "weekly digest updates non full semver actions",
+      "matchManagers": ["github-actions"],
+      "matchDepTypes": ["action"],
+      "matchUpdateTypes": ["digest"],
+      "matchCurrentValue": "!/^v?\\d+\\.\\d+\\.\\d+$/",
+      "extends": ["schedule:weekly"]
+    },
+    {
+      "description": "No digest updates for full semver actions",
+      "matchManagers": ["github-actions"],
+      "matchDepTypes": ["action"],
+      "matchUpdateTypes": ["digest"],
+      "matchCurrentValue": "/^v?\\d+\\.\\d+\\.\\d+$/",
+      "enabled": false
+    },
+    {
+      "description": "No dashboard approval for major updates of github actions",
       "matchManagers": ["github-actions"],
       "dependencyDashboardApproval": false
     },
