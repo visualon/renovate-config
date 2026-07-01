@@ -32,6 +32,9 @@
     "**/tests/**",
     "**/flux-system/gotk-sync.yaml"
   ],
+  "statusCheckWhen": {
+    "artifactError": "always"
+  },
   "lockFileMaintenance": { "automerge": true },
   "packageRules": [
     {
