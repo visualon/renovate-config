@@ -157,6 +157,11 @@
       "matchDatasources": ["docker"],
       "matchDepNames": ["dxflrs/garage"],
       "sourceUrl": "https://git.deuxfleurs.fr/Deuxfleurs/garage"
+    },
+    {
+      "description": "set source url for ncalc",
+      "matchPackageNames": ["NCalc.Core"],
+      "sourceUrl": "https://github.com/ncalc/ncalc"
     }
   ]
 }
