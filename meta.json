@@ -162,6 +162,11 @@
       "description": "set source url for ncalc",
       "matchPackageNames": ["NCalc.Core"],
       "sourceUrl": "https://github.com/ncalc/ncalc"
+    },
+    {
+      "description": "override changelog url for matomo",
+      "matchPackageNames": ["ghcr.io/visualon/library/matomo"],
+      "changelogUrl": "https://matomo.org/changelog"
     }
   ]
 }
