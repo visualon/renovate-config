@@ -215,9 +215,10 @@
       "groupName": "skiasharp major"
     },
     {
-      "description": "Flux",
+      "description": "Flux images",
       "matchSourceUrls": ["https://github.com/fluxcd/**"],
-      "groupName": "Flux"
+      "matchDatasources": ["docker"],
+      "groupName": "flux-images"
     },
     {
       "description": "bitnami cert-manager",
