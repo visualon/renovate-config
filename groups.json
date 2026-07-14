@@ -218,7 +218,7 @@
       "description": "Flux images",
       "matchSourceUrls": ["https://github.com/fluxcd/**"],
       "matchDatasources": ["docker"],
-      "groupName": "flux-images"
+      "dependencyDashboardApproval": true
     },
     {
       "description": "bitnami cert-manager",
