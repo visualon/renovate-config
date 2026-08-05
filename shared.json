@@ -196,7 +196,7 @@
       "description": "Use other registry for chocolatey packages",
       "matchPackageNames": ["chocolatey-core.extension", "graphviz.portable"],
       "matchDatasources": ["nuget"],
-      "registryUrls": ["https://chocolatey.org/api/v2/"]
+      "registryUrls": ["https://community.chocolatey.org/api/v2/"]
     },
     {
       "description": "separate multiple major and use build scope for node",
