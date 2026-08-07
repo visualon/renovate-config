@@ -9,9 +9,10 @@
       "dependencyDashboardApproval": true
     },
     {
-      "description": "Separate multiple typescript minor for angular",
+      "description": "Separate multiple typescript major and minor for angular",
       "matchPackageNames": ["typescript"],
-      "separateMultipleMinor": true
+      "separateMultipleMinor": true,
+      "separateMultipleMajor": true
     },
     {
       "description": "Do not automerge and group angular updates for major and minor",
