@@ -58,8 +58,6 @@
       "description": "Do not automerge nx, don't seperate major / minor / patch, needs migration",
       "matchSourceUrls": ["https://github.com/nrwl/nx"],
       "automerge": false,
-      "separateMinorPatch": false,
-      "separateMajorMinor": false,
       "semanticCommitType": "build"
     }
   ]
