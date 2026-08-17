@@ -26,6 +26,11 @@
       ],
       "dependencyDashboardApproval": false,
       "separateMinorPatch": false
+    },
+    {
+      "matchPackageNames": ["ghcr.io/open-telemetry/**"],
+      "separateMinorPatch": false,
+      "extends": ["schedule:weekly"]
     }
   ]
 }
