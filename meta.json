@@ -167,6 +167,12 @@
       "description": "override changelog url for matomo",
       "matchPackageNames": ["ghcr.io/visualon/library/matomo"],
       "changelogUrl": "https://matomo.org/changelog"
+    },
+    {
+      "description": "override source url dor HTML-Renderer",
+      "matchDepNames": ["HtmlRenderer.*"],
+      "matchDatasources": ["nuget"],
+      "sourceUrl": "https://github.com/ArthurHub/HTML-Renderer"
     }
   ]
 }
