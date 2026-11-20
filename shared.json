@@ -240,7 +240,7 @@
   "customManagers": [
     {
       "customType": "regex",
-      "managerFilePatterns": ["**/*.tf"],
+      "managerFilePatterns": ["**/*.tf", "**/*.tofu"],
       "matchStrings": [
         "\\s+image_[a-z0-9_]+\\s+=\\s+\"(?<packageName>[a-z0-9.\\/-]+)(?::(?<currentValue>[a-z0-9.-]+))?(?:@(?<currentDigest>sha256:[a-f0-9]+))?\"\\s+# renovate:(?: depName=(?<depName>.+?))?(?: versioning=(?<versioning>.+?))?\\s"
       ],
@@ -259,7 +259,7 @@
     {
       "customType": "regex",
       "description": "update _version variables in terraform",
-      "managerFilePatterns": ["**/*.tf"],
+      "managerFilePatterns": ["**/*.tf", "**/*.tofu"],
       "matchStrings": [
         "\\s+(?<depName>[a-z0-9_]+?)_version\\s+=\\s+\"(?<currentValue>[a-z0-9.-]+)\"\\s+# renovate: datasource=(?<datasource>.+?)(?: packageName=(?<packageName>.+?))?(?: versioning=(?<versioning>.+?))?\\s"
       ]
