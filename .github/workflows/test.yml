@@ -58,9 +58,12 @@ jobs:
           show-progress: false
 
       - name: testing ${{ matrix.file }}
-        run: renovate-config-validator --no-global --strict ${{ matrix.file }}.json
+        run: renovate-config-validator --no-global --strict --migrate ${{ matrix.file }}.json
         env:
           LOG_LEVEL: debug
+          FORCE_COLOR: '1'
+      - name: Check for config migrations
+        run: git diff --color --exit-code
 
   test-success:
     runs-on: ubuntu-latest
