@@ -3,7 +3,6 @@
   "extends": [
     "github>visualon/renovate-config//shared.json",
     "github>visualon/renovate-config//vo.json",
-    ":dependencyDashboard",
     ":assignee(viceice)",
     "helpers:pinGitHubActionDigests"
   ],
